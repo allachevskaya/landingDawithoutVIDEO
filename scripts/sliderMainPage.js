@@ -1,5 +1,5 @@
 const favoriteIcon = document.querySelectorAll('#loveWhite');
-const arrayFavoriteIcon = ['../assets/icons/loveWhite.svg', '../assets/icons/loveWhiteFull.svg']
+const arrayFavoriteIcon = ['assets/icons/loveWhite.svg', 'assets/icons/loveWhiteFull.svg']
 const slides = document.querySelectorAll('.NewProductsSliderSlides');
 const slidesMob = document.querySelectorAll('.NewProductsMobSliderItem')
 const mainImg = document.querySelector('#MainImg');
