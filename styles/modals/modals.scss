@@ -622,6 +622,7 @@
     opacity: 0;
     overflow: hidden;
     visibility: hidden;
+    z-index: -5;
 }
 
 .hiddenBody {

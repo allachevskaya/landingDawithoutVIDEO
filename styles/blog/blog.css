@@ -47,7 +47,7 @@
   height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 11.4285714286vw 7.1428571429vw;
+  gap: 11.4285714286vw 12.8571428571vw;
 }
 .blogItemsItem {
   display: flex;

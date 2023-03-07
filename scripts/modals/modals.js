@@ -36,11 +36,15 @@ const closeModal = (currentModal, classCurrentModal) => {
 
 const handleClickWindow = (curentPop, classCurrentPop) => {
     window.addEventListener('click', (e) => {
+  
         if (e.target.className === classCurrentPop) {
             toggleClass(curentPop, 'closeHeaderPop');
         }
         if (e.target.id === 'closeHeaderPop') {
-            
+            closeModal(curentPop, 'closeHeaderPop')
+        }
+       
+        if(e.target.className === 'HeaderPopStore'){
             closeModal(curentPop, 'closeHeaderPop')
         }
     })
@@ -53,6 +57,7 @@ const openModalUser = (e) => {
     toggleClass(HeaderPop, 'closeHeaderPop');
     handleClickWindow(HeaderPop, 'HeaderPop')
 }
+
 
 const openModalStore = (e) => {
     e.preventDefault();

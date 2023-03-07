@@ -61,7 +61,7 @@
         grid-template-columns: repeat(2, 1fr);
 
         // gap: 160px 100px;
-        gap: calc(160 * (100vw/1400)) calc(100 * (100vw/1400));
+        gap: calc(160 * (100vw/1400)) calc(180 * (100vw/1400));
 
         &Item {
             display: flex;
