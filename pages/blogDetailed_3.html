@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/blogDetailed/blogDetailed_1.css">
+    <title>Быт и уют: особенности домашней обстановки в разных странах.</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <section class="blogDetailed">
+                <main class="blogDetailedMain">
+                    <picture>
+                        <source srcset="../assets/blogDetailed/3/370520.png" media="(max-width: 520px)">
+                        <img src="../assets/blogDetailed/3/370.png" alt="My default image">
+                    </picture>
+
+                    <div class="blogDetailedMainText __3blogDetailedMainText">
+                        <p>ноябрь 2022 </p>
+                        <h1>Быт и уют: особенности домашней обстановки в разных странах.</h1>
+                    </div>
+                </main>
+                <div class="blogDetailedText">
+                    <p>
+                        Национальные особенности и менталитет - это не только манера общения и ведения бизнеса, образ
+                        мыслей и вековые традиции. Это еще и уникальное видение того, как должно быть обустроено жилище
+                        и какие предметы обязательно должны быть в доме.
+                        <br><br>
+                        Предлагаем заглянуть в гости к жителям трех стран: Германии, Франции, Израиля. Мы узнаем, что
+                        именно они используют в быту и как предпочитают создавать уют и комфорт в стенах своих квартир и
+                        домов. А затем посмотрим, как оформляют интерьер в нашей стране. Ведь чем больше мы узнаем друг
+                        о друге, тем ближе становимся.
+
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Германия</h1>
+                    <p>
+                        Жители Германии восхищают своей практичностью. Мебель дома расставлена строго в соответствии с
+                        потребностями. Невозможно найти лишний и неиспользуемый предмет. Любая деталь интерьера также
+                        всегда функциональна и полезна. Именно практичность и удобство в мелочах создают комфортную,
+                        уютную обстановку.
+                        <br><br>
+                        В большинстве домов вы увидите стены в кремовых, сливочных, кофейных и оливковых тонах. Такие
+                        оттенки помогают визуально расширить пространство. При этом мебель и пол скорее всего будут в
+                        темных тонах.
+                        <br><br>
+                        Немцы предпочитают устанавливать жалюзи снаружи за окнами. Металлические автоматические или
+                        жалюзи с ручным механизмом возможно и не украшают фасад здания, зато крайне удобны и
+                        функциональны. Они защищают окна от грязи и пыли, не перекрывают доступ к подоконникам, что
+                        позволяет расширить внутреннее пространство комнаты.
+                        <br><br>
+                        Окна в ванных комнатах и туалетах - вполне обыденное явление в домах Германии. Это обусловлено
+                        выбором в пользу естественного проветривания помещений без использования систем
+                        кондиционирования и энергозатратных ресурсов.
+                        <br><br>
+                        Проветривание в ванных комнатах помогает также бороться с плесенью. Как и скребок для стекол,
+                        который всегда можно найти в шкафчике рядом с шампунями и кремами. Его используют каждый раз
+                        после душа, чтобы собрать осевшую влагу с плитки, стенок душевой кабины и окон.
+                        <br><br>
+                        Холодильники в Германии меньше, чем у нас, что позволяет лишний раз сэкономить на электричестве.
+                        Зато в каждом доме вы найдете кладовку для хранения солений, консервов, овощей и круп. Чем
+                        больше дом, тем больше разных кладовок: для бытовой техники, спортивного инвентаря и много
+                        другого. И все всегда на своих местах.
+                        <br><br>
+                        <strong><i>Интересно:</i></strong>
+                        <i>В Германии собственный двор - это святыня. Там собирают друзей и близких, делают
+                            барбекю, играют с детьми и занимаются спортом. Рядом с многими многоквартирными домами в
+                            небольших городах также есть ухоженные дворики. Своеобразные островки безмятежности, где
+                            можно
+                            посидеть в хорошую погоду, пообщаться с соседями или спокойно почитать книгу.
+                        </i>
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedImgRight">
+                    <img src="../assets/blogDetailed/3/image 445.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Франция</h1>
+                    <p>«Оставьте стены белыми» – основной принцип интерьера во французском стиле. Светлые и теплые
+                        оттенки (бежевый, кремовый, слоновой кости) преобладают в оформлении стен и потолков, а также
+                        фасадов домов. Особый шарм придают акценты в виде пастельных тонов: лавандовых, фисташковых,
+                        песочных, розовых, голубых.
+                        <br><br>
+                        При этом в цветовой гамме мебели и декора предпочтение отдается насыщенным оттенкам (винным,
+                        изумрудным, оранжевым, терракотовым, синим).
+                        <br><br>
+                        Расположение квартиры для французов намного важнее размера ее площади. Многие мечтают жить ближе
+                        к центру города, в исторических домах и объектах культурного наследия. В них стараются сохранить
+                        в первозданном виде малейшие напоминания о прошлом: каменные кладки, звонки, дверные ручки,
+                        старинное остекление, смесители, светильники, каминные порталы и т.д.
+                        <br><br>
+                        Французы придают огромное значение истории и особую ценность винтажным элементам декора.
+                        Абсолютно в каждом доме вы найдете фамильные фотографии и портреты членов семьи, изысканные
+                        статуэтки и шкатулки, старинные книги и журналы середины прошлого века, настольные лампы с
+                        мозаичными абажурами и многое другое.
+                        <br><br>
+                        Все это передают из поколения в поколение, покупают в антикварных лавках и на блошиных рынках.
+                        При этом обладатель такого сокровища всегда расскажет вам в каком веке был создан тот или иной
+                        предмет, в каком стиле и, возможно, даже связанную с ним семейную легенду.
+                        <br><br>
+                        Для создания особой, уютной атмосферы во Франции в интерьере также используют живые или
+                        засушенные цветы в невысоких винтажных вазах. Очень популярны текстильные изделия, в том числе
+                        ручной работы: пледы, одеяла, ковры, скатерти и шторы, шелковые и сатиновые гобелены и шпалеры.
+                        <br><br>
+                        <strong><i>Интересно:</i></strong>
+                        <i>
+                            Самая знаменитая французская ткань - «Туаль-де-Жуи» («Toile de Jouy» – дословно
+                            переводится как «ткань из Жуи») используется для изготовления постельного белья, портьер и
+                            балдахинов. Принт в этой стилистике был невероятно дорог сердцу Кристиана Диора и стал одним
+                            из
+                            фирменных мотивов модного дома «DIOR». «Toile de Jouy» и по сей день можно увидеть в дизайне
+                            сумок, обуви и других аксессуаров бренда.
+                        </i>
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/3/image 456.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Израиль</h1>
+                    <p>
+                        Любимый стиль в оформлении жилища в этой стране - минимализм. Израильтяне отдают предпочтение
+                        светлым и кремовые оттенкам стен и полов. Выбор этот обусловлен климатом. Палящее солнце не
+                        щадит даже самые качественные и дорогие материалы, выжигая и обесцвечивая рисунки и орнаменты на
+                        обоях, напольных покрытиях, занавесках и мебели.
+                        <br><br>
+                        Примечательно, что маленькие квартиры в Израиле практически не востребованы. Чаще всего они
+                        используются как съемное жилье, которое выбирают неженатые люди, репатрианты и туристы. Семейные
+                        пары предпочитают просторные апартаменты с тремя и более комнатами, с балконами и террасами.
+                        Традиционно, счастливая израильская семья – это многодетная семья с большим количеством
+                        родственников. Поэтому дома каждый должен чувствовать себя комфортно, уютно и свободно.
+                        <br><br>
+                        <strong><i>Интересно:</i></strong>
+                        <i>
+                            У входной двери в Израиле можно встретить прикрепленную к стене своеобразную колбу –
+                            мезузу. Внутрь нее кладут свиток со словами из Торы. Перед тем, как войти в дом, верующие
+                            целуют
+                            мезузу, приложив два пальца к ней, а потом к губам.
+                        </i>
+                        <br><br>
+                        В Израильском доме нет прихожей. Она расценивается как бесполезная трата пространства. Поэтому
+                        входя в квартиру, вы сразу попадаете в гостиную. По этой же причине в Израиле низким спросом
+                        пользуются ванны. Типичная ванная комната оснащена либо душевой кабиной, либо просторным
+                        углублением, выложенным кафелем.
+                        <br><br>
+                        Не смотря на то, что Израиль славится своими застольями и кулинарией, кухонная комната как
+                        правило небольшого размера с минимальным количеством мебели. Завтракать, обедать и ужинать
+                        принято не на кухне, а в гостиной, обеденном зале или на террасе.
+                        <br><br>
+                        Затяжной военный конфликт Израиля с соседней Палестиной вынудил строить дома так, чтобы каждая
+                        квартира была оснащена специальной защитной комнатой (мамак), и даже комнатой-бомбоубежищем
+                        (мамад), рассчитанной на несколько семей. И этот факт очень важен к осмыслению и пониманию того,
+                        почему израильтяне не усердствуют в дизайне интерьера, а предпочитают тратить все свободное
+                        время на общение с семьей и близкими.
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/3/image 457.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Россия</h1>
+                    <p>Большинство жителей нашей страны отдают предпочтение светлым и кремовым оттенкам стен, обоям с
+                        эффектом шелкографии. Не теряют актуальность мебельные гарнитуры темных или светлых тонов.
+                        <br><br>
+                        Учитывая, что в новых домах чаще встречаются квартиры с небольшими площадями, набирает
+                        популярность оформление интерьера с использованием техники зонирования пространства. Применяются
+                        цветовые и графические акценты на стенах. Локации разграничиваются при помощи книжных шкафов и
+                        подвесных полок. При этом не угасает любовь россиян к расстановке мебели строго по периметру
+                        комнаты, оставляя полностью свободное пространство в центральной части.
+                        <br><br>
+                        Дизайнеры отмечают, что в последние 10-15 лет в России все больше и больше интересуются
+                        оформлением интерьера. Жители разных возрастов изучают основы и теорию дизайна, новые техники и
+                        материалы.
+                        <br><br>
+                        Особенностью российских интерьерных проектов считается "вышколенность" и перфекционизм, в
+                        которых отсутствует "расслабленность" европейских школ. При этом сложно выделить одно или
+                        несколько стилистических направлений. Интерьер жилища в разных регионах создается исходя из
+                        традиций и местоположения (в южной и северных частях страны они разительно отличаются).
+                        Разнообразие культур и народностей предполагает открытость к экспериментам и стилистикам, в том
+                        числе пришедших из других стран.
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/3/image 458.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        <strong><i>В заключении хотим сказать…</i></strong>
+                        <br><br>
+                       
+
+                        Не важно, в какой стране мы живем. Важно стремиться к пониманию и уважению разных культур. И не
+                        стоит обижаться, если в европейских странах на вас будут косо смотреть за чрезмерную трату
+                        природных ресурсов, а в азиатских - за неумение использовать минимум пространства в доме с
+                        максимумом пользы. Не злитесь на размеренность островитян, они искренне не понимают, почему
+                        нужно все время куда-то успеть и почему так страшно опоздать.
+                        <br><br>
+                        Нам, к примеру, не сразу станет понятна страсть жителей Нидерландов к большим окнам, которые они
+                        не зашторивают ни днем ни ночью, даже на первом этаже. Мы воспринимаем это как демонстрацию
+                        нюансов своей жизни и подглядывание за ней. Для них - закрытые окна скорее вызывают подозрения:
+                        не происходит ли там что-то незаконное, кто новые соседи и можно ли им доверять.
+                        <br><br>
+                        Не смотря на различия, дом для каждого человека на планете - это храм и отдушина. Используйте
+                        свои опыт и опыт других в создании особенной и уютной атмосферы. Окружите себя любимыми и
+                        полезными в быту вещами, красивым и функциональным декором, приятными цветовыми решениями и
+                        ароматами.
+                        <br><br>
+                        Начните переосмысление своего личного пространства с выбора изысканного ароматического диффузора
+                        DIVINE AROMA, который станет не только прекрасным дополнением к любому интерьеру, но и подарит
+                        нужное настроение.
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/3/image 459.png" alt="">
+                </div>
+               
+                <div class="blogDetailedText">
+                    <p>
+                        Мы предлагаем познакомиться и с нашим <a class="blogDetailedTextLink" href="">новыми диффузорами
+                            premium класса</a>. Любимые ароматы в новом формате: еще более стойкие и насыщенные.
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <h5>Всегда с любовью к вам и вашему дому,
+                        <br>DIVINE AROMA
+                    </h5>
+                </div>
+                <div class="blogDetailedNetWorks">
+                    <p>Понравилась статья? Не забудьте поделиться с друзьями в социальных сетях.</p>
+                    <div class="blogDetailedNetWorksIcons">
+                        <a href=""><img src="../assets/icons/face.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/vk.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/twi.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/class.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+
+</body>
+
+</html>

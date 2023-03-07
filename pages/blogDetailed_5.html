@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/blogDetailed/blogDetailed_1.css">
+    <title>Создание парфюмерной композиции аромата - волшебство или наука?</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <section class="blogDetailed">
+                <main class="blogDetailedMain">
+                    <picture>
+                        <source srcset="../assets/blogDetailed/5/372520.png" media="(max-width: 520px)">
+                        <img src="../assets/blogDetailed/5/372.png" alt="My default image">
+                    </picture>
+
+                    <div class="blogDetailedMainText __3blogDetailedMainText">
+                        <p>сентябрь 2022</p>
+                        <h1>Создание парфюмерной композиции аромата - волшебство или наука?</h1>
+                    </div>
+                </main>
+                <div class="blogDetailedTitle">
+                    <p>Чтобы создать что-то исключительное, ваше мышление должно быть непрерывно сфокусировано на
+                        мельчайших деталях.
+
+                        <br> (с) Джорджио Армани
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Всего несколько правильно подобранных деталей и акцентов способны превратить обыденное в нечто
+                        уникальное и запоминающееся. Такой подход используют во многих отраслях, где важно подчеркнуть
+                        индивидуальность и вкус покупателя: от производства автомобилей, пищевой и текстильной
+                        промышленности, до парфюмерной индустрии.
+                        <br><br>
+                        Что же отличает одни духи от других? Конечно же запоминающаяся парфюмерная композиция. Сочетание
+                        нот, выверенный баланс, мастерство и опыт парфюмеров, следование стандартам производства и
+                        четкое понимание целевой аудитории - то, без чего невозможно создание неповторимого аромата.
+                    </p>
+
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/5/image 466.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Парфюмерная композиция - это многокомпонентное сочетание душистых веществ (органических
+                        соединений с определенными парфюмерными свойствами). От их процентного соотношения с другими
+                        составляющими (спирт, вода) зависит то, чем станет итоговый продукт: духами, одеколоном,
+                        парфюмерной или туалетной водой.
+                        <br><br>
+                        Согласно классическому принципу французской школы парфюмерная композиция аромата раскрывается
+                        поэтапно:
+                        <br><br>
+                        &middot; сначала звучат верхние ноты;
+                        <br>
+                        &middot;затем ноты сердца (или средние ноты);
+                        <br>
+                        &middot; и завершают композицию базовые или конечные ноты (иногда их называют шлейфовые). Их мы
+                        ощущаем
+                        <br>
+                        &middot; дольше всего: от 6 часов до суток.
+                        <br><br>
+                        Верхние ноты дают нам первое впечатление об аромате, его настроении. Как правило это: цитрусовые
+                        (лимон и цедра лимона, бергамот, апельсин, грейпфрут), сладкие фрукты и ягоды, травы ( лаванда и
+                        шалфей и т.д.).
+                        <br><br>
+                        Ноты сердца - главные в аромате, показывают его характер и темперамент. Как правило это:
+                        цветочные ноты (роза, герань, лимонник, лаванда, иланг-иланг, жасмин, нероли и т.д.), специи
+                        (кориандр, мускатный орех, корица, розовые и белый перец и т.д.), древесные ноты.
+                        <br><br>
+                        Базовые ноты ощущаются в конце раскрытия аромата, обеспечивают ему силу, стойкость и глубину.
+                        Как правило это: амбра, сладкие ноты (ваниль, бобы тонка), янтарь, кедр, сандаловое дерево,
+                        дубовый мох и многие другие.
+                        <br><br>
+                        Существуют непреложные правила размещения той или иной ноты на определенном уровне. К примеру,
+                        амбра всегда располагается в "базе" парфюмерной композиции, т.к. она скрепляет структуру,
+                        продлевает стойкость аромата и делает его невероятно манким и томным.
+
+                    </p>
+                    <p>
+                        <i>
+                            Справка: Амбра - продукт жизнедеятельности кашалотов, образующийся в пищеварительном тракте.
+                            Для защиты стенок в кишечнике кашалота выделяется специальный воскообразный секрет (амбра),
+                            обволакивающий неперевариваемую пищу, которая может повредить стенки кишечника (например
+                            клювы гигантских кальмаров).
+                            <br><br>
+                            Учитывая сложность добычи амбры и высокую стоимость, в парфюмерной индустрии чаще всего
+                            используют воссозданную на молекулярном уровне амбру.
+                        </i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight __blogDetailedImgLeftText">
+                    <img src="../assets/blogDetailed/5/image 467.png" alt="">
+                    <p>Амбра</p>
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Расположение основных нот аромата в парфюмерной композиции</h1>
+                    <p>У парфюмеров всегда есть свобода творчества, и большую часть нот можно расставлять на разных
+                        уровнях и дублировать, а сохранить баланс помогают классические сочетания нот.
+                        <br><br>
+                        Цветочные ноты отлично сочетаются с древесными, зелеными и цитрусовыми аккордами (роза и пачули,
+                        жасмин и бергамот и т.д.). Восточные и пряные ноты (ваниль, корица, сандал, имбирь, специи и
+                        т.д.) можно комбинировать с нейтральными цветочными и цитрусовыми, а древесные (ветивер, уд,
+                        кедр, хвоя, можжевельник, эвкалипт и т.д.) - с цитрусовыми и зелеными (зеленый чай, полынь,
+                        лемонграсс, ревень, лист черной смородины и винограда и т.д.).
+                    </p>
+                    <p style="font-family: Montserrat Italic; font-weight: 300;">
+                        Интересно: Уд - смола агарового дерева, древесина которого заражена специальным грибком. В
+                        борьбе с грибком дерево выделяет особенную смолу, которая дает глубокий и насыщенный удовый
+                        аромат.
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedImgLeft __blogDetailedImgRightText">
+                    <img src="../assets/blogDetailed/5/image 468.png" alt="">
+                    <p>Уходовое дерево</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        На самом деле все ароматы можно сочетать. Главное, чтобы ноты не "заглушали" друг друга, и
+                        парфюмерная
+                        композиция раскрывалась постепенно и интригующе.
+                        <br><br>
+                        Существует понятие "комплементарные ноты". Это - ноты, которые усиливают и подчеркивают красоту
+                        звучания
+                        основной, "главной" ноты.
+                        <br><br>
+                        Например:
+                        <br><br>
+                        Для аромата сладкого апельсина комплементарными нотами будут: кориандр, сандал, нероли, корица,
+                        иланг-иланг, жасмин.
+                        <br><br>
+                        Для бергамота - жасмин, нероли, иланг-иланг, роза, герань, цитрусовые, лаванда, пачули, розовое
+                        дерево.
+                        <br><br>
+                        Пряное звучание имбиря подчеркивают ноты: розы, герани, жасмина, цитрусовые, лаванды, пачули,
+                        розового
+                        дерева.
+                        <br><br>
+                        Чарующий дымный ладан совершенно бесподобно раскрывается, если рядом расположены ноты мирры,
+                        розового
+                        дерева, розы, черного перца, вербены, лаванды, кипариса и можжевельника.
+                    </p>
+
+                </div>
+
+                <div class="blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/5/image 469.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1 class="blogDetailedTextTitle">Современные технологии</h1>
+                    <p>
+                        Не секрет, что в современной парфюмерии в основном используют синтетические ингредиенты. Те же
+                        уд и амбра чаще всего не натуральные, а искусственно воссозданные в лабораториях ароматы.
+                        Впервые синтетические ингредиенты были использованы в 1889 году в женских духах "Jicky" (Эме
+                        Герлен) и сохраняют свою актуальность по сей день.
+                        <br><br>
+                        В первую очередь такие технологии делают итоговый продукт доступнее, упрощают производственные
+                        процессы. Во вторых натуральные масла являются аллергенами и их используют с особой
+                        осторожностью (например эссенция дубового мха запрещена к использованию Международной
+                        парфюмерной ассоциацией IFRA). Ну и в третьих, человечество все больше заботиться о вымирающих
+                        видах животных и растений, стремясь сохранить популяции редких представителей флоры и фауны.
+                        <br><br>
+                        С использованием синтетических нот парфюмерам стали доступны новые ароматы, которые было
+                        невозможно добыть методом анфлеража (получение концентратов эфирных масел путем экстракции
+                        твердым жиром): мускусные, морские и минеральные ноты, аромат молока и многие другие.
+                    </p>
+                    <p style="font-family: Montserrat Italic; font-weight: 300;">
+                        <i>Важно: Не стоит бояться понятия "синтетические ноты". Это совершенно безопасный для здоровья
+                            продукт, который сначала проходит десятки тестов и исследований, прежде чем попасть в
+                            заветный флакон с духами. И кстати, свои формулы воссозданных ароматов парфюмерные
+                            корпорации держат под большим секретом. Даже ноты ванили разных брендов отличаются друг от
+                            друга, ведь каждый стремиться превзойти конкурента.</i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/5/image 470.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Рождение новых идей</h1>
+                    <p>Новые технологии помогают увеличить объемы продукции, скорость изготовления и сократить издержки.
+                        Но без самого главного - особенного и выделяющегося на фоне других продукта, всё это не имело бы
+                        смысла.
+                        <br><br>
+                        Благодаря экспериментам мировых парфюмеров, каждое десятилетие приносит новые сочетания ароматов
+                        (например: табак и ваниль, роза и сладкие фрукты, органические и морские ноты), и даже целые
+                        группы нот (например: гурманские).
+                        <br><br>
+                        В 1992 году амбициозный Тьерри Мюглер создал сладкий и "съедобный" парфюм "Angel", тем самым
+                        выделил новую группу Гурманских ароматов. Основные ноты гурманских композиций: какао и шоколад,
+                        печенье, карамель, сливки, мед, пралине, маршмеллоу, миндаль и т.д.
+                        <br><br>
+                        В 1917 году Франсуа Коти создал аромат "Chypre" с ярким шипровым аккордом. Аромат стал настолько
+                        запоминающимся, что и по сей день вдохновляет десятки парфюмеров, в работах которых центральное
+                        место занимают именно шипровые ноты.
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight __blogDetailedImgRightText">
+                    <img src="../assets/blogDetailed/5/image 471.png" alt="">
+                    <p>Франсуа Коти</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>Основной тренд последних лет - смешивание парфюмов. Модницы и модники всего мира наносят
+                        одновременно несколько ароматов, подчеркивая свою индивидуальность. Зная основные правила
+                        сочетания и раскрытия нот, можно смело экспериментировать с любимыми духами и каждый раз
+                        открывать для себя в их звучании что-то новое.</p>
+                    <p style="font-family: Montserrat Italic; font-weight: 300;">
+                        <i>
+                            Интересно: Ароматы можно не просто "наслаивать" друг на друга, а также наносить разные
+                            парфюмы на разные участки тела. Например, запахи с легким цветочным звучанием наносить на
+                            запястья, а более томные и тягучие (ориентальные, пряные)- на сгибе под коленями, в области
+                            поясницы и бедер.
+                        </i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft ">
+                    <img src="../assets/blogDetailed/5/image 472.png" alt="">
+
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Как мы видим, создание уникальной и запоминающейся парфюмерной композиции - это процесс,
+                        состоящий из опыта технологов, сложных расчетов химических формул и экспериментов, а также из
+                        способности парфюмеров по новому взглянуть на привычные вещи.
+                        <br><br>
+                        Поэтому само создание духов или парфюмерной воды - это наука в чистом виде, а вот эффект,
+                        который новый аромат оказывает на людей, уже смело можно назвать самым настоящим волшебством.
+                        <br><br>
+                        Лучшие современные производства стремятся к модернизации технологий и совершенствованию
+                        процессов, направленных в том числе на безопасность для окружающей среды. Бренд DIVINE AROMA
+                        тщательно подходит к выбору поставщиков парфюмерных ингредиентов и сырья, ведь главное для нас -
+                        высокие стандарты качества и экологичность. Узнать подробное о наших поставщиках можно в истории
+                        бренда DIVINE AROMA
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter __blogDetailedImgLeftText">
+                    <img src="../assets/blogDetailed/5/image 473.png" alt="">
+                    <p>Производство DIVINE AROMA</p>
+
+                </div>
+                <div class="blogDetailedText">
+                    <h5>
+                        Выберите любимые ароматы в коллекциях парфюмерии и диффузоров DIVINE AROMA и почувствуйте магию изысканного и многогранного раскрытия наших парфюмерных композиций.
+                    </h5>
+                </div>
+                <div class="blogDetailedNetWorks">
+                    <p>Понравилась статья? Не забудьте поделиться с друзьями в социальных сетях.</p>
+                    <div class="blogDetailedNetWorksIcons">
+                        <a href=""><img src="../assets/icons/face.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/vk.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/twi.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/class.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+
+</body>
+
+</html>

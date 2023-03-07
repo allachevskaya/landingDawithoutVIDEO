@@ -1,0 +1,231 @@
+@charset "UTF-8";
+.map {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 540px;
+  margin: 80px 0;
+}
+.mapIMG {
+  border: 1px solid red;
+  min-height: 250px;
+  width: 100%;
+  background-color: #D9D9D9;
+}
+.mapBar {
+  background-color: #F4F5F5;
+}
+.mapBarText {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 2rem;
+}
+.mapBarText form {
+  display: flex;
+}
+.mapBarText h1 {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 24px;
+  font-variant: small-caps;
+  color: #3D4043;
+}
+.mapBarText p {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #787676;
+}
+.mapBarInput {
+  margin-top: 15px;
+  border: 1px solid #000000;
+  max-width: 300px;
+}
+.mapBarFilters {
+  padding: 2rem;
+  background-color: #ffffff;
+}
+.mapBarFilters h1 {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 24px;
+  font-variant: small-caps;
+  color: #3D4043;
+}
+.mapBarFiltersItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 11px;
+  width: 100%;
+  margin-top: 20px;
+}
+.mapBarFiltersItems a {
+  flex: 1 1 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #F4F5F5;
+  padding: 10px;
+  max-width: 249px;
+  transition: all 0.75s ease-in-out;
+}
+.mapBarFiltersItems a p {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.mapBarList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #D9D9D9;
+  border-top: 1px solid #D9D9D9;
+}
+.mapBarListBox {
+  padding: 2rem;
+}
+.mapBarListBox h1 {
+  font-family: "Montserrat Medium";
+}
+.mapBarListBoxAdress {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.mapBarListBoxAdress a, .mapBarListBoxAdress p {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #787676;
+}
+
+.mapBarFiltersItems a:hover {
+  background-color: #000000;
+}
+.mapBarFiltersItems a:hover p {
+  color: #fff;
+}
+
+/* контейнер должен быть расположен относительно друг друга: */
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+#myInput {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#myInput {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+#mySubmit {
+  background-color: black !important;
+  color: #F4F5F5;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /* расположите элементы автозаполнения на той же ширине, что и контейнер: */
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/* при наведении курсора на элемент: */
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/* при навигации по элементам используйте клавиши со стрелками: */
+.autocomplete-active {
+  background-color: #F4F5F5 !important;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .map {
+    grid-template-columns: 1fr 500px;
+  }
+}
+@media (max-width: 980px) {
+  .map {
+    grid-template-columns: 1fr;
+    margin: 40px 0;
+  }
+  .mapBarText h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .mapBarText p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .mapBarFilters h1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .mapBarFiltersItems a p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .mapBarListBoxAdress {
+    gap: 10px;
+  }
+  .mapBarListBoxAdress a, .mapBarListBoxAdress p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  #myInput {
+    font-size: 13px;
+  }
+  #mySubmit {
+    font-size: 13px;
+  }
+}
+@media (max-width: 520px) {
+  .mapBarText {
+    padding: 1rem;
+  }
+  .mapBarFilters {
+    padding: 1rem;
+  }
+  .mapBarFiltersItems a {
+    max-width: 165px;
+  }
+  .mapBarFiltersItems a p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .mapBarListBox {
+    padding: 1rem;
+  }
+}/*# sourceMappingURL=map.css.map */

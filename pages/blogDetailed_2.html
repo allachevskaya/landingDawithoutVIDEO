@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/blogDetailed/blogDetailed_1.css">
+    <title>Новогодние традиции в России: от древности до современности</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <section class="blogDetailed">
+                <main class="blogDetailedMain">
+                    <picture>
+                        <source srcset="../assets/blogDetailed/2/370520.png" media="(max-width: 520px)">
+                        <img src="../assets/blogDetailed/2/370.png" alt="My default image">
+                    </picture>
+
+                    <div class="blogDetailedMainText __2blogDetailedMainText">
+                        <p>декабрь 2022 </p>
+                        <h1>Новогодние традиции в России: от древности до современности</h1>
+                    </div>
+                </main>
+                <div class="blogDetailedText">
+                    <p>
+                        Новый год — один из немногих праздников, который любят и дети, и взрослые. Кто-то получает
+                        удовольствие от процесса декорирования дома, другие с нетерпением ждут новогодних каникул, чтобы
+                        отдохнуть и отвлечься от суеты рабочих дней.
+                        <br><br>
+                        Совсем скоро у нас появится возможность вдоволь покататься на лыжах и коньках, без зазрения
+                        совести полакомиться любимыми угощениями, насладиться хвойными и цитрусовыми ароматами, погулять
+                        по вечернему городу, утопающему в красочной иллюминации.
+                        <br><br>
+                        А пока что, предлагаем уже сейчас почувствовать праздничное настроение и узнать больше о том,
+                        что значил Новый год для страны в разные временные периоды, как его отмечали наши предки и какие
+                        традиции сохранились по сей день.
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Русь</h1>
+                    <p>Новый год на просторах нашей страны не всегда отмечался в ночь с 31 декабря на 1 января. До сих
+                        пор ведутся споры историков, на какую дату выпадало празднование у язычников, до крещения Руси.
+                        Многие исследования подтверждают только то, что смысл и таинство праздника совпадали с
+                        окончанием зимы.
+                        <br><br>
+                        С новым летоисчислением, связанным с крещением Руси в 988 году, за праздником закрепилась дата 1
+                        марта: время пробуждения природы и начала весенних полевых работ.
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        <strong> <i>Интересно:</i></strong>
+                        <i> История празднования Нового Года своими корнями уходит в Месопотамию. Там зародилась
+                            традиция отмечать пробуждение природы весной, в самом начале марта. Маскарадные гуляния и
+                            празднование длились больше недели. Затем, обычай встречать Новый год переняли греки,
+                            египтяне и римляне.</i>
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>Важным праздником стал Васильев вечер (сейчас среди светского населения его называют «Старый
+                        Новый год»). По старому календарю отмечался 31 декабря (13 января по новому календарю). Это –
+                        церковный праздник, посвященный дню памяти святого Василия Великого.
+                        <br><br>
+                        История Васильева вечера имеет глубокие корни. Она берет начало из обычаев наших языческих
+                        предков и христианских традиций.
+                        <br><br>
+                        В этот вечер украшали жилище, накрывали праздничный стол, звали гостей. Необходимым убранством
+                        был обрядовый сноп из колосьев собранного урожая – дидух.
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        <strong> <i>Интересно:</i></strong>
+                        <i>Дидух ставили в красном углу, на самом видном месте. По окончании святочных
+                            праздников дидух сжигали, чтобы привлечь богатый урожай в новом году.</i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/2/image 445.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>Еще одна необычная традиция Васильева вечера — щедование. Это обряд, когда молодые люди
+                        собирались компаниями, гуляли по улице, распевая песни. Принято было желать благополучия и
+                        здоровья каждому хозяину дома. Также молодые люди «засевали» дома монетками и зерном, чтобы
+                        привлечь достаток. В знак благодарности от хозяев они получали угощения и деньги. При этом
+                        девушкам и женщинам запрещалось щедровать, т.к. считалось, что они навлекут на дом ссоры и
+                        зависть соседей. Поэтому дамы в это время развлекали себя гаданиями в кругу подруг и готовили
+                        праздничный стол.</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        <strong> <i>Интересно:</i></strong>
+                        <i>Главное блюдо Васильева вечера – кутья (с древнегреческого языка означает «вареная
+                            пшеница»). Пшеница всегда была символом плодородия, благополучия и круговорота жизни как в
+                            России, так и в Европе.</i>
+                        <br><br>
+                        Блюдам на основе пшеницы предавали огромное значение, в котором воплощались благодарность
+                        жизни, надежды и вера в светлое будущее. Традиционные ингредиенты кутьи: пшеница, рис или
+                        гречневая крупа, мед, мак, изюм или орехи. У каждого ингредиента свой смысл:
+                    </p>
+
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        <i>Зерно – зарождение новой жизни;</i>
+                        <br>
+                        <i>Мед –радостные события;</i>
+                        <br>
+                        <i>Мак – благополучие и успешность;</i>
+                        <br>
+                        <i>Изюм – долголетие;</i>
+                        <br>
+                        <i>Орехи – здоровье и сила духа;</i>
+                        <br>
+                        <i>Масло – щедрость и благосклонность наступающего года</i>
+                        <br>
+                        <br>
+                    </p>
+                    <p>
+                        В 1492 году великим князем Московским Иваном III празднование Нового года было перенесено на 1
+                        сентября. По примеру европейских стран,
+                        живших по Григорианскому календарю,
+                        в 1699 году царь Петр I издал указ о праздновании Нового Года 1 января. Также он ввел обычай
+                        украшать жилища еловыми ветками и деревьями.
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight">
+                    <img src="../assets/blogDetailed/2/image 446.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Советский союз</h1>
+                    <p>
+                        Из-за антирелигиозной борьбы после 1927 года в Советской России было запрещено праздновать
+                        Рождество и Новый год. И только в 1935 году декретом Совета Народных Комиссаров официально
+                        разрешили отмечать Новый год и наряжать елки. Этот день объявили праздничным.
+                        <br><br>
+                        В тот же период возник любопытный тренд. Своеобразный отпечаток духа эпохи: помимо привычных
+                        елочных игрушек (звери и птицы, звезды, шары и другие традиционные во всем мире украшения)
+                        рекомендовалось использовать «увлекательные для ребят образы строительства, героики, завоевания
+                        Северного полюса, парашюты, оборонные игрушки».
+                        <br><br>
+                        Возникли знакомые нам и согревающие душу атрибуты Нового года. На праздничном столе появились
+                        салаты «Оливье» и «Сельдь под шубой», труднодобываемые в то время мандарины и ананасы. Консервы
+                        с икрой и крабовым мясом были редким деликатесом, но ради торжества люди находили возможность их
+                        заполучить.
+                        <br><br>
+                        <strong><i>Интересно: </i></strong> <i>Абхазские мандарины, такие популярные в Советском Союзе,
+                            на самом деле своим
+                            происхождением обязаны агрономам из Японии. Этот специальный холодостойкий сорт называется
+                            «Уншиу» или «Сатсума».</i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/2/image 447.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Появились традиции смотреть трансляции новогодних огоньков и фильмов, а также встречать праздник
+                        под бой курантов Московского Кремля, во время которого обязательно нужно успеть загадать
+                        желание. Семьи, друзья и соседи собирались у телевизора и смотрели развлекательные и праздничные
+                        передачи, кино. Общались и веселились, угощали друг друга домашними кулинарными изысками.
+                    </p>
+                    <p>
+                        <strong>
+                            <i>Интересно: </i>
+                        </strong>
+                        <i>
+                            Поколение, не заставшее советский период, спросит: «Что может быть праздничного в просмотре
+                            телевизора?» Но не будем забывать, что в прошлом веке появление телевидения было абсолютным
+                            прогрессом.
+                            <br><br>
+                            Телевизор был не в каждой семье, и можно сказать являлся атрибутом роскоши. Он не только был
+                            не по карману ряду граждан, в первое время его было в принципе сложно достать без нужных
+                            знакомств и определенного положения в обществе.
+                            <br><br>
+                            Телевещание на регулярной основе началось в Советском Союзе лишь в 1938 году. Массовое
+                            распространение телевизоров началось после 1949 года благодаря серийному производству модели
+                            КВН-49. Объем производства телевизоров вырос с 12 тыс. штук в 1950 году до 1,7 млн в 1960-м.
+                            К 1970 году телевизор был в 61% советских семей, живших в городах.
+                        </i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/2/image 448.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Бесспорно, что предвкушение и дух праздника, который многие сохранили в себе и во взрослом
+                        возрасте, рождался и благодаря детским новогодним елкам. Малыши и школьники ходили на
+                        праздничные концерты, в завершении которых в обмен на пригласительный можно было получить
+                        подарки. И только родители знали, как трудно было достать заветный билет на самую лучшую
+                        «Новогоднюю елку» города.
+                        <br><br>
+                        Большой популярностью пользовались новогодние катки. Первые собственные коньки - мечта каждого
+                        советского ребенка. Обычно это были «Снегурки» с широкими полозьями на плоской металлической
+                        платформе с закругленными концами. Они крепились на валенки или ботинки при помощи кожаных
+                        ремешков.
+                        <br><br>
+                        С огромным удовольствием ходили в театры и кино. Часто билеты приходилось покупать у спекулянтов
+                        и через знакомых. Зато любое подобное мероприятие воспринималось как важное событие, ради
+                        которого надевали лучшие платья и костюмы.
+                        <br><br>
+                        Сложные и неоднозначные с точки зрения истории времена, порой оставляют в памяти самые светлые и
+                        чистые воспоминания.
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/2/image 449.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Современность</h1>
+                    <p>
+                        Новый год сегодня — это праздник, в котором перемешались традиции не только разных эпох и
+                        конфессий, но и обычаи разных стран. Города начинают украшать уже к католическому Рождеству. В
+                        ночь с 31 декабря на 1 января на главных площадях устраивают новогодние концерты, делают горки
+                        для катания на ватрушках и санках (тюбинг). Практически в каждом районе крупных городов
+                        организуют народные гулянья с выступлениями местных артистов.
+                        <br><br>
+                        Традиции новогодних катков и рождественских ярмарок перебрались и в наши дни. Многие, как и в
+                        прошлую эпоху, на новогодних каникулах любят ходить на концерты и в кино, кататься на лыжах и
+                        стараются успеть как можно больше.
+                        <br><br>
+                        Даже обычная семейная прогулка по городу во время январских каникул превращается в сказочное
+                        путешествие по множеству празднично оформленных локаций, где огни гирлянд и персонажи из старых
+                        мультфильмов захватывают даже воображение взрослых.
+                        <br><br>
+                        В домах стоят нарядные елки, неповторимые и уникальные. На некоторых можно увидеть и антикварные
+                        игрушки, оставшиеся от родителей, бабушек и дедушек. Рядом с ними висят современные яркие шары,
+                        звезды и ангелы, и даже игрушки сделанные своими руками.
+                        <br><br>
+                        Окна украшены снежинками и гирляндам, переливающимися разноцветными огнями. В квартирах
+                        чувствуются ароматы выпечки, любимых блюд и бодрящий хвойно-цитрусовый запах...
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight">
+                    <img src="../assets/blogDetailed/2/image 450.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Надеемся, вы уже почувствовали праздничное настроение и с нетерпением ждете главной ночи года.
+                        Время, когда можно порадовать родных оригинальными и интересными подарками, вспомнить про
+                        близость чудес и загадать заветное желание.
+                        <br><br>
+                        Если вы еще не определились с подарками, то сейчас самое время выбирать. Мы уверены, что лучший
+                        вариант - это парфюмерная продукция, которая станет напоминанием о ваших чувствах, заботе и
+                        внимании.
+                        <br><br>
+                        Поэтому смело заказывайте универсальный и приятный подарок — ароматические диффузоры DIVINE
+                        AROMA. Они подходят для любого возраста, мужчинам и женщинам. В многогранных ароматах каждый
+                        найдет частичку своего характера и индивидуальности, сможет поднять себе настроение и создать
+                        атмосферу праздника в одно мгновение.
+                        <br><br>
+                        Обратите внимание на новинки бренда — диффузоры PRO с невероятно стойкими и глубокими
+                        композициями. Теперь у вас есть возможность сразу приобрести и <a class="blogDetailedTextLink" href="">рефил</a> любимого аромата. В
+                        коллекции также появились <a class="blogDetailedTextLink" href="">парфюмированные спреи для дома и автомобиля</a>– незаменимый и полезный
+                        презент для себя и самых близких.
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/2/image 451.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Мы предлагаем познакомиться и с нашим <a class="blogDetailedTextLink" href="">новыми диффузорами premium класса</a>. Любимые ароматы в новом формате: еще более стойкие и насыщенные.
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <h5>Всегда с любовью к вам и вашему дому,
+                        <br>DIVINE AROMA</h5>
+                </div>
+                <div class="blogDetailedNetWorks">
+                    <p>Понравилась статья? Не забудьте поделиться с друзьями в социальных сетях.</p>
+                    <div class="blogDetailedNetWorksIcons">
+                        <a href=""><img src="../assets/icons/face.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/vk.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/twi.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/class.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+.fragrancesCars {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.fragrancesCarsNAMELINK {
+  display: none;
+}
+.fragrancesCarsImage {
+  position: relative;
+  width: 100%;
+  max-height: 867px;
+  display: flex;
+}
+.fragrancesCarsImage img {
+  width: 100%;
+  height: auto;
+}
+.fragrancesCarsImage h1 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 79px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #8d8282;
+}
+.fragrancesCarsDescription {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fragrancesCarsDescriptionText {
+  padding: 120px 20px;
+  max-width: 1258px;
+}
+.fragrancesCarsDescriptionText p {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 42px;
+  text-align: center;
+  color: #3D4043;
+}
+.fragrancesCarsBlock {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fragrancesCarsBlockImage {
+  max-width: 1440px;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.fragrancesCarsBlockImage img {
+  width: 100%;
+  height: auto;
+}
+.fragrancesCarsBlockImage h1 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 67px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px rgba(181, 173, 173, 0.5294117647);
+}
+.fragrancesCarsLink {
+  padding: 80px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fragrancesCarsLink a {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3D4043;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid rgba(181, 173, 173, 0.5294117647);
+}
+
+@media (max-width: 980px) {
+  .fragrancesCarsImage h1 {
+    font-size: 29px;
+    line-height: 45px;
+  }
+  .fragrancesCarsDescriptionText {
+    padding: 80px 20px 0;
+  }
+  .fragrancesCarsDescriptionText p {
+    font-size: 19px;
+  }
+  .fragrancesCarsBlockImage h1 {
+    font-size: 29px;
+    line-height: 45px;
+  }
+  .fragrancesCarsLink {
+    padding: 40px 20px;
+  }
+  .fragrancesCarsLink a {
+    font-size: 19px;
+  }
+}
+@media (max-width: 520px) {
+  .fragrancesCarsImage {
+    display: none;
+  }
+  .fragrancesCarsNAMELINK {
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+  }
+  .fragrancesCarsNAMELINK a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 0.5px solid #D9D9D9;
+  }
+  .fragrancesCarsNAMELINK a img {
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+  }
+  .fragrancesCarsNAMELINK a p {
+    font-family: "Montserrat Medium";
+    position: static;
+    text-align: start;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #262626;
+    text-shadow: 1px 1px 2px rgba(141, 130, 130, 0);
+    transform: translate(0%, 0%);
+    font-weight: 500;
+  }
+  .fragrancesCarsBlockImage h1 {
+    display: none;
+  }
+  .fragrancesCarsDescription {
+    display: none;
+  }
+  .fragrancesCarsLink {
+    padding: 40px 20px;
+  }
+  .fragrancesCarsLink a {
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #D9D9D9;
+  }
+}/*# sourceMappingURL=fragrancesCars.css.map */

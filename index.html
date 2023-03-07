@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index/index.css">
+    <link rel="stylesheet" href="./styles/ui/ui.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.ico">
+    <link rel="stylesheet" href="./styles/modals/modals.css">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    <a href="./pages/blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="./index.html">
+                        <img class="logo" src="./assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="./assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="./assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="./assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="./assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="./pages/blog.html">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="./assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./pages/wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="./assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="./assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="./assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="./assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="./assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="./assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="./assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="./assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="./assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="./assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="./assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="./assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="./assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="./assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>  
+                    <img src="./assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt" >ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+                      
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="PageContent">
+            <main class="Main">
+                <video autoplay loop muted src="./assets/video/DIVINE AROMA commercial.mov"></video>
+                <p>Стиль и уют всего в одной детали.<br>
+                    Создай свою коллекцию интерьерных ароматов с <br>
+                    DIVINE AROMA</p>
+                <!-- <img id="MainImg" src="./assets/mainPage/image 367.png" alt=""> -->
+                <!-- <img id="MainImg" src="./assets/mainPage/IMG_6884.jpg" alt=""> -->
+                <picture>
+                    <source srcset="../assets/mainPage/mainIMg.png" media="(max-width: 520px)">
+                    <img src="./assets/mainPage/IMG_6884.jpg" alt="My default image">
+                </picture>
+            </main>
+    
+            <section class="NewProducts">
+                <div class="NewProductsTitle">
+                    <h1>НОВИНКИ</h1>
+                </div>
+                <div class="NewProductsSlider">
+                    <div class="NewProductsSliderSlides">
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 299.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 301.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 301.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="NewProductsSliderSlides closeSlideMainPage">
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 301.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 301.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 301.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="NewProductsSliderSlides closeSlideMainPage">
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 301.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 301.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                        <div class="NewProductsSliderSlidesItem">
+                            <div class="NewProductsSliderSlidesItemImage">
+                                <img src="./assets/mainPage/image 301.png" alt="товар">
+                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                            </div>
+                            <div class="NewProductsSliderSlidesItemText">
+                                <h5>
+                                    <a href="">MILANO PRO </a>
+                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                            fill="#262626" />
+                                    </svg>
+                                </h5>
+                                <p>8 200 р.</p>
+                                <p>древесный, пряный</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="NewProductsMobSlider">
+                    <div class="NewProductsMobSliderItem">
+                        <div class="NewProductsMobSliderItemImage">
+                            <img src="./assets/mainPage/image 301.png" alt="товар">
+                            <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                        </div>
+                        <div class="NewProductsSliderSlidesItemText">
+                            <h5>
+                                <a href="">MILANO PRO </a>
+                                <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                        fill="#262626" />
+                                </svg>
+                            </h5>
+                            <p>8 200 р.</p>
+                            <p>древесный, пряный</p>
+                        </div>
+    
+    
+                    </div>
+                    <div class="NewProductsMobSliderItem closeSlideMainPage">
+                        <div class="NewProductsMobSliderItemImage">
+                            <img src="./assets/mainPage/image 299.png" alt="товар">
+                            <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                        </div>
+                        <div class="NewProductsSliderSlidesItemText">
+                            <h5>
+                                <a href="">MILANO PRO </a>
+                                <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                        fill="#262626" />
+                                </svg>
+                            </h5>
+                            <p>8 200 р.</p>
+                            <p>древесный, пряный</p>
+                        </div>
+    
+    
+                    </div>
+                    <div class="NewProductsMobSliderItem closeSlideMainPage">
+                        <div class="NewProductsMobSliderItemImage">
+                            <img src="./assets/mainPage/image 299.png" alt="товар">
+                            <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
+    
+                        </div>
+                        <div class="NewProductsSliderSlidesItemText">
+                            <h5>
+                                <a href="">MILANO PRO </a>
+                                <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
+                                        fill="#262626" />
+                                </svg>
+                            </h5>
+                            <p>8 200 р.</p>
+                            <p>древесный, пряный</p>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </section>
+    
+    
+            <footer class="Footer">
+                <div class="FooterContent">
+                    <div class="FooterContentBox">
+                        <h5>КОНТАКТЫ</h5>
+                        <a href="">197110, Санкт-Петербург,<br>
+                            Большая Зеленина улица, 24</a>
+                        <div class="FooterContentBoxContacts">
+                            <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                            <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                            <a href="">
+                                <img src="./assets/icons/insta.svg" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="FooterContentBox">
+                        <h5>ИНФОРМАЦИЯ</h5>
+                        <div class="FooterContentBoxInfo">
+                            <a href="">
+                                Сотрудничество
+    
+                            </a>
+                            <a href="./pages/ PRIVACYPOLICY.html">
+                                Политика кондефициальности
+                            </a>
+                        </div>
+                    </div>
+                    <div class="FooterContentBox" id="FooterContentBoxLast">
+                        <h5>НОВОСТИ</h5>
+                        <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                        <form action="" class="HeaderBurgerBlockForm">
+                            <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                            <button type="submit">Подписаться</button>
+                            <a href="">Политика обработки персональных данных</a>
+                        </form>
+                    </div>
+    
+                    <div class="FooterContentNetworks">
+                        <h5>Следите за нами в </h5>
+                        <a href="">
+                            <img src="./assets/icons/insta.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+            </footer>
+        </div>
+
+       
+
+
+    </div>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/sliderMainPage.js"></script>
+    <script src="./scripts/modals/modals.js"></script>
+</body>
+
+</html>

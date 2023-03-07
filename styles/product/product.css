@@ -1,0 +1,696 @@
+.Product {
+  padding: 40px 0px 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  position: relative;
+}
+.ProductImages {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.ProductImagesItem {
+  width: 100%;
+  min-width: 349px;
+}
+.ProductImagesItem img {
+  height: 100%;
+  width: 100%;
+}
+.ProductModal {
+  position: sticky;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: white;
+}
+.ProductModalContent {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: white;
+}
+.ProductModalContentId p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat Regular";
+  color: #A5A2A2;
+}
+.ProductModalContentName {
+  display: flex;
+  justify-content: space-between;
+}
+.ProductModalContentName h1 {
+  font-style: normal;
+  font-family: "Montserrat SemiBold";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #262626;
+}
+.ProductModalContentNameIcons {
+  display: flex;
+  gap: 20px;
+}
+.ProductModalContentNameIcons a {
+  width: 21px;
+  height: 25px;
+  cursor: pointer;
+}
+.ProductModalContentNameIcons a img {
+  width: 100%;
+}
+.ProductModalContentNamePriceMob {
+  display: none;
+}
+.ProductModalContentList li:first-child {
+  padding-top: 25px;
+}
+.ProductModalContentList {
+  border-top: 1px solid #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ProductModalContentList li {
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: minmax(50px, 220px) 1fr;
+  gap: 80px;
+  justify-content: space-between;
+}
+.ProductModalContentList li h1 {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: #262626;
+}
+.ProductModalContentList li p {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #808080;
+}
+.ProductModalContentList li p span {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #808080;
+}
+.ProductModalContentBtns {
+  display: none;
+}
+.ProductModalContentShow a {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #262626;
+}
+.ProductModalContentShow a p {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  color: #262626;
+}
+.ProductModalContentBtnsDesktop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ProductModalContentBtnsDesktop button {
+  font-size: 17px;
+  padding: 15px 20px;
+}
+.ProductModalContentPrice h1 {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  color: #262626;
+}
+
+.ProductVolumeActive {
+  color: #262626 !important;
+}
+
+@media (max-width: 980px) {
+  .ProductImagesItem {
+    min-width: 150px;
+  }
+  .ProductModalContent {
+    padding: 0 20px;
+    gap: 20px;
+    min-width: 350px;
+  }
+  .ProductModalContentName h1 {
+    font-size: 16px;
+  }
+  .ProductModalContentNameIcons {
+    width: 45px;
+    height: 45px;
+  }
+  .ProductModalContentList li:first-child {
+    padding-top: 15px;
+  }
+  .ProductModalContentList li {
+    grid-template-columns: 100px 1fr;
+    gap: 30px;
+    padding-top: 10px;
+  }
+  .ProductModalContentList li h1 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .ProductModalContentList li p {
+    font-size: 12px;
+  }
+  .ProductModalContentList li p span {
+    font-size: 12px;
+  }
+  .ProductModalContentShow a {
+    gap: 5px;
+  }
+  .ProductModalContentShow a p {
+    font-size: 13px;
+  }
+  .ProductModalContentShow a img {
+    width: 13px;
+  }
+  .ProductModalContentBtnsDesktop button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .ProductModalContentPrice h1 {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+@media (max-width: 650px) {
+  .Product {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ProductModalContent {
+    position: relative;
+    padding: 0;
+    gap: 26px;
+    min-width: 100%;
+  }
+  .ProductModalContentId {
+    position: absolute;
+    top: 64px;
+    left: 0px;
+    padding: 0 20px;
+  }
+  .ProductModalContentId p {
+    font-size: 11px;
+  }
+  .ProductModalContentName {
+    padding: 10px 20px 0;
+    position: relative;
+  }
+  .ProductModalContentName h1 {
+    font-size: 16px;
+  }
+  .ProductModalContentNameIcons {
+    width: 51px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+  .ProductModalContentNamePriceMob {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    bottom: -8px;
+  }
+  .ProductModalContentList {
+    padding: 0 20px;
+    border: 0;
+  }
+  .ProductModalContentList li:first-child {
+    border-top: 1px solid #D9D9D9;
+  }
+  .ProductModalContentList li {
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+  }
+  .ProductModalContentList li h1 {
+    font-size: 14px;
+  }
+  .ProductModalContentList li p {
+    font-size: 12px;
+  }
+  .ProductModalContentList li p span {
+    font-size: 12px;
+  }
+  .ProductModalContentBtns {
+    display: flex;
+    width: 100%;
+    padding: 15px 0 15px;
+  }
+  .ProductModalContentBtns button {
+    width: 100%;
+    padding: 10px 13px !important;
+  }
+  .ProductModalContentBtnsDesktop, .ProductModalContentShow, .ProductModalContentPrice {
+    display: none;
+  }
+}
+@media (max-width: 520px) {
+  .ProductModalContent {
+    gap: 10px;
+  }
+  .ProductModalContentList li {
+    grid-template-columns: 165px 1fr;
+  }
+  .ProductModalContentBtns {
+    margin-top: 30px;
+  }
+  .ProductModalContentBtns button {
+    font-size: 12px;
+  }
+  .ProductModalContentName {
+    padding: 20px 10px 0;
+  }
+  .ProductModalContentNamePriceMob {
+    left: 10px;
+  }
+  .ProductModalContentId {
+    left: -10px;
+    top: 73px;
+  }
+  .ProductModalContentList {
+    padding: 0 10px;
+  }
+  .ProductModalContentList li h1 {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .ProductModalContentList li p {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .ProductModalContentList li p span {
+    font-weight: 600;
+    font-size: 9px;
+  }
+}
+.ProductBtnNotActive {
+  background-color: white;
+  color: #262626;
+}
+
+.ProductDescription {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 68px 0px;
+}
+.ProductDescriptionBoxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding-bottom: 30px;
+}
+.ProductDescriptionBoxesBoxTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #D9D9D9;
+  padding: 10px 0;
+  align-items: center;
+}
+.ProductDescriptionBoxesBoxTitle h1 {
+  font-family: "Montserrat SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #262626;
+}
+.ProductDescriptionBoxesBoxText {
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+  padding-top: 20px;
+}
+.ProductDescriptionBoxesBoxText p {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #3D4043;
+}
+.ProductDescriptionBoxesBoxText-center {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+}
+.ProductDescriptionBoxesBoxText-center h1 {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #3D4043;
+}
+.ProductDescriptionBoxesBoxText-center p {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #3D4043;
+}
+.ProductDescriptionBoxesBoxText-centerLine {
+  width: 62px;
+  height: 1px;
+  background-color: #262626;
+}
+
+.__ProductDescriptioBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 0;
+}
+
+@media (max-width: 980px) {
+  .ProductDescription {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  .ProductDescriptionBoxesBoxTitle {
+    padding: 4px 0;
+  }
+  .ProductDescriptionBoxesBoxTitle h1 {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .ProductDescriptionBoxesBoxText {
+    padding-top: 10px;
+  }
+  .ProductDescriptionBoxesBoxText p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .ProductDescriptionBoxesBoxText-center {
+    gap: 10px;
+  }
+  .ProductDescriptionBoxesBoxText-center h1 {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .ProductDescriptionBoxesBoxText-center p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}
+@media (max-width: 650px) {
+  .ProductDescription {
+    gap: 40px;
+  }
+  .ProductDescriptionBoxes {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+@media (max-width: 520px) {
+  .ProductDescription {
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .ProductDescriptionBoxes {
+    gap: 5px;
+    padding-bottom: 0px;
+  }
+  .ProductDescriptionBoxesBox {
+    padding-bottom: 10px;
+  }
+  .ProductDescriptionBoxesBoxTitle h1 {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .ProductDescriptionBoxesBoxText {
+    padding-top: 5px;
+  }
+  .ProductDescriptionBoxesBoxText p {
+    font-size: 9px;
+    line-height: 14px;
+  }
+  .ProductDescriptionBoxesBoxText-center {
+    padding-top: 5px;
+    gap: 5px;
+  }
+  .ProductDescriptionBoxesBoxText-center h1 {
+    font-size: 9px;
+    line-height: 14px;
+  }
+  .ProductDescriptionBoxesBoxText-center p {
+    font-size: 9px;
+    line-height: 14px;
+  }
+  .__ProductDescriptioBox {
+    padding-top: 0;
+  }
+  .ProductDescriptionBoxes:first-child {
+    border: 0;
+  }
+}
+.ProductDescriptionTextHidden {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.ProductRecommendation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
+.ProductRecommendationMobSLider {
+  display: none;
+}
+.ProductRecommendationTitle {
+  padding: 0 68px;
+}
+.ProductRecommendationTitle h1 {
+  font-family: "Montserrat SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #262626;
+}
+.ProductRecommendationSlider {
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 444px;
+}
+.ProductRecommendationSliderItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  height: auto;
+  overflow: hidden;
+}
+.ProductRecommendationSliderItemsItem {
+  position: relative;
+}
+.ProductRecommendationSliderItemsItemText {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+.ProductRecommendationSliderItemsItemText a {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #262626;
+}
+.ProductRecommendationSliderItemsItem img {
+  width: 100%;
+}
+
+.SliderItemLike, .SliderItemLikeMob {
+  position: absolute;
+  width: 30px !important;
+  height: 30px;
+  top: 50px;
+  right: 50px;
+}
+
+#addItemToBasket {
+  position: absolute;
+  right: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 980px) {
+  .ProductRecommendation {
+    gap: 15px;
+  }
+  .ProductRecommendationTitle {
+    padding: 0 20px;
+  }
+  .ProductRecommendationTitle h1 {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .ProductRecommendationSlider {
+    min-height: 250px;
+  }
+  .ProductRecommendationSliderItemsItemText a {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .SliderItemLike, .SliderItemLikeMob {
+    top: 16px;
+    right: 16px;
+    width: 25px !important;
+    height: 25px;
+  }
+  #addItemToBasket {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 650px) {
+  #addItemToBasket {
+    width: 15px;
+    height: 15px;
+    right: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .ProductRecommendation {
+    gap: 21px;
+    padding-top: 40px;
+  }
+  .ProductRecommendationTitle {
+    padding: 0 10px;
+  }
+  .ProductRecommendationTitle h1 {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .ProductRecommendationSlider {
+    display: none;
+  }
+  .ProductRecommendationMobSLider {
+    display: block;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 40px;
+  }
+  .ProductRecommendationMobSLiderItems {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .ProductRecommendationMobSLiderItemsItem {
+    height: auto;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    position: relative;
+  }
+  .ProductRecommendationMobSLiderItemsItemText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ProductRecommendationMobSLiderItemsItemText a {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Montserrat Medium";
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    color: #262626;
+  }
+  .ProductRecommendationMobSLiderItemsItem img {
+    width: 100%;
+    max-height: 409.766px;
+  }
+  .ProductRecommendation .SliderItemLikeMob {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  #addItemToBasket {
+    width: 11px;
+    height: 11px;
+  }
+}
+.sliderMobHidden {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-in-out;
+}
+
+.sliderHidden {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity 1s ease-in-out;
+}/*# sourceMappingURL=product.css.map */

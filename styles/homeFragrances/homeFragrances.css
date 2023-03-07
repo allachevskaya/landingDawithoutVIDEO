@@ -1,0 +1,181 @@
+.homeFragrances {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+.homeFragrancesImage {
+  position: relative;
+  width: 100%;
+  max-height: 867px;
+  display: flex;
+}
+.homeFragrancesImage img {
+  width: 100%;
+  height: auto;
+}
+.homeFragrancesImage h1 {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 79px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #8d8282;
+}
+.homeFragrancesDescription {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeFragrancesDescriptionText {
+  padding: 120px 20px;
+  max-width: 1258px;
+}
+.homeFragrancesDescriptionText p {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #3D4043;
+}
+.homeFragrancesBlock {
+  padding: 120px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeFragrancesBlockItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.homeFragrancesBlockItemsItem {
+  position: relative;
+  transition: all 0.7s ease-in-out;
+}
+.homeFragrancesBlockItemsItem img {
+  width: 100%;
+}
+.homeFragrancesBlockItemsItem h1 {
+  text-shadow: 1px 1px 2px #8d8282;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.homeFragrancesBlockItemsItem h1 img {
+  display: none;
+}
+.homeFragrancesBlockItemsItem:hover {
+  transform: scale(1.01);
+}
+.homeFragrancesLink {
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeFragrancesLink a {
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3D4043;
+  padding-bottom: 10px;
+  border-bottom: 0.5px solid #3D4043;
+}
+
+@media (max-width: 980px) {
+  .homeFragrancesImage h1 {
+    font-size: 29px;
+    line-height: 45px;
+  }
+  .homeFragrancesDescriptionText {
+    padding: 80px 20px 0;
+  }
+  .homeFragrancesDescriptionText p {
+    font-size: 19px;
+  }
+  .homeFragrancesBlock {
+    padding: 80px 0 0 0;
+  }
+  .homeFragrancesBlockItemsItem h1 {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .homeFragrancesLink a {
+    font-size: 19px;
+  }
+}
+@media (max-width: 520px) {
+  .homeFragrancesImage {
+    display: none;
+  }
+  .homeFragrancesDescription {
+    display: none;
+  }
+  .homeFragrancesBlock {
+    padding: 0;
+  }
+  .homeFragrancesBlockItems {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .homeFragrancesBlockItemsItem {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .homeFragrancesBlockItemsItem h1 {
+    padding: 10px;
+    position: static;
+    text-align: start;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #262626;
+    text-shadow: 1px 1px 2px rgba(141, 130, 130, 0);
+    transform: translate(0%, 0%);
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid #D9D9D9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .homeFragrancesBlockItemsItem h1 img {
+    display: flex;
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+  }
+  .homeFragrancesLink a {
+    font-size: 10px;
+    line-height: 12px;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #D9D9D9;
+  }
+}/*# sourceMappingURL=homeFragrances.css.map */

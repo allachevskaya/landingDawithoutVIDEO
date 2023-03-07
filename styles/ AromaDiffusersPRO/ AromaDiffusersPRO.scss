@@ -1,0 +1,318 @@
+.AromaDiffusersPRO {
+    &__GenaralVersion {
+        width: 100%;
+
+        &Title {
+            padding: 40px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            & h1 {
+                font-family: "Montserrat Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 61px;
+                letter-spacing: 0.05em;
+                color: #262626;
+            }
+        }
+
+        &Content {
+
+            width: 100%;
+
+            &Filters {
+                padding: 20px 68px 0;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #D9D9D9;
+
+                &Box {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+
+                    align-items: center;
+
+                    & h1 {
+                        font-family: "Montserrat Medium";
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 29px;
+                        text-align: center;
+                        text-transform: uppercase;
+
+                        color: #000000;
+                    }
+
+                    & img {
+                        width: 8px;
+                        cursor: pointer;
+                    }
+
+                    &Item {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 18px;
+                        margin: 0 15px;
+                        align-items: center;
+
+                        & img {
+                            cursor: pointer;
+                        }
+
+                        & h1 {
+                            color: #808080;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            &Cards {
+                padding: 68px 40px;
+                display: flex;
+                gap:40px;
+                justify-content: space-evenly;
+                border: 1px solid red;
+                &4 {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    border: 1px solid red;
+                    gap:25px 40px;
+                    
+                    &Item {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        align-items: center;
+                        & h1 {
+                            font-family: "Montserrat Medium";
+                            color: #262626;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            width: 100%;
+                            text-align: center;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 22px;
+                        
+                            border: 1px solid red;
+                          
+                        }
+
+                        & p {
+                            font-family: "Montserrat Medium";
+                            color: #808080;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-transform: capitalize;
+
+
+                        }
+
+                        & h5 {
+                            font-family: "Montserrat Italic";
+                            color: #808080;
+                            font-style: italic;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-transform: lowercase;
+
+                        }
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            max-height: 201px;
+                            // max-width: 309px;
+                        }
+                    }
+                }
+                &1{
+                    border: 1px solid blue;
+                    &Item {
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        align-items: center;
+                        & h1 {
+                            font-family: "Montserrat Medium";
+                            color: #262626;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            width: 100%;
+                            text-align: center;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 22px;
+                        
+                            border: 1px solid red;
+                          
+                        }
+
+                        & p {
+                            font-family: "Montserrat Medium";
+                            color: #808080;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-transform: capitalize;
+
+
+                        }
+
+                        & h5 {
+                            font-family: "Montserrat Italic";
+                            color: #808080;
+                            font-style: italic;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 22px;
+                            text-transform: lowercase;
+
+                        }
+
+                        & img {
+                            width: 100%;
+                            height: 100%;
+                            max-height: 510px;
+                            // max-width: 309px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#grid1,
+#grid2 {
+    width: 15px;
+    cursor: pointer;
+}
+
+#like {
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+#add {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    width: 14px;
+    height: 12px;
+}
+
+@media (max-width:1200px) {
+    .AromaDiffusersPRO__GenaralVersionContentCards{
+        padding: 40px 0 40px 40px;
+        &Item{
+            & h1{
+                
+            }
+        }
+    }
+    .AromaDiffusersPRO__GenaralVersionContentFilters{
+        padding: 20px 0 0 40px;
+        &Box{
+            &Item{
+                gap:9px;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+@media (max-width:980px) {
+    .AromaDiffusersPRO {
+        &__GenaralVersion {
+            &Title {
+                & h1 {
+                    font-size: calc(32 * (100vw/980));
+                    line-height: 150%;
+                }
+            }
+
+            &Content {
+                &Filters {
+                    padding: 20px 40px 5px;
+
+                    &Box {
+                        & h1 {
+                            font-size: calc(14 * (100vw/980));
+                            line-height: 150%;
+                        }
+
+                        &Item {
+                            margin: 0 5px;
+                            gap: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:520px) {
+    .AromaDiffusersPRO {
+        &__GenaralVersion {
+            &Title {
+                & h1 {
+                    font-size: calc(19 * (100vw/520));
+                    line-height: 150%;
+                }
+            }
+
+            &Content {
+                &Filters {
+                    padding: 0 20px 5px;
+
+                    &Box {
+                        gap: 8px;
+
+                        & h1 {
+                            font-size: calc(14 * (100vw/980));
+                            line-height: 150%;
+                        }
+
+                        & img {
+                            width: 5px;
+                        }
+
+                        &Item {
+                            gap: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #grid1,
+    #grid2 {
+        width: calc(10 * (100vw/520));
+        cursor: pointer;
+    }
+}

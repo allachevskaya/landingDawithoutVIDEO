@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/blogDetailed/blogDetailed_1.css">
+    <title>Как сохранить внутренний баланс и поднять себе настроение?</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="./blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <section class="blogDetailed">
+                <main class="blogDetailedMain">
+                    <picture>
+                        <source srcset="../assets/blogDetailed/4/370520.png" media="(max-width: 520px)">
+                        <img src="../assets/blogDetailed/4/370.png" alt="My default image">
+                    </picture>
+
+                    <div class="blogDetailedMainText __3blogDetailedMainText">
+                        <p>октябрь 2022 </p>
+                        <h1>Как сохранить внутренний баланс и поднять себе настроение?</h1>
+                    </div>
+                </main>
+                <div class="blogDetailedText">
+                    <p>
+                        Мы часто сталкиваемся с не комфортными ситуациями и переживаниями. Чтобы негативные эмоции не
+                        накапливались внутри нас, нужно как можно чаще заботиться о себе, радовать и баловать.
+                        <br><br>
+                        Все мы разные и поднять настроение нам могут абсолютно разные вещи. Предлагаем забыть о суете и
+                        сомнениях, и делимся с вами 5 универсальными способами: как можно отвлечься и повысить жизненный
+                        тонус. Уверены, что каждый найдет среди них подходящие и нужные для себя варианты.
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedText">
+                    <h1>1. Прогулки и путешествия</h1>
+                    <p>
+                        Большинство из нас много времени проводит в офисах сидя перед монитором, а после рабочего дня -
+                        дома за столом или на диване. Без движения мы начинаем набирать вес, теряем энергию и
+                        концентрацию. Психологи настоятельно рекомендуют чаще совершать прогулки и путешествовать, хотя
+                        бы раз в неделю выбираться за город.
+                        <br><br>
+                        Во-первых, пребывание на свежем воздухе улучшает метаболические процессы, ходьба укрепляет мышцы
+                        и сердечно-сосудистую систему. В отличие от спортзала, на прогулке мы не гонимся за какой-то
+                        целью или рекордом, а созерцаем происходящее как снаружи, так и внутри себя.
+                        <br><br>
+                        Во-вторых, прогулки благоприятно сказываются на нашем психологическом самочувствии. Когда
+                        человек много времени проводит в помещениях, на подсознательном уровне ему начинает казаться,
+                        что он сам «маленький» и его достижения и жизнь в целом не имеет особого смысла.
+                        <br><br>
+                        На природе, на открытых и возвышенных пространствах (на берегу озера, в поле, в горах и т.д.),
+                        мы будто подстраиваемся под масштабы окружающей реальности, чувствуем себя «больше», увереннее и
+                        спокойнее. Нам становится легче строить планы, принимать решения и находить ответы на важные
+                        вопросы.
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/4/image 460.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>2. Ритуалы красоты</h1>
+                    <p>
+                        Заботиться о своей внешности важно не только для того, чтобы нравится окружающим. Психологи
+                        признали, что ухоженный внешний вид, а точнее наше собственное осознание своей привлекательности
+                        – это действенный и рабочий ресурс для укрепления самооценки. Это правило работает для мужчин и
+                        для женщин в равной степени.
+                        <br><br>
+                        Спа-процедуры, маникюр, педикюр, ухоженные волосы, сияющая здоровьем кожа и подтянутое тело –
+                        все это придает уверенности и поднимает настроение. Не забывайте и про массаж лица, ведь это
+                        действительно отличный способ избавиться от морщинок и негативных переживаний одновременно. Все
+                        дело в том, что наши мышцы (в том числе мышечный корсет лица, отвечающий за мимику) ловят
+                        сигналы от мозга и зажимаются в стрессовых ситуациях. Когда мы их расслабляем, в головной мозг
+                        поступает обратный сигнал, что опасность миновала.
+                        <br><br>
+                        Именно поэтому обязательно посещайте массажный кабинет. Общий расслабляющий, спортивный,
+                        классический тонизирующий, корректирующий и еще десятки видов массажа – это помощь в борьбе с
+                        усталостью, рассеянностью и неврозами.
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight">
+                    <img src="../assets/blogDetailed/4/image 461.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>3. Уют личного пространства</h1>
+                    <p>
+                        Везде, где вы находитесь и можете сами создать особенную и комфортную атмосферу: дома, в офисе,
+                        в машине, обязательно окружайте себя приятными для вас вещами, любимыми цветовыми акцентами и
+                        ароматами.
+                        <br><br>
+                        Вещи (будь это любимая статуэтка, подушка и плед, рамка с памятной фотографией, где вы
+                        счастливы) не просто дополняют интерьер. Они являются своеобразным подтверждением того, что
+                        именно сейчас вокруг вас все стабильно и безопасно.
+                        <br><br>
+                        Приятные цвета и оттенки на подсознательном уровне благоприятно воздействуют на наше восприятие
+                        мира и происходящих событий. Психолог Макс Люшер (создатель популярного цветового теста на
+                        психоэмоциональное состояние человека) еще в 1949 году установил, что каждый цвет вызывает
+                        определенную эмоцию. Например, синие и серые оттенки действуют успокаивающе, красные тона
+                        возбуждают и заряжают энергией, желтые и оранжевые располагают к позитивному мышлению.
+                        <br><br>
+                        Ароматы ничуть не меньше влияют на наше мироощущение. Воздействие запахов на человека происходит
+                        через лимбическую систему головного мозга, отвечающего за поведенческие реакции, память, эмоции
+                        и чувства.
+                        <br><br>
+                        Фруктовые, пряные и ванильные ноты создают уютную и согревающую атмосферу, древесные повышают
+                        уровень концентрации и помогают восстановить эмоциональный баланс. Морские запахи в сочетании с
+                        цитрусовыми тонизируют и наполняют внутренней силой.
+                        <br><br>
+                        <i> Важную роль в выборе подходящей для каждой ситуации парфюмерной композиции играют наши
+                            личные
+                            ассоциации и предпочтения.</i>
+                        <br><br>
+                        Для сохранения гармонии и уюта дома или в офисе, обязательно используйте в оформлении интерьера
+                        ароматические свечи и диффузоры. В автомобиле распыляйте парфюмерные спреи или используйте саше
+                        с расслабляющими и повышающими уровень концентрации ароматами. Это не только элемент
+                        ароматерапии, но еще и ритуал, в котором вы своими руками создаете нужное настроение, что
+                        повышает чувство уверенности и безопасности.
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/4/image 462.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>4. Общение с близкими</h1>
+                    <p>
+                        Поддержка близкого человека – бесценна. Когда мы общаемся и делимся важными темами, наш мозг
+                        переключается из режима «переживание» в режим «объективной оценки» ситуации. Взгляд на проблему
+                        со стороны и под иным углом часто помогает разглядеть ее локальность, и порой она вовсе
+                        перестает быть для нас чем-то важным и значимым.
+                        <br><br>
+                        Общаясь с близкими, мы избавляемся не только от своих переживаний, но и помогаем избавиться от
+                        них другим людям. В этом случае происходит трансформация из архетипа «жертвы» в
+                        «героя/помощника». Мы начинаем осознавать свою собственную силу и значимость.
+                        <br><br>
+                        Чтобы такое общение было продуктивным, оно должно проходить в комфортной и уютной обстановке.
+                        Правильное освещение, спокойная обстановка, приятные ароматы, удобное расположение тела
+                        способствуют расслаблению и располагают к открытому общению.
+                        <br><br>
+                        Перед разговором на важные темы психологи советуют уделить время позитивным воспоминаниям или
+                        расслабиться при помощи юмора. Любимая комедия, истории из жизни, над которыми можно посмеяться
+                        до слез – раскрепощают и избавляют от внутренних зажимов.
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/4/image 463.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>5. Шоппинг</h1>
+                    <p>
+                        Пожалуй, это один из самых быстродействующих способов поднять настроение. Кит Ярроу, профессор
+                        психологии и маркетинга в Университете Золотых Ворот (Golden Gate University, Сан-Франциско,
+                        США) в своих исследованиях установила, что покупка новых вещей помогает человеку вступить в
+                        новую фазу жизни и на некоторое время забыть о переживаниях. Именно эта «пауза» в рефлексии
+                        позволяет накопить силы и посмотреть на беспокоящую ситуацию чуть более отстраненно.
+                        <br><br>
+                        Когда мы ходим по магазинам или совершаем интернет покупки, практически сразу ощущаем
+                        уверенность в своих силах и контроль над ситуацией. Кроме того, пользу приносит и последующая
+                        оценка приобретенных товаров.
+                        <br><br>
+                        <i> Важно помнить: шоппинг должен быть разумным. Лучше всего заранее составить список из того,
+                            что
+                            вам нужно и принесет пользу и радость. В таком случае процесс покупок будет действительно
+                            терапией, а не пустым выбросом эмоций.</i>
+                        <br><br>
+                        Особое место в таком методе обретения внутреннего баланса занимает покупка парфюмерии. Духи и
+                        парфюмерная вода – это невербальный метод самовыражения, деликатный и интимный. Выбирая запахи,
+                        мы выбираем себе образы, которые станут своеобразной защитой от внешнего мира, подчеркнут именно
+                        те грани личности, которые мы хотим продемонстрировать здесь и сейчас.
+                        <br><br>
+                        Например: Сочные фруктовые и ягодные парфюмерные композиции добавляют образу экспрессии юности.
+                        Цветочные ноты подчеркивают женственность и утонченность. Древесные, шипровые и кожаные ароматы
+                        помогают создать уверенный деловой образ. Пряные восточные композиции раскрывают сексуальность и
+                        чувственность.
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight">
+                    <img src="../assets/blogDetailed/4/image 464.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>ЗАКЛЮЧЕНИЕ</h1>
+                    <p>Наше эмоциональное и психическое здоровье и благополучие являются крепким фундаментом спокойной и
+                        счастливой жизни. Часто залогом хорошего настроения становится небольшое усилие или действие,
+                        которое в конечном счете помогает перевернуть горы.
+                        <br><br>
+                        Уделяйте время своему здоровью и любимым занятиям, внешнему виду и внутренней гармонии. Чаще
+                        бывайте на природе и общайтесь с людьми. Балуйте себя маленькими и большими радостями, покупайте
+                        красивую одежду и изысканные духи, окружайте свое личное пространство приятными и памятными
+                        вещами.
+                        <br><br>
+                        Каждая положительная эмоция – вклад в копилку вашего благополучия. Одним из важных помощников в
+                        достижении этой цели являются правильно подобранные ароматы, которые окружают вас на протяжении
+                        всего дня. Именно поэтому предлагаем начать преображение своей жизни с выбора духов и
+                        интерьерных ароматов.</p>
+                </div>
+                <div class="blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/4/image 465.png" alt="">
+                </div>
+
+             
+                <div class="blogDetailedText">
+                    <h5>Всегда с любовью к вам и вашему дому,
+                        <br>DIVINE AROMA
+                    </h5>
+                </div>
+                <div class="blogDetailedNetWorks">
+                    <p>Понравилась статья? Не забудьте поделиться с друзьями в социальных сетях.</p>
+                    <div class="blogDetailedNetWorksIcons">
+                        <a href=""><img src="../assets/icons/face.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/vk.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/twi.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/class.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+
+</body>
+
+</html>

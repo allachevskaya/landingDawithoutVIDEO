@@ -1,0 +1,687 @@
+//**HeaderPersonal
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("/font/Montserrat-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat Italic";
+    src: url("/font/Montserrat-Italic.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("/font/Montserrat-Medium.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("/font/Montserrat-Light.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat MediumItalic";
+    src: url("/font/Montserrat-MediumItalic.ttf");
+
+}
+
+
+
+
+
+
+.HeaderPop {
+    width: auto;
+    min-width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+
+    background-color: #00000096;
+    // height: 100vh;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.85s ease-in;
+
+    &Modal {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        transition: all 0.85s ease-in;
+
+        width: 490px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 4rem 2.5rem;
+
+        &Text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & img {
+                width: 0.8rem;
+                height: 0.8rem;
+                cursor: pointer;
+            }
+
+            &Title {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                & img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    // margin: auto 0;
+
+                }
+
+                & p {
+                    font-family: "Montserrat Medium";
+                    font-size: 1rem;
+                    font-weight: 400;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: .25rem;
+                    color: #262626;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+
+        &Form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &Input {
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+                position: relative;
+
+                &Btn {
+                    padding-top: 20px;
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+
+                & p {
+                    font-family: "Montserrat Medium";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 24px;
+                    letter-spacing: 0.1em;
+                    color: #262626;
+                }
+
+                & img {
+                    position: absolute;
+                    right: 12px;
+                    top: 40px;
+                    width: 25px;
+                    height: auto;
+                    cursor: pointer;
+                }
+            }
+
+            &Helpers {
+                // & input[type=email]:not(:placeholder-shown):invalid {
+                //     color: red;
+                //     outline-color: red;
+                //   }
+                display: flex;
+                justify-content: space-between;
+                padding-top: 20px;
+
+                & a {
+                    border-bottom: 1px solid #262626;
+                    font-family: "Montserrat Medium";
+                    font-weight: 500;
+                    font-size: 11px;
+                    line-height: 24px;
+                    letter-spacing: 0.1em;
+                }
+
+                &Remember {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+
+                    & label {
+                        font-family: "Montserrat Medium";
+                        font-weight: 500;
+                        font-size: 11px;
+                        line-height: 24px;
+                        letter-spacing: 0.1em;
+                        color: #262626;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+
+        &Register {
+            margin-top: 40px;
+            border-top: 1px solid #D9D9D9;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            & h5 {
+                padding-top: 20px;
+                font-family: "Montserrat Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 37px;
+                letter-spacing: 0.1em;
+                color: #262626;
+            }
+
+            & p {
+                font-family: "Montserrat Regular";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 24px;
+                letter-spacing: 0.05em;
+            }
+        }
+
+    }
+
+
+}
+
+.HeaderPopStore {
+    width: auto;
+    min-width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    background-color: #00000096;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.85s ease-in;
+
+    &Modal {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        transition: all 0.85s ease-in;
+        width: 490px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 4rem 2.5rem;
+
+        &Text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #D9D9D9;
+            padding-bottom: 20px;
+
+            & img {
+                width: .8rem;
+                height: .8rem;
+                cursor: pointer;
+            }
+
+            &Title {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                & img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    // margin: auto 0;
+
+                }
+
+                & p {
+                    font-family: "Montserrat Light";
+                    font-size: 1rem;
+                    font-weight: 400;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: .25rem;
+                    color: #262626;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+
+        &Items {
+            height: max-content;
+            min-height: 140px;
+            height: 50%;
+
+        }
+
+        &Sum {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #D9D9D9;
+            border-bottom: 1px solid #D9D9D9;
+
+            & p {
+                font-family: "Montserrat Medium";
+                font-size: 1rem;
+                font-weight: 400;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: .25rem;
+                color: #262626;
+                text-transform: uppercase;
+            }
+
+            & p:last-child {
+                text-transform: lowercase;
+            }
+        }
+
+        &Inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+}
+
+
+.rememberPassword {
+    width: auto;
+    min-width: 100%;
+    position: absolute;
+    top: 140px;
+    height: 100vh;
+
+    background-color: #00000096;
+    // height: 100vh;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 1s ease-in;
+
+    &Modal {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        transition: all 1s ease-in;
+
+        width: 490px;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 2.5rem;
+
+        &Text {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & img {
+                width: 0.8rem;
+                height: 0.8rem;
+                cursor: pointer;
+            }
+
+            &Title {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                & img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    // margin: auto 0;
+
+                }
+
+                & p {
+                    font-family: "Montserrat Medium";
+                    font-size: 1rem;
+                    font-weight: 400;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: .25rem;
+                    color: #262626;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+
+        &Subtext {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-height: 300px;
+            border-bottom: 1px solid #D9D9D9;
+
+            & p {
+                font-family: "Montserrat Medium";
+                font-size: 13px;
+                font-weight: 400;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: .1rem;
+                color: #262626;
+                text-transform: lowercase;
+            }
+
+        }
+
+        &LastText {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            & h1 {
+                font-family: "Montserrat Medium";
+                font-size: 1rem;
+                font-weight: 400;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.25rem;
+                color: #262626;
+                text-transform: uppercase;
+            }
+
+            & p {
+                font-family: "Montserrat Regular";
+
+                font-size: 13px;
+                font-weight: 400;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.1rem;
+                color: #262626;
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width:980px) {
+    .HeaderPop {
+        &Modal {
+            width: 100%;
+        }
+    }
+
+    .HeaderPopStore {
+        &Modal {
+            width: 100%;
+        }
+    }
+
+    .rememberPassword {
+        &Modal {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:520px) {
+    .HeaderPop {
+        top: 0px;
+
+        position: fixed;
+
+        &Modal {
+            width: 100%;
+            padding: 2.5rem 20px;
+            gap: 28px;
+
+            &Register {
+                margin-top: 22px;
+
+                & p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .HeaderPopStore {
+        top: 0px;
+        position: fixed;
+
+        &Modal {
+            width: 100%;
+            padding: 2.5rem 20px;
+
+            & p {
+                font-size: 11px;
+                letter-spacing: 0.08em;
+            }
+        }
+    }
+
+    .rememberPassword {
+
+        top: 80px;
+        position: fixed;
+
+        &Modal {
+            width: 100%;
+            padding: 2.5rem 20px;
+        }
+    }
+
+    .HelpersPasswordBox {
+
+        position: absolute;
+        top: 290px;
+        right: 129px;
+
+    }
+
+    #HelpersPassword {
+        right: 135px;
+    }
+
+}
+
+@media (max-width:320px) {
+    .HeaderPop {
+
+        &Modal {
+            padding: 1.5rem 20px;
+            width: 100%;
+            gap: 28px;
+
+            &Form {
+                gap: 9px;
+
+                &Helpers {
+                    padding-top: 7px;
+                }
+
+                button {
+                    margin-top: 11px !important;
+                    padding: 9px 13px !important;
+                    font-size: 11px !important;
+                }
+            }
+
+            &Text {
+                &Title {
+                    & p {
+                        font-size: 12px;
+                        letter-spacing: 0.1rem;
+
+                    }
+                }
+            }
+
+            &Form {
+                &Input {
+                    gap: 0;
+
+                    & p {
+                        font-size: 10px;
+                    }
+
+                    & img {
+                        top: 31px;
+                        width: 21px;
+                    }
+                }
+
+                &Helpers {
+                    & a {
+                        font-size: 9px;
+                    }
+
+                    &Remember {
+                        & label {
+                            font-size: 9px;
+                        }
+                    }
+                }
+
+            }
+
+            &Register {
+                margin-top: 5px;
+
+                & h5 {
+                    padding-top: 9px;
+                    font-size: 12px;
+                    line-height: 23px;
+                }
+
+                & p {
+                    font-size: 10px;
+                    line-height: 16px;
+                }
+
+                button {
+                    margin-top: 11px !important;
+                    padding: 9px 13px !important;
+                    font-size: 11px !important;
+                }
+            }
+        }
+    }
+
+    .HeaderPopStore {
+        &Modal {
+            width: 100%;
+            gap: 30px;
+
+            &Items {
+                min-height: 127px;
+            }
+        }
+    }
+}
+
+
+// toggle class
+
+
+.closeHeaderPop {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.hiddenBody {
+    overflow: hidden;
+
+}
+
+#HelpersPassword {
+    opacity: 0;
+    position: absolute;
+    top: 332px;
+    right: 166px;
+    z-index: 10;
+
+}
+
+.HelpersPasswordBox {
+    position: absolute;
+    top: 332px;
+    right: 162px;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border: 1px solid #262626;
+    transition: all 1s ease-in;
+    cursor: pointer;
+
+    &Square {
+        background-color: #262626;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (max-width:520px) {
+    .HelpersPasswordBox {
+        top: 304px;
+        right: 139px;
+        width: 13px;
+        height: 13px;
+    }
+
+    #HelpersPassword {
+        top: 304px;
+        right: 139px;
+        // opacity: 1;
+        background-color: #262626;
+    }
+
+}
+
+@media (max-width:320px) {
+    #HelpersPassword {
+        top: 228px;
+        right: 121px;
+    }
+
+    .HelpersPasswordBox {
+        top: 228px;
+        right: 121px;
+    }
+}

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/blogDetailed/blogDetailed_1.css">
+    <title>Ароматы в Искусстве</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <section class="blogDetailed">
+                <main class="blogDetailedMain">
+                    <picture>
+                        <source srcset="../assets/blogDetailed/1/361.png" media="(max-width: 520px)">
+                        <img src="../assets/blogDetailed/1/354.png" alt="My default image">
+                    </picture>
+
+                    <div class="blogDetailedMainText">
+                        <p>январь 2023</p>
+                        <h1>Ароматы в Искусстве</h1>
+                    </div>
+                </main>
+                <div class="blogDetailedTitle">
+                    <p>"Искусство есть способность видеть невидимое, осязать неосязаемое и рисовать то, что не имеет
+                        облика."
+                        <br>(с) Жозеф Жубер
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        На сегодняшний день одна из самых сложных задач деятелей Искусства – привлечь внимание и
+                        заинтересовать. Зритель становится все более искушенным, и не каждый открыт к новым формам.
+                        <br><br>
+                        С помощью современных технологий Искусство становится интерактивным и все больше уходит в
+                        цифровое пространство. Компьютер теперь может сам писать музыку и картины благодаря генерации
+                        элементов из накопленных баз данных. И пусть эти работы пока что для человеческого восприятия
+                        несколько абстрактны и размыты, возможно в будущем уже сложно будет отличить картину, написанную
+                        художником, от картины, созданной программой.
+                        <br><br>
+                        Единственное, что еще сложно описать двоичным кодом, и что сохраняет тепло рук творца и душу
+                        природы – аромат. Запахи помогают найти путь к сердцу зрителя, обнажить эмоции, рассказать
+                        проникновенную историю и открыть нечто важное, скрытое в тумане обыденности.
+                        <br><br>
+                        Именно поэтому соприкосновение через ольфакторный канал восприятия (наше обоняние) – один из
+                        актуальных инструментов взаимодействия со зрителем. Его используют на концертах классической и
+                        современной музыки, художественных выставках, инсталляциях и перфомансах.
+                    </p>
+                    <h1 class="blogDetailedTextTitle">
+                        XX Век
+                    </h1>
+                    <p>
+                        Ароматы в Искусстве начали использовать еще в прошлом веке. В 1938 году на Международной
+                        сюрреалистической выставке в Париже "Exposition internationale du Surréalisme" в галерее Изящных
+                        искусств было представлено несколько произведений, в которых важную роль играли запахи.
+                        <br><br>
+                        В инсталляции художника Вольфганга Паалена дубовые листья, травы и мох, камыши и водные лилии
+                        были разбросаны вокруг искусственного пруда прямо в центре зала. Свежий лесной запах смешивался
+                        с ароматами, ассоциирующимися с жаркой Бразилией, ведь в гроте главного зала поэт Бенжамен Пере
+                        обжаривал кофейные зерна. Таким образом два противоположных настроения сливались воедино,
+                        подчеркивая дуалистические характеры миров: реального и бессознательного.
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/1/image 355.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        После Второй мировой войны, в поиске доверительного диалога со зрителем, для создания эффекта
+                        присутствия художники вновь вернулись к выражению мысли при помощи запахов.
+                        <br><br>
+                        В 1975 году Билл Виола (американский художник видеоарта) в своей работе "Il Vapor" использовал
+                        яркий аромат эвкалипта. Перед большим экраном, на котором воспроизводилась запись, как художник
+                        запускает эвкалиптовые листья в чан с кипящей водой, стоял настоящий чан, распространяющий
+                        ароматный пар.
+                        <br><br>
+                        Немецкий художник Вольфганг Лаиб в 1988 году добился "полного погружения" зрителя в инсталляцию
+                        "The Passageway" (с англ. – проход, коридор, галерея), собранную из кубов пчелиного воска. По
+                        залу распространялся сладкий и расслабляющий медовый аромат, что создавало единое пространство и
+                        чувство защищенности, полностью погружая зрителя в творчество мастера.
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight">
+                    <img src="../assets/blogDetailed/1/image 356.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>Знаковая работа "Spice Chess" японской художницы и участницы группы "Fluxus" Такако Саито в 1965
+                        году призывала к социальному равенству. В шахматном наборе все фигуры были заменены на бутылочки
+                        с пряными запахами. К примеру, белые пешки были наполнены экстрактом корицы, белые кони –
+                        имбирем, белые ладьи – мускатным орехом, белый ферзь – анисом. Черные слоны – тмином, черный
+                        король – асафетидой (высушенным натуральным латексом), а черный ферзь – кайенским перцем. Прежде
+                        чем сделать ход, игроки подносили бутылочку к носу и по запаху определяли статус фигуры. Саито
+                        таким образом обратила внимание на неравенство людей, классовую и расовую категоричность,
+                        которые ставят клеймо на человека и определяют его возможность передвижения в социальном
+                        пространстве.</p>
+                </div>
+                <div class="blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/1/image 357.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1 class="blogDetailedTextTitle">XI век</h1>
+                    <p>В нашем веке парфюмерные композиции часто являются полноценными участниками творческих проектов.
+                        Мультисенсорность окружающего мира словно ворвалась в современные и классические выставочные
+                        залы, усиливая эмоциональный контакт зрителя и художника.
+                        <br><br>
+                        На выставке "In Search of Scents Lost" ("В поисках утерянных ароматов"), прошедшей в 2015 году в
+                        галерее Рейксмузеум в Амстердаме, запахи заняли ключевое место в исследовании зрителем работ
+                        известных художников.
+                        <br><br>
+                        Каждая картина на выставке была обрамлена определенным ароматом.К примеру, у картины Гертгена
+                        тот Синт Янса "Поклонение волхвов" можно было почувствовать горьковатый и плотный запах мирры,
+                        оттеняющий сюжет библейской истории. Этот аромат своим тяжелым звучанием создавал нагнетающую
+                        атмосферу и сообщал зрителю о трудной судьбе Иисуса Христа.
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/1/image 358.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Итальянский скульптор и дизайнер Маттео Чибик в 2017 году создал невероятные футуристические
+                        цветы и растения из белого гипса, одарив каждый уникальным и ярким ароматом. Тут автор
+                        показывает как тесно связаны восприятия: визуальное и ольфакторное.
+                        <br><br>
+                        Эта мысль также лежала в основе проекта "ECAL" ("Букет"), созданного студентами швейцарского
+                        Университета прикладных наук под руководством Никласа Роя. ECAL – это обонятельное устройство,
+                        которое при помощи специального сопла позволяет передавать цвет с экрана через ассоциативное
+                        сочетание ароматов. Создается феномен синестезии, приумножающий чувственное восприятие.
+                        <br><br>
+                        В рамках международного фестиваля дизайна "DESIGN ACT-2010" российский арт-проект «Аромамедиа»
+                        представил в Москве инсталляцию "Архитектура воздуха". Зрителю предлагалось попасть в небольшое
+                        пространство, ограниченное черным кубом, в котором полностью отсутствовал свет. Входя внутрь
+                        куба, зритель слышал объемный, раскрывающийся звук и ощущал легкий, расширяющий пространство
+                        аромат. Без основного канала коммуникации – зрения, выстраивается своеобразная архитектура
+                        воздуха, обретающая форму и многомерность благодаря вибрациям звука и запаха.
+                        <br><br>
+                        В 2022 году в Санкт-Петербурге прошла выставка "Everplace NFT". Зрителю предлагался чувственный
+                        опыт в восприятии сложного технологического Искусства, выполненного в разных медиа-жанрах. На
+                        этой выставке картины Серафимы Сажиной, посвященные сновидениям разных людей, были дополненны
+                        подвешенными к потолку ольфакторными гипсовыми объектами Лилии Бакановой. Эта совместная работа
+                        предлагала зрителям ощутить состояние, когда сон полностью овладевает телом и сознанием, из
+                        которого не выбраться, пока не проснешься.
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight">
+                    <img src="../assets/blogDetailed/1/image 359.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1 class="blogDetailedTextTitle">ЗАКЛЮЧЕНИЕ</h1>
+                    <p>В этой небольшой подборке художественных проектов, которые тесно переплетены с чувственным миром
+                        ароматов, отчетливо видно, что разные каналы восприятия создают объемную и многомерную
+                        действительность. Ощущения усиливаются на фоне ассоциаций и воспоминаний, и зритель становится
+                        соавтором и непосредственным участником творческого процесса.
+                        <br><br>
+                        Если переложить такой опыт на нашу жизнь, можно смело сказать, что каждый из нас является
+                        творцом и художником, использующим ольфакторные каналы восприятия для создания своего
+                        собственного образа.
+                        <br><br>
+                        Подбирая парфюм под определенное настроение и задачи, подчеркивая концепцию интерьера особыми
+                        ароматами, мы создаем уникальный диалог с окружающим миром, в который вкладываем свою историю и
+                        рассказываем об индивидуальном взгляде на жизнь.
+                        <br><br>
+                        Найти вдохновение, преобразить мироощущение и наполнить жизнь яркими красками помогут
+                        парфюмерные композиции DIVINE AROMA, в сердце которых каждый найдет частичку своего характера.
+                        Создайте творческое пространство, сотканное из изысканных и утонченных ароматов…
+                    </p>
+                </div>
+                <div class="blogDetailedImgFinally">
+                    <img src="../assets/blogDetailed/1/image 360.png" alt="">
+                </div>
+                <div class="blogDetailedNetWorks">
+                    <p>Понравилась статья? Не забудьте поделиться с друзьями в социальных сетях.</p>
+                    <div class="blogDetailedNetWorksIcons">
+                        <a href=""><img src="../assets/icons/face.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/vk.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/twi.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/class.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+
+</body>
+
+</html>

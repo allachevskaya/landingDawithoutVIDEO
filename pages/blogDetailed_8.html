@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/blogDetailed/blogDetailed_1.css">
+    <title>Психология образа:
+        Архетипы личности.</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="./blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <section class="blogDetailed">
+                <main class="blogDetailedMain">
+                    <picture>
+                        <source srcset="../assets/blogDetailed/8/370520.png" media="(max-width: 520px)">
+                        <img src="../assets/blogDetailed/8/370.png" alt="My default image">
+                    </picture>
+
+                    <div class="blogDetailedMainText __8blogDetailedMainText">
+                        <p>июнь 2022 </p>
+                        <h1>Психология образа:
+                            <br>
+                            Архетипы личности.
+                        </h1>
+                        <p>Выбираем ароматы и стиль для достижения целей</p>
+                    </div>
+                </main>
+                <div class="blogDetailedText">
+                    <p>
+                        Каждый день мы посылаем во внешний мир сотни сигналов. Через взгляд, жесты и мимику, интонацию
+                        голоса и позу рассказываем о своем настроении, ценностях и намерениях.
+                        <br><br>
+                        По мнению психологов, при общении от 7 до 40 % информации передается вербально и более половины
+                        – через невербальную коммуникацию.
+                        <br><br>
+                        Вербальное общение — это обмен информацией с помощью слов. Невербальное общение — взаимодействие
+                        без использования слов (передача информации или влияние друг на друга через мимику, интонации,
+                        жесты, пантомимику, изменение мизансцены общения), то есть без речевых и языковых средств,
+                        представленных в прямой или знаковой форме.
+                        <br><br>
+                        К невербальным способам презентации своей личности относится выбор одежды и парфюма. Ведь
+                        правильно подобранный образ транслирует то, о чем мы хотим рассказать окружающим, а также
+                        помогает достичь высоких результатов и успехов в каждой социальной роли.
+                        <br><br>
+                        В наши дни все чаще обращаются к термину «архетип личности». Впервые это понятие было
+                        сформулировано швейцарским психиатром Карлом Густавом Юнгом (1875-1961 гг).
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedImgRight __blogDetailedImgRightText">
+                    <img src="../assets/blogDetailed/8/image 486.png" alt="">
+                    <p>Карл Густав Юнг (1875-1961 гг)</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        В аналитической психологии архетип — структурный элемент коллективного бессознательного.
+                        Согласно теории Юнга, архетипы создают архетипные имиджи, которые ассоциируются с определенными
+                        вариантами универсальных действий по универсальным шаблонам. Один и тот же человек обладает
+                        несколькими доминирующими архетипами.
+
+                        <br><br>
+                        <i> Например: Вы — жесткий руководитель в рамках рабочего времени. При этом в кругу друзей
+                            можете
+                            брать на себя роль «клоуна», рассказывать самые забавные истории, изображая мимикой каждый
+                            сюжетный поворот. Но если вы перенесете такое шаблонное поведение весельчака в рабочий
+                            коллектив, вас скорее всего не узнают и попросят взять отгул.</i>
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedImgLeft __blogDetailedImgLeftText">
+                    <img src="../assets/blogDetailed/8/image 487.png" alt="">
+                    <p>Архетипный имидж</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        В современной культуре (в частности в брендинге, рекламе и маркетинге) понятие «архетип
+                        личности» используется для определения и обозначения типичных черт субъекта, интуитивно понятных
+                        ролевых моделей. Архетипы — роли, которые являются составляющими личности, и могут быть уместно
+                        сыгранными в конкретных обстоятельствах. Ключевым инструментом являются невербальные сигналы.
+                        <br><br>
+                        В художественных фильмах супер-герой всегда сражается со злодеями в ярком и облегающем костюме.
+                        Комический персонаж имеет слегка неопрятный вид, немного взъерошен и зажат в движениях. В
+                        рекламе йогурта мы видим юных девушек в светлых и романтичных платьях с аккуратными прическами.
+                        <br><br>
+                        Эти архетипы мы распознаем с первых кадров и интуитивно наделяем их рядом характеристик: герой —
+                        смелый и справедливый, комический персонаж — ранимый и ему надо помогать, девушка из рекламы
+                        йогурта — добрая, домашняя, заботливая.
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter __blogDetailedImgRightText">
+                    <img src="../assets/blogDetailed/8/image 488.png" alt="">
+                    <p>Реклама йогурта</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        В кинематографе и рекламе все образы гипертрофированы, ведь транслировать черты архетипа
+                        возможно только через визуальный и звуковой ряд. Реальная жизнь дарит еще один способ передачи
+                        невербальных сигналов, раскрывающих тот или иной образ — <strong>запахи</strong>.
+                        <br><br>
+                        Чтобы создать нужное впечатление, начните с самого главного — поставьте перед собой цель и
+                        выберете подходящий для ее достижения архетип. Продумайте каждую деталь: тембр голоса, мимика,
+                        жесты, и конечно же внешний вид.
+                        <br><br>
+                        <i>Финальным штрихом</i> и самым главным оружием в построении образа станет соответствующий ему
+                        аромат.
+                        Не забывайте, что запахи влияют на восприятие нас окружающими на бессознательном уровне и тесно
+                        связаны с базовыми эмоциями (радость, печаль, интерес, удивление и т.д.)
+                        <br><br>
+                        На основании исследований Карла Юнга авторами <i>Маргарет Марк и Кэрол Пирсон</i> написана
+                        хрестоматийная для маркетологов книга <strong>«Герой и бунтарь. Создание бренда с помощью
+                            архетипов»</strong>. В
+                        ней выделяют 12 архетипов личности: <i>Правитель, Мудрец, Герой, Искатель, Эстет, Заботливый,
+                            Простодушный, Славный Малый, Бунтарь, Творец, Маг, Шут.</i>
+                        <br><br>
+                        Мы рассмотрим основные черты самых востребованных в обществе архетипов:
+                        <br><br>
+                        &middot;правитель;
+                        <br>
+                        &middot;мудрец;
+                        <br>
+                        &middot;герой;
+                        <br>
+                        &middot;бунтарь;
+                        <br>
+                        &middot;заботливый;
+                        <br><br>
+                        а также способы воссоздания таких образов через внешний вид и правильно подобранный аромат.
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter __blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/8/image 489.png" alt="">
+                    <p>12 архетипов личности по книге "Герой и бунтарь. Создание бренда с помощью архетипов"</p>
+                </div>
+                <div class="blogDetailedText">
+                    <h1>«Правитель»</h1>
+                    <p>
+                        Для правителя важно обладать властью, статусностью, иметь финансовую свободу и признание. При
+                        всем этом он осознает степень ответственности за окружающих и стратегически контролирует каждое
+                        решение.
+                        <br><br>
+                        <strong>Достоинства:</strong> организаторские и аналитические способности, эффективность,
+                        уверенность в успехе,
+                        ответственность, авторитетность.Если необходимо невербально продемонстрировать черты
+                        «Правителя», то в этом помогут:
+                        <br><br>
+                        &middot;идеальная посадка костюмов и силуэт «по фигуре»;
+                        <br>
+                        симметрия и статика кроя, прямые линии;
+                        <br>
+                        &middot;глубокие насыщенные цвета, пастельные или жемчужно-перламутровые оттенки;
+                        &middot;фасон одежды должен визуально вытягивать фигуру, делать вас выше (жакет/пиджак до
+                        середины
+                        бедра, удлиненные брюки, юбки длины миди или макси, обувь на каблуке);
+                        <br>
+                        &middot;аксессуары, подчеркивающие внимание к деталям (часы, очки, тонкие изящные цепочки,
+                        серьги
+                        «пусеты»);
+                        <br>
+                        &middot;для особых мероприятий «Правителю» подойдут:
+                        <br>
+                        &middot; — массивные ювелирные украшения и изысканная бижутерия (крупные камни, жемчуг),—
+                        дорогие
+                        фактурные ткани и декор (бархат и шелк, вышивка орнаментов).
+                        <br><br>
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft __blogDetailedImgLeftText">
+                    <img src="../assets/blogDetailed/8/image 490.png" alt="">
+                    <p>"Правитель"</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        <strong>Парфюмерная композиция, </strong> которую выбирает «Правитель», насыщена цветочными
+                        нотами. Аромат
+                        царственного жасмина и нежной розы подчеркивает естественность и благородство образа. Ноты
+                        амбры, пачули и ванили придают персоне значимость и статусность. Роскошное звучание уда, замши и
+                        кожи притягивает внимание к обладателю и беспрекословно увлекает за собой. Базовые древесные
+                        ноты в таком имидже демонстрируют уверенность.
+                    </p>
+
+                </div>
+
+                <div class="blogDetailedText">
+                    <h1>«Мудрец» («Философ»)</h1>
+                    <p>
+                        «Мудрецу» свойственны: философский образ мысли, страсть к рассуждениям и познанию устройства
+                        мира и социума. Развитая интуиция, спокойствие и уверенность притягивают окружающих. Он
+                        стремится к отстраненности, но с радостью делится накопленными знаниями и помогает принимать
+                        верные решения.
+                        <br><br>
+                        <strong>Достоинства: </strong>экспертность, непредвзятость, справедливость, уравновешенность.
+                        <br><br>
+                        Чтобы окружающие прислушивались к вашему мнению и обращались за мудрым советом, подчеркнуть
+                        принадлежность к этому архетипу можно при помощи:
+                        <br><br>
+
+                        &middot;свободного и лаконичного кроя одежды;<br>
+                        &middot;натуральных тканей (например: хлопок, вискоза, лен);<br>
+                        &middot;сдержанной палитры (например: бежевый, серый, черный и белый цвет, пастельные
+                        оттенки);<br>
+                        &middot;монохромного сочетания цветов или природной цветовой гаммы (например: нежно-голубой и
+                        бежевый,
+                        &middot;подобно песчаному берегу и морским волнам);<br>
+                        &middot;минимализма в аксессуарах и принтах (каждый акцент должен быть точечным и наполненным
+                        смыслом);<br>
+                        &middot;нюдового макияжа с акцентом на глаза (для женщин);<br>
+                        &middot;легкой небритости (для мужчин).<br><br>
+
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight __blogDetailedImgRightText">
+                    <img src="../assets/blogDetailed/8/image 491.png" alt="">
+                    <p>"Мудрец" ("Философ")</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        <strong>Парфюмерия,</strong> которая ассоциируется с этим архетипом, отличается минимализмом и
+                        естественным
+                        звучанием композиции. Листья зеленого чая, мускусные и травянистые ноты подчеркивают связь с
+                        природой. Цитрусовые аккорды в аромате рассказывают о свежести взглядов и открытости.
+                        Ориентальные и пряные оттенки парфюма ассоциируются с восточной мудростью. Ноты мха, кедра,
+                        ладана и сандала добавляют образу магнетизма и загадочности.
+                    </p>
+                </div>
+                <div class="blogDetailedText">
+                    <h1>«Герой» </h1>
+                    <p>Тот, кто всегда защитит. «Герои» принимают на себя удары судьбы, прикрывая окружающих, и всегда
+                        готовы прийти на помощь. Этот архетип отличается принципиальным идеализмом и стремлением к
+                        признанию своих заслуг. За ним всегда идет молва. О его подвигах слагают легенды.
+                        <br><br>
+                        <strong>Достоинства:</strong> смелость, ответственность, энергичность, внутренняя потребность
+                        изменить мир к
+                        лучшему, постоянное движение и саморазвитие, защита интересов окружающих.
+
+                        В случаях, когда необходимо продемонстрировать свою силу, смелость и готовность выручить, а
+                        может быть напомнить о своих заслугах и талантах на этом поприще, вам помогут:
+                    </p>
+                    <br><br>
+                    &middot;четкие и структурированные силуэты, подчеркивающие готовность к действию;
+                    <br>
+                    &middot;акцент на талии;
+                    <br>
+                    &middot;аксессуары или вставки в одежде из гладкой кожи;
+                    <br>
+                    &middot;палитра: серый, стальной, черный, приглушенные оттенки в сочетании с яркими, динамичными
+                    цветами;
+                    <br>
+                    &middot; макияж: яркие губные помады и палетка для скульптурирования лица.
+                    <br><br>
+                </div>
+                <div class="blogDetailedImgLeft __blogDetailedImgLeftText">
+                    <img src="../assets/blogDetailed/8/image 492.png" alt="">
+                    <p>«Герой»</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        <strong>Ароматы, </strong> которые подходят героическому образу, сдержаны, но с яркими
+                        акцентами. Цитрусовые ноты и
+                        аккорды сочных фруктов подчеркнут динамику характера. Морские ноты выигрышно преподнесут вас как
+                        легкого человека, готового трижды обогнуть земной шар. Цветочные ноты расскажут о способности
+                        сопереживать и поддерживать. Аромат уда и замши раскроет окружающим вашу уверенность в своих
+                        ценностях и установках. Шипровые оттенки идеально подчеркнут героический характер и цельность
+                        образа.
+                    </p>
+                    <p>
+                        <strong> Достоинства: </strong>
+                        лидерские качества, творческие способности, свежие идеи и взгляды, сопротивление
+                        устаревшим стандартам, весомость мнения.
+                        <br><br>
+                        Если необходимо, чтобы вас рассмотрели в качестве представителя организации в важном спорном
+                        совещании или инвесторы заметили ваш новый творческий проект, рекомендуем использовать:
+                        <br><br>
+
+                        &middot; ассиметричный крой;
+                        <br>
+                        &middot; деконструктивизм и эклектику (нескольких стилей и направлений в одном образе);
+                        <br>
+                        &middot; цветовые контрасты: глубокие затемненные оттенки и яркие акценты;
+                        <br>
+                        &middot; сочетание разных фактур;
+                        <br>
+                        &middot; при уместности мероприятия, можно использовать атрибутику панк-движения (но не более
+                        двух
+                        <br>
+                        &middot; элементов: клетка «тартан», аксессуары из кожи и цепей, яркий макияж глаз).
+                        <br><br>
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight __blogDetailedImgRightText">
+                    <img src="../assets/blogDetailed/8/image 493.png" alt="">
+                    <p>«Бунтарь»</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>«Бунтарь» выбирает <strong>яркие ароматы,</strong> которые заставляют оборачиваться вслед. Сочные
+                        фруктовые и
+                        ягодные ноты добавят образу экспрессии и свежести. Ноты амбры, мускуса, сандала и кумарина
+                        подчеркнут значимость ваших слов. Смолистые и пудровые ароматы придают образу объемность и
+                        гипнотическое притяжение.</p>
+                    <h1>«Правитель»</h1>
+                    <p>
+                        Таким архетипом движут: сочувствие, щедрость, стремление к стабильности и безопасности.
+                        «Заботливый» чувствует настроение окружающих и знает как их утешить. Всегда готов выслушать и
+                        дать хороший совет. Он радуется чужому счастью и создает в коллективе гармоничную атмосферу.
+                        <br><br>
+                        <strong> Достоинства:</strong> отзывчивость, умиротворенность, теплота и душевность, доверие
+                        окружающих.
+                        <br><br>
+                        Когда необходимо продемонстрировать черты этого архетипа, на работе или в кругу друзей и
+                        знакомых, смело используйте:
+                        <br><br>
+                        &middot;симметричный и статичный крой;
+                        <br>
+
+                        &middot; закругленные формы;
+                        <br>
+                        &middot;натуральные ткани (хлопок, шерсть, шелк);
+                        <br>
+                        &middot; интересные и сдержанные аксессуары, приветствуется стиль ретро;
+                        <br>
+                        &middot; неброский макияж с акцентами на глаза и губы;
+                        <br>
+                        &middot; цветовая палитра – приглушенная (серо-бежевая гамма, йогуртовые оттенки и пастельные
+                        тона);
+                        <br>
+                        &middot;прическа: завивка в мягкие волны, невысокий хвост, аккуратный пучок с структурированными
+                        прядями.
+                        <br><br>
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft __blogDetailedImgLeftText">
+                    <img src="../assets/blogDetailed/8/image 494.png" alt="">
+                    <p>«Заботливый»</p>
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        «Заботливый» отдает предпочтение мягким и деликатным ароматам. Нежно-цветочные и мускусные ноты
+                        рассказывают об открытости натуры и манят к доверительному общению. Пряные и ванильные
+                        композиции придают образу тепла и уюта. Фруктовые и сладкие ягодные ноты подчеркивают
+                        романтичность и легкость характера.
+                    </p>
+                    <h1>Заключение</h1>
+                    <p>
+                        <strong>Начните с главного</strong> — определите какие роли вам комфортны, какие необходимы и
+                        какие помогут
+                        добиться поставленных целей и задач.
+                        <br><br>
+                        Настройтесь на позитивные изменения. Разберите свой гардероб, составьте подходящие для выбранных
+                        архетипов комплекты одежды и аксессуаров. Наверняка у вас уже есть большая часть базовых вещей,
+                        идеально раскрывающие новые имиджи.
+                        <br><br>
+                        <strong>И самое приятное</strong> — создайте свою уникальную <a
+                            href="blogDetailedTextLink">коллекцию ароматов</a> которые соберут воедино концепцию
+                        каждого образа и помогут сделать их яркими и запоминающимися.
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight __blogDetailedImgRightText">
+                    <img src="../assets/blogDetailed/8/image 495.png" alt="">
+                    <p>Духи группы "Экстра" DIVINE AROMA</p>
+                </div>
+
+                <div class="blogDetailedText">
+                    <h5>
+                        Выберете любимые ароматы DIVINE AROMA, которые подходят для нескольких образов сразу и идеально
+                        подчеркнут самый важный для вас архетип.
+                        <br><br>
+                        И приготовьтесь к приятным и долгожданным переменам…
+                    </h5>
+                </div>
+                <div class="blogDetailedNetWorks">
+                    <p>Понравилась статья? Не забудьте поделиться с друзьями в социальных сетях.</p>
+                    <div class="blogDetailedNetWorksIcons">
+                        <a href=""><img src="../assets/icons/face.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/vk.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/twi.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/class.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+
+</body>
+
+</html>

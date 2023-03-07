@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/aboutHome/aboutHome.css">
+    <title>О доме</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <main class="aboutHome">
+                <div class="aboutHomeImage">
+                    <img src="../assets/aboutHome/image 556.png" alt="">
+                    <h1>ИСТОРИЯ ДОМА</h1>
+                </div>
+            </main>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+                    <h1>DIVINE AROMA</h1>
+                    <p> Российский парфюмерный дом, расположенный в одном из самых красивых и вдохновляющих городов —
+                        Санкт-Петербурге.
+                        <br><br>
+                        Мы — люди, влюбленные в ароматы, энтузиасты и профессионалы своего дела. Изучая ароматы разных
+                        стран, экспериментируя с популярными и редкими запахами, через личный опыт пришли к пониманию того,
+                        какой именно должна быть наша продукция.
+                    </p>
+                </div>
+            </section>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+                    <h1>ПРОИЗВОДСТВО И ВДОХНОВЕНИЕ</h1>
+                    <p> Создавая изысканные и многогранные ароматы, мы используем современные технологии и опыт
+                        сотрудничества с такими компаниями как Parfums Plus и Argeville (Франция) и CreaSens Group (Италия).
+                    </p>
+                </div>
+            </section>
+
+            <section class="aboutHomeBlock">
+                <div class="aboutHomeBlockImages">
+                    <div class="aboutHomeBlockImagesItem">
+                        <img src="../assets/aboutHome/image 257.png" alt="">
+                        <p>Parfums Plus</p>
+                    </div>
+                    <div class="aboutHomeBlockImagesItem">
+                        <img src="../assets/aboutHome/image 258.png" alt="">
+                        <p>Parfums Plus</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+                    <h1>Parfums Plus</h1>
+                    <p>Французская компания, специализирующаяся на создании и выпуске эксклюзивных парфюмерных композиций.
+                        Использует передовое оборудование на ультрасовременных производственных объектах в Бар-сюр-Лу. В
+                        марте 2022 года Parfums Plus представляли свою продукцию на крупной международной выставке Beauty
+                        World Saoudi Arabia.</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeBox aboutHomeBox-right">
+                <div class="aboutHomeBoxItem">
+                    <img src="../assets/aboutHome/image 259.png" alt="">
+                    <p>Производство продукции DIVINE AROMA</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+                    <h1>Argeville</h1>
+                    <p>Argeville создана в 1921 году и является одной из самых передовых парфюмерных компаний. Сегодня
+                        Argeville активно внедряет экологичные методы производства и работает над созданием 100% натуральных
+                        продуктов, соответствующих всемирным стандартам COSMOS. В 2022 году приняли участие в крупнейшей
+                        европейской выставке In-Cosmetics Global Paris 2022, где продемонстрировали возможности создания
+                        парфюмерной продукции без нанесения ущерба окружающей среде.</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeBox aboutHomeBox-left">
+                <div class="aboutHomeBoxItem aboutHomeBoxItem-left">
+                    <img src="../assets/aboutHome/image 260.png" alt="">
+                    <p class="aboutHomeBoxItem-PLeft">Производство продукции DIVINE AROMA</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+                    <h1>CreaSens Group</h1>
+                    <p>Компания CreaSens Group создана из союза двух компаний, решивших объединить профессиональное
+                        наследие, разработанное более чем за 60 лет парфюмерной деятельности: Creazioni Mediterranee и
+                        Cerizza. В 2012 году к ним присоединилась компания French APA – Atelier de Productions Aromatiques
+                        (Грасс), специализирующаяся на исследованиях и разработках, в частности для Fine Fragrance.</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+                    <h1>Наша команда</h1>
+                    <p>В нашей работе высокие стандарты и требования к качеству сырья и его происхождению тесно сплетены с
+                        творческим началом.
+                        <br>
+                        <br>
+                        Команду парфюмеров возглавляет Мелисса Хоффманн — выпускница Института парфюмерии Грасса, ученица
+                        парфюмера из Roure-Bertrand.
+                    </p>
+                </div>
+            </section>
+
+            <section class="aboutHomeBlock">
+                <div class="aboutHomeBlockImages">
+                    <div class="aboutHomeBlockImagesItem">
+                        <img src="../assets/aboutHome/image 274.png" alt="">
+                        <p>Команда парфюмеров DIVINE AROMA</p>
+                    </div>
+                    <div class="aboutHomeBlockImagesItem">
+                        <img src="../assets/aboutHome/image 275.png" alt="">
+                        <p>Команда парфюмеров DIVINE AROMA</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="aboutHomeText">
+                <div class="aboutHomeTextTitle">
+                    <h1>
+                        Мелисса
+                    </h1>
+                    <p>
+                        Потомственный знаток ароматов, чья родословная богата людьми, оставившими значительный вклад в
+                        индустрии парфюмерии Грасса.
+                    </p>
+                </div>
+                <div class="aboutHomeTextDescription">
+                    <p>“Я родилась в Грассе — колыбели парфюмерии. Ароматы всегда были частью моей жизни. Для меня познание
+                        окружающего мира через обоняние подобно дыханию — жизненно необходимо.</p>
+                    <p>Мой прадед Чарльз Филип был генеральным секретарем союза парфюмеров. Мой дед Роберт Филип работал
+                        парфюмером в знаковых компаниях Грасса, таких как Robertet и Fragonard. Мой отец Морис Ремон тоже
+                        парфюмер. Начав свою карьеру в Robertet, он принял участие в росте компании Parfex. В настоящее
+                        время он работает в Expressions Parfumées. Моя крестная Натали Лорсон обладает исключительно тонким
+                        обонянием . В 2016 году она получила звание мастера-парфюмера Firmenich. Ее карьера ознаменовалась
+                        культовыми духами и многочисленными успехами. Мой крестный отец создает ароматы для Drom Fragrances.
+                    </p>
+                    <p>Поэтому неудивительно, что я тоже выбрала эту великолепную профессию — парфюмер”.</p>
+                </div>
+                <div class="aboutHomeTextSub">
+                    <p>К числу создателей наших ароматов также относятся: потомственный парфюмер Аймрик Верлак и
+                        парфюмер-технолог Лоик Сесиль.</p>
+                    <h1>Продукция</h1>
+                </div>
+            </section>
+
+            <section class="aboutHomeBox aboutHomeBox-left">
+                <div class="aboutHomeBoxItem aboutHomeBoxItem-left">
+                    <img src="../assets/aboutHome/image 276.png" alt="">
+                    <p class="aboutHomeBoxItem-PLeft">Ароматические диффузоры DIVINE AROMA</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+
+                    <p>Мы отслеживаем тенденции и находимся в постоянном поиске нового. При создании продукции расставляем
+                        приоритеты на: качество, натуральность и исключительность.</p>
+                    <p>В 2021 году мы открыли новую страницу в истории бренда и разработали уникальный продукт —
+                        бесспиртовые Ароматические диффузоры с наночастицами серебра.</p>
+                    <p>Вдохновленные стилем и философией жизни наших покупателей, в 2022 году дополнили коллекцию изысканной
+                        линейкой — Диффузорами PRO. Ароматы с 30% содержанием душистых веществ обрели новое звучание и
+                        особенную глубину раскрытия.</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeBox aboutHomeBox-right">
+                <div class="aboutHomeBoxItem">
+                    <img src="../assets/aboutHome/image 277.png" alt="">
+                    <p>Ароматические диффузоры PRO DIVINE AROMA</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+                    <p>Новинками бренда стали также интерьерные ароматы в удобном формате спрея для дома и автомобиля, а
+                        также рефиллы для диффузоров PRO объемом 500 мл.</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeBox aboutHomeBox-left">
+                <div class="aboutHomeBoxItem aboutHomeBoxItem-left">
+                    <img src="../assets/aboutHome/image 278.png" alt="">
+                    <p class="aboutHomeBoxItem-PLeft">Парфюмированные спреи для дома и машин DIVINE AROMA</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeList">
+                <div class="aboutHomeListItem">
+                    <p>Сегодня коллекция парфюмерного дома DIVINE AROMA представлена следующими продуктами:</p>
+                    <ul>
+                        <li>бесспиртовые Ароматические диффузоры с наночастицами серебра (14 утонченных ароматов, навеянных живописными уголками Италии): Классические и PRO уровня;</li>
+                        <li>рефиллы для диффузоров PREMIUM объемом 500 мл;</li>
+                        <li>парфюмированные спреи для дома и автомобиля.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="aboutHomeBox aboutHomeBox-right">
+                <div class="aboutHomeBoxItem">
+                    <img src="../assets/aboutHome/image 280.png" alt="">
+                    <p>Продукция DIVINE AROMA</p>
+                </div>
+            </section>
+
+            <section class="aboutHomeDescription">
+                <div class="aboutHomeDescriptionText">
+                <p>Наша продукция помогает раскрыть индивидуальность и наполнить жизнь яркими ощущениями и эмоциями.</p>
+                <p><strong>Основная концепция бренда — </strong>  производство парфюмерной продукции, которая будет соответствовать стилю жизни и образу мыслей современного человека.</p>
+                <p>У нас множество планов по расширению ассортимента, и уже совсем скоро мы представим вашему вниманию эксклюзивные ароматы в совершенно новом исполнении.</p>
+                </div>
+            </section>
+        </div>
+        
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+
+    </div>
+
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/aboutHome.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+</body>
+
+</html>

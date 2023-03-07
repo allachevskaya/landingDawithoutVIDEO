@@ -1,0 +1,636 @@
+.aboutHome {
+    width: 100%;
+    height: max-content;
+
+
+    &Image {
+        position: relative;
+        width: 100%;
+        max-height: 867px;
+        display: flex;
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+
+        & h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: "Montserrat Medium";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 65px;
+            line-height: 79px;
+            text-align: center;
+            color: #FFFFFF;
+            text-shadow: 1px 1px 2px #8d8282;
+        }
+    }
+
+    &Description {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &Text {
+            padding-top: 120px;
+
+            max-width: 828px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+
+            & h1 {
+                font-family: "Montserrat Medium";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+
+                color: #000000;
+            }
+
+            & p {
+                font-family: "Montserrat Regular";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+
+                color: #000000;
+
+                & strong {
+                    font-family: "Montserrat Regular";
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    &Block {
+
+        padding: 120px 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &Images {
+            display: flex;
+
+            justify-content: space-between;
+            gap: 80px;
+
+            &Item {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                & img {
+                    width: 100%;
+                }
+
+                & p {
+                    font-family: "Montserrat MediumItalic";
+                    display: flex;
+                    justify-content: flex-end;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+    }
+
+    &Box {
+        width: 100%;
+        padding: 120px 210px 0;
+        display: flex;
+
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 10px;
+
+        &Item {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            max-width: 584px;
+            float: right;
+
+            &img {
+                width: 100%;
+            }
+
+            & p {
+                font-family: "Montserrat MediumItalic";
+
+                display: flex;
+                justify-content: flex-end;
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 24px;
+
+            }
+        }
+
+        &-left {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+    }
+
+    &Text {
+        padding: 120px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &Title {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 878px;
+            padding-bottom: 30px;
+
+
+            & p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+                font-family: "Montserrat Regular";
+            }
+
+            & h1 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+                font-family: "Montserrat Medium";
+            }
+        }
+
+        &Description {
+            border-bottom: 1px solid #D9D9D9;
+            border-top: 1px solid #D9D9D9;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 878px;
+            padding: 30px 0;
+
+            & p {
+
+                font-family: "Montserrat Italic";
+                font-style: italic;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+        }
+
+        &Sub {
+            padding: 30px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            max-width: 878px;
+
+            & p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+                font-family: "Montserrat Regular";
+            }
+
+            & h1 {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+                font-family: "Montserrat Medium";
+            }
+        }
+    }
+
+    &List {
+        width: 100%;
+        padding: 120px 80px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &Item {
+            display: flex;
+            flex-direction: column;
+
+            max-width: 878px;
+            gap: 30px;
+
+            & p {
+                font-family: "Montserrat Regular";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+            }
+
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                & li {
+                    list-style-type: circle;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #000000;
+                    font-family: "Montserrat Regular";
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:980px) {
+    .aboutHome {
+        &Image {
+            & h1 {
+                font-size: 39px;
+                line-height: 45px;
+            }
+        }
+
+        &Description {
+            padding: 0 20px;
+            gap: 20px;
+
+            &Text {
+                padding-top: 80px;
+
+                & h1 {
+                    font-size: 19px;
+                }
+
+                & p {
+                    font-size: 19px;
+                }
+            }
+        }
+
+        &Block {
+            padding-top: 80px;
+
+            &Images {
+                gap: 20px;
+
+                & p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &Box {
+            padding: 80px 20px 0 50px;
+
+            &Item {
+                max-width: 451.625px;
+
+                & p {
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &Text {
+            padding: 80px 20px;
+
+            &Title {
+                & h1 {
+                    font-size: 19px;
+                }
+
+                & p {
+                    font-size: 19px;
+                }
+            }
+
+            &Description {
+                & p {
+                    font-size: 19px;
+                }
+            }
+
+            &Sub {
+                & p {
+                    font-size: 19px;
+                }
+
+                & h1 {
+                    font-size: 19px;
+                }
+            }
+        }
+
+        &List {
+            width: 100%;
+            padding: 80px 20px;
+
+            &Item {
+                max-width: 878px;
+                gap: 30px;
+
+                & p {
+                    font-size: 19px;
+                }
+
+                & ul {
+                    padding-left: 21px;
+
+                    & li {
+                        font-size: 19px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:520px) {
+    .aboutHome {
+        &Image {
+            & h1 {
+                font-style: normal;
+                width: 100%;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 37px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+
+        &Description {
+
+
+            &Text {
+                padding-top: 40px;
+                gap: 15px;
+
+                & h1 {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+
+                & p {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+        }
+
+        &Block {
+            padding: 40px 0px 0;
+
+            &Images {
+                flex-direction: column;
+
+                &Item {
+                    gap: 0;
+
+                    & p {
+                        font-size: 10px;
+                        padding: 5px 5px 0;
+                        line-height: 12px;
+                    }
+                }
+            }
+        }
+
+        &Box {
+            padding: 40px 10px 0 50px;
+
+            &-left {
+                padding: 40px 50px 0 10px;
+            }
+
+            &Item {
+                width: 100%;
+
+                & p {
+                    max-width: max-content;
+                    width: 100%;
+                    padding: 5px 0px 0;
+                    font-size: 9px;
+                    line-height: 12px;
+                }
+
+                &-left {
+                    display: flex;
+                    justify-content: end;
+                    align-items: end;
+
+                    & img {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+
+        &Text {
+            padding: 40px 20px;
+
+            &Title {
+                padding-bottom: 20px;
+                gap: 15px;
+
+                & h1 {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+
+                & p {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+
+            &Description {
+                gap: 15px;
+                padding: 20px 0;
+
+                & p {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+
+            &Sub {
+                padding-top: 20px;
+                gap: 25px;
+
+                & p {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+
+                & h1 {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+        }
+
+        &List {
+            width: 100%;
+            padding: 40px 20px;
+
+            &Item {
+
+                gap: 20px;
+
+                & p {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+
+                & ul {
+                    padding-left: 17px;
+
+                    & li {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:320px) {
+    .aboutHome {
+        &Image {
+            & h1 {
+                font-style: normal;
+                width: 100%;
+                font-weight: 500;
+                font-size: 21px;
+                line-height: 37px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+
+        &Description {
+            &Text {
+                padding-top: 40px;
+
+                & h1 {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+
+                & p {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+        }
+
+        &Text {
+            padding: 40px 20px;
+
+            &Title {
+                padding-bottom: 20px;
+                gap: 15px;
+
+                & h1 {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+
+                & p {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+
+            &Description {
+                gap: 15px;
+                padding: 20px 0;
+
+                & p {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+
+            &Sub {
+                padding-top: 20px;
+                gap: 25px;
+
+                & p {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+
+                & h1 {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+            }
+        }
+
+        &List {
+            width: 100%;
+            padding: 40px 20px;
+
+            &Item {
+
+                gap: 20px;
+
+                & p {
+                    font-size: 11px;
+                    line-height: 15px;
+                }
+
+                & ul {
+                    padding-left: 14px;
+
+                    & li {
+                        font-size: 11px;
+                        line-height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

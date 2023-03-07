@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru" translate="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/blogDetailed/blogDetailed_1.css">
+    <title>Ароматический диффузор</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="./blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <section class="blogDetailed">
+                <main class="blogDetailedMain">
+                    <picture>
+                        <source srcset="../assets/blogDetailed/11/370520.png" media="(max-width: 520px)">
+                        <img src="../assets/blogDetailed/11/370.png" alt="My default image">
+                    </picture>
+
+                    <div class="blogDetailedMainText __2blogDetailedMainText">
+                        <p>февраль 2022 </p>
+                        <h1>Ароматический диффузор</h1>
+                        <p>стиль и уют всего в одной детали</p>
+                    </div>
+                </main>
+                <div class="blogDetailedText">
+                    <p>
+                        В древние времена ароматы эфирных масел и трав использовались в ритуалах и обрядах для
+                        привлечения положительной энергии и изгнания злых духов. Из века в век ароматам придавали особое
+                        значение и верили в их способность влиять на жизни людей.
+                        <br><br>
+                        Переосмыслив опыт прошлых поколений, в XXI веке психологи и маркетологи используют ароматы как
+                        вспомогательный инструмент. Ведь запахи влияют на лимбическую систему головного мозга,
+                        отвечающую за эмоции и поведение.
+                        <br><br>
+                        В продуктовых магазинах распыляют ароматы выпечки, чтобы стимулировать нас к покупкам. В самых
+                        роскошных отелях ОАЭ всюду слышится стойкий аромат дорогих духов, клиенты ощущают свою
+                        исключительность и с легкостью тратят деньги.
+                        <br><br>
+                        Известный производитель спортивной обуви провел эксперимент. В торговом зале распылили аромат
+                        свежескошенной травы и колы. По итогам эксперимента был зафиксирован рост продаж, который
+                        составил 80%.
+                        <br><br>
+                        Так почему бы нам не использовать влияние ароматов в своих целях? Для расслабления и
+                        концентрации, для легкого сна или бодрости. Рынок товаров ароматерапии предлагает достаточно
+                        широкий ассортимент: парфюмерные свечи, палочки, аэрозоли, саше и диффузоры.
+                    </p>
+                </div>
+                <div class="blogDetailedTitle">
+                    <p>Ароматический диффузор — это емкость, наполненная специальнымпарфюмерным составом.
+                    </p>
+                </div>
+
+
+
+
+                <div class="blogDetailedImgLeft ">
+                    <img src="../assets/blogDetailed/11/image 550.png" alt="">
+
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Виды диффузоров</h1>
+                    <p> По способу передачи в воздух выбранного аромата существует два типа диффузоров:</p>
+                    <h1>1. Автоматический</h1>
+                    <p>
+                        Распыление происходит благодаря ультразвуковым волнам. Такой прибор работает от электричества и,
+                        как правило, имеет нейтральный дизайн. Подходит для помещений с большой площадью.
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight ">
+                    <img src="../assets/blogDetailed/11/image 551.png" alt="">
+
+                </div>
+                <div class="blogDetailedText">
+                    <h1>
+                        2. Диффузор с палочками
+                    </h1>
+                    <p>
+                        Подходит для квартиры и офиса. Их можно использовать в шоу-руме, спа-салоне, студии танцев и
+                        йоги. Красивые и эстетичные флаконы радуют глаз, а выбранный аромат поможет создать нужную
+                        атмосферу.
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter ">
+                    <img src="../assets/blogDetailed/11/image 551.png" alt="">
+
+                </div>
+                <div class="blogDetailedText">
+                    <p>Интенсивность аромата меняется при помощи палочек. Чем больше палочек добавить во флакон, тем
+                        интенсивнее будет аромат. Стеклянный флакон, в отличие от пластикового, помогает аромату
+                        сохранить свои первозданные свойства. Предпочтение стоит отдавать палочкам из натуральных
+                        материалов: тростниковым, бамбуковым, ротанговым.</p>
+                    <h1>Преимущества диффузоров с палочками:</h1>
+                    <p>
+                        &middot;удобство в использовании;<br>
+                        &middot;гармоничное дополнение к любому интерьеру;<br>
+                        &middot;безопасность из-за отсутствия подключения к электричеству.<br>
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft ">
+                    <img src="../assets/blogDetailed/9/image 499.png" alt="">
+
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Состав ароматического диффузора</h1>
+                    <p>
+                        Парфюмерную композицию для диффузора можно приготовить самостоятельно из смеси эфирных масел.
+                        Важно помнить, что натуральные эфирные масла — дорогостоящий ингредиент, а с более доступными
+                        восстановленными маслами аромат быстро станет плоским и скучным.
+                        <br><br>
+                        Приобретая диффузор с профессиональной парфюмерной основой, изучите состав. В качественной
+                        продукции:
+                    </p>
+                    <p>
+                        &middot;Отсутствует спирт, что делает аромат долгоиграющим и ярким;<br>
+                        &middot;Содержатся натуральные ингредиенты;<br>
+                        &middot;Присутствуют безопасные скрепляющие вещества;<br>
+                        &middot;Добавлены дезинфицирующие воздух компоненты.<br>
+
+                    </p>
+
+                </div>
+
+
+                <div class="blogDetailedImgRight ">
+                    <img src="../assets/blogDetailed/11/image 553.png" alt="">
+
+                </div>
+
+                <div class="blogDetailedText">
+                    <h1>
+                        Влияние ароматов
+
+                    </h1>
+                    <p>
+
+                        Выбранный аромат способен благотворно влиять на работоспособность и концентрацию, расслабление
+                        мышц и контроль аппетита.
+                        <br><br>
+                        Запахи лаванды, тимьяна и мелиссы влияют на зону сна, расположенную в продолговатом мозге, и
+                        способствуют расслаблению. Аромат сандалового дерева оказывает расслабляющий и успокаивающий
+                        эффект.
+                        <br><br>
+                        Эфирное масло лаванды поможет улучшить кратковременную память. Ароматы лимона, розмарина и мяты
+                        делают интеллектуальную работу более эффективной.
+                        <br><br>
+                        Запах кофе и эфирное масло нероли — повышают работоспособность. Мандарин, грейпфрут и пихта —
+                        тонизируют организм.
+                        <br><br>
+                        Апельсин, бергамот, жасмин, пачули и роза — влияют на чувственное восприятие.
+                        <br><br>
+                        Кипарис, розмарин, анис, лимон и цветочные эфирные масла — снижают аппетит.Специалисты не
+                        рекомендуют смешивать противоположные по свойствам эфирные масла, чтобы сохранить баланс и
+                        гармонию аромата, а также достичь желаемого эффекта.
+                        <br><br>
+                        Влияние аромата может меняться от степени усталости и особенности организма. У каждого человека
+                        есть индивидуальное восприятия запахов, основанное на обонятельных рецепторах и ассоциациях.
+                        <br><br>
+                        <i>
+                            К примеру, немецкий поэт Фридрих Шиллер оригинально повышал свою работоспособность. На его
+                            письменном столе стоял ящик с гнилыми яблоками. Возможно, вдохновение приходило благодаря
+                            вырабатываемому из таких фруктов метану. В малых дозах метан создает эффект легкого
+                            головокружения.
+                        </i>
+                    </p>
+                </div>
+
+                <div class="blogDetailedImgLeft ">
+                    <img src="../assets/blogDetailed/11/image 554.png" alt="">
+
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Выбор диффузора</h1>
+                    <p>
+                        При выборе парфюмерной основы диффузора прислушайтесь к своим ощущениям. В первую очередь аромат
+                        должен нравится и радовать.
+                        <br><br>
+                        Команда DIVINE AROMA создала специальную линейку ароматов и воплотили ее в виде диффузоров с
+                        палочками, ведь они универсальны и станут стильной деталью интерьера.
+
+
+                    </p>
+                    <h1>
+                        Достоинства наших <a href="" class="blogDetailedTextLink">ароматических диффузоров:</a></h1>
+                    <p>
+                        &middot;не содержат спирта, поэтому обладают длительной стойкостью и сохраняют насыщенный аромат
+                        до 6 месяцев;<br>
+                        &middot;производятся исключительно из органических ингредиентов и имеют многокомпонентный
+                        состав, что делает запах более естественным, богатым, объемным и интересным;
+                        <br>
+                        &middot;содержат концентрат коллоидного раствора наночастиц серебра «AgБион-2», которые
+                        экологически безопасны и в то же время обладают высокой антимикробной активностью;
+                        <br>
+                        &middot;изготовлены на основе скрепляющего вещества MMB японской компании Kuraray Co., Ltd.,
+                        которое повышает летучесть аромата;<br>
+
+                        &middot;имеют в комплекте девять ротанговых палочек, что позволяет более гибко регулировать
+                        интенсивность распространения аромата;<br>
+
+                        &middot;разлиты во флаконы из стекла, которое в отличие от пластика не вступает с ароматической
+                        композицией в химическую реакцию, поэтому позволяет сохранить ее первозданной;
+                        <br>
+                        &middot;
+                        упакованы в фирменную коробочку из экологичного крафтового картона, который полностью
+                        перерабатывается, что способствует сохранению окружающей среды.
+                        <br><br>
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight ">
+                    <img src="../assets/blogDetailed/11/image 555.png" alt="">
+
+                </div>
+
+
+
+
+
+                <div class="blogDetailedText">
+                    <h5>
+                        Аромадиффузоры станут отличным подарком себе и близким, добавят уюта и придадут атмосферу
+                        праздника. Выберете любимые ароматы и создайте нужное настроение с DIVINE AROMA.
+                    </h5>
+                </div>
+                <div class="blogDetailedNetWorks">
+                    <p>Понравилась статья? Не забудьте поделиться с друзьями в социальных сетях.</p>
+                    <div class="blogDetailedNetWorksIcons">
+                        <a href=""><img src="../assets/icons/face.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/vk.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/twi.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/class.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+
+</body>
+
+</html>

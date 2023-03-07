@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/ui/ui.css">
+    <link rel="stylesheet" href="../styles/modals/modals.css">
+    <link rel="stylesheet" href="../styles/blogDetailed/blogDetailed_1.css">
+    <title>Уникальная профессия: парфюмер</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="Header">
+            <div class="HeaderContainer">
+                <nav class="HeaderContainerNav">
+                    <a href="store.html" id="MenuDesktop">МАГАЗИН</a>
+                    <a href="aboutHome.html">О ДОМЕ</a>
+                    <a href="./blog.html">БЛОГ</a>
+                    <a href="">КОНТАКТЫ</a>
+                </nav>
+                <div class="HeaderContainerLogo">
+                    <a href="../index.html">
+                        <img class="logo" src="../assets/icons/logo.png" alt="divine-aroma">
+                    </a>
+                </div>
+                <nav class="HeaderContainerIcons">
+                    <a class="HeaderContainerIconsSearch" href="search">
+                        <img src="../assets/icons/search.svg" alt="search">
+                    </a>
+                    <a class="HeaderContainerIconsLang" href="lang">
+                        <img src="../assets/icons/lang.svg" alt="lang">
+                    </a>
+                    <a id="store" class="HeaderContainerIconsStore" href="store">
+                        <img src="../assets/icons/store.svg" alt="store">
+                    </a>
+                    <a id="user" class="HeaderContainerIconsUser" href="">
+                        <img src="../assets/icons/user.svg" alt="user">
+                    </a>
+                </nav>
+                <div class="HeaderContainerMenu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="24" height="20" viewBox="0 0 100 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="HeaderBurger closeHeaderMenu">
+                <ul class="HeaderBurgerList">
+                    <li>
+                        <a href="">НОВИНКИ</a>
+                    </li>
+                    <li>
+                        <a id="store" href="">МАГАЗИН</a>
+                    </li>
+                    <li>
+                        <a href="./pages/aboutHome.html">О ДОМЕ</a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">БЛОГ</a>
+                    </li>
+                    <li>
+                        <a href="">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+
+                <nav class="HeaderBurgerBox">
+                    <a id="user" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/user.svg" alt="user">
+                        <p>Личный Кабинет</p>
+                    </a>
+                    <a href="./wishList.html" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/love.svg" alt="Избранное">
+                        <p>Избранное</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/lang.svg" alt="страна">
+                        <p>Россия</p>
+                    </a>
+                    <a class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/point.svg" alt="city">
+                        <p>Город</p>
+                    </a>
+                    <a href="tel: +79210999935" class="HeaderBurgerBoxItem">
+                        <img src="../assets/icons/tel.svg" alt="tel">
+                        <p> +7 (921) 099-99-35</p>
+                    </a>
+                </nav>
+                <div class="HeaderBurgerBlock">
+                    <div class="HeaderBurgerBlockTitle">
+                        НОВОСТИ
+                    </div>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+                <div class="HeaderBurgerNework">
+                    <div class="HeaderBurgerNeworkTitle">
+                        Следите за нами в
+
+                    </div>
+                    <a href="">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                    <p>© DIVINE AROMA 2018 — 2023</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="HeaderOpen closeMenuDesktop">
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ ДОМА</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры PRO </a>
+                <a class="HeaderOpenTextA" href="">Рефиллы PRO</a>
+                <a class="HeaderOpenTextA" href="">Аромадиффузоры CLASSC </a>
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">АРОМАТЫ ДЛЯ МАШИН</a>
+                <a class="HeaderOpenTextA" href="">Парфюмированные спреи </a>
+
+            </div>
+            <div class="HeaderOpenText">
+                <a href="" class="HeaderOpenTextTitle">НОВИНКИ</a>
+            </div>
+            <div class="HeaderOpenImages">
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 256.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 255.png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+                <div class="HeaderOpenImagesItem">
+                    <img src="../assets/mainPage/image 315 (2).png" alt="">
+                    <a href="">узнать больше</a>
+                </div>
+            </div>
+        </section>
+
+        <div class=" HeaderPop closeHeaderPop">
+            <div class="HeaderPopModal">
+                <div class="HeaderPopModalText">
+                    <div class="HeaderPopModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>ВХОД В СИСТЕМУ</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <form class="HeaderPopModalForm">
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                    </div>
+                    <div class="HeaderPopModalFormInput">
+                        <p>Введите свой пароль *</p>
+                        <input type="password" required autocomplete="current-password" id="password"
+                            inputmode="numeric" minlength="8" size="8">
+                        <img src="../assets/icons/show.svg" title="Показать пароль" id="showPassword" alt="">
+                    </div>
+
+                    <div class="HeaderPopModalFormHelpers">
+                        <a id="rememberPassword" href="">Вы забыли пароль?</a>
+                        <div class="HeaderPopModalFormHelpersRemember">
+                            <input type="radio" id="HelpersPassword" name="contact" value="email">
+                            <div class="HelpersPasswordBox">
+                                <div class="HelpersPasswordBoxSquare"></div>
+                            </div>
+                            <label for="HelpersPassword">Запомнить меня</label>
+                        </div>
+                    </div>
+
+                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+
+                </form>
+                <form action="" class="HeaderPopModalRegister">
+                    <h5>СОЗДАТЬ АККАУНТ</h5>
+                    <p>Получайте привилегии и узнавайте
+                        <br> о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="HeaderPopStore closeHeaderPop">
+
+            <div class="HeaderPopStoreModal ">
+                <div class="HeaderPopStoreModalText">
+                    <div class="HeaderPopStoreModalTextTitle">
+                        <img src="../assets/icons/store.svg" alt="Личный кабинет">
+                        <p>ВАШ ВЫБОР</p>
+                        <p>( 0 )</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="HeaderPopStoreModalItems">
+
+                </div>
+                <div class="HeaderPopStoreModalSum">
+                    <p>ОБЩАЯ СУММА</p>
+                    <p>руб <span>0,00</span></p>
+                </div>
+                <div class="HeaderPopStoreModalInputs">
+                    <input type="text" placeholder="ВВЕДИТЕ ПРОМОКОД">
+                    <button>ОПЛАТИТЬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rememberPassword closeHeaderPop">
+            <div class="rememberPasswordModal">
+                <div class="rememberPasswordModalText">
+                    <div class="rememberPasswordModalTextTitle">
+                        <img src="../assets/icons/user.svg" alt="Личный кабинет">
+                        <p>Изменить пароль</p>
+                    </div>
+                    <img src="../assets/icons/close.svg" alt="" id="closeHeaderPop">
+                </div>
+                <div class="rememberPasswordModalSubtext">
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
+                    <form action="" class="HeaderPopModalFormInput">
+                        <p>Введите e-mail *</p>
+                        <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
+                        <div class="HeaderPopModalFormInputBtn">
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
+                            <button>ПОДТВЕРДИТЬ</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="rememberPasswordModalLastText">
+                    <h1>СОЗДАТЬ АККАУНТ</h1>
+                    <p>Получайте привилегии и узнавайте о новинках парфюмерного дома DIVINE AROMA
+                    </p>
+                    <button>ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="PageContent">
+            <section class="blogDetailed">
+                <main class="blogDetailedMain">
+                    <picture>
+                        <source srcset="../assets/blogDetailed/6/370520.png" media="(max-width: 520px)">
+                        <img src="../assets/blogDetailed/6/370.png" alt="My default image">
+                    </picture>
+
+                    <div class="blogDetailedMainText __2blogDetailedMainText">
+                        <p>август 2022 </p>
+                        <h1>Уникальная профессия: парфюмер</h1>
+                    </div>
+                </main>
+                <div class="blogDetailedText">
+                    <p>
+                        Приобретая новый или давно полюбившийся аромат, мы редко задумываемся о том, сколько трудов ушло
+                        на его создание. Необычный дизайн флакона и упаковки, продвижение продукта, доставка в магазины
+                        разных стран и многое другое – все это благодаря усилиями сотен и тысяч людей.
+                        <br><br>
+                        Но это вершина айсберга. Самый главный труд – создание неповторимой и запоминающейся парфюмерной
+                        композиции. Это – алхимия и магия, открывающие нам мир чувственных наслаждений и соблазнов.
+                        <br><br>
+                        За ведущими и именитыми парфюмерами охотятся передовые дома мод и производственные империи. В
+                        наши дни приятный и правильный аромат - залог популярности практически всех товаров, от
+                        парфюмерно-косметической группы до пищевой промышленности.
+                        <br><br>
+                        Мы предлагаем заглянуть «за кулисы» парфюмерного ремесла и узнать чуть больше о такой загадочной
+                        и удивительной профессии как парфюмер.
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/6/image 474.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Образование и карьера</h1>
+                    <p>В первую очередь парфюмер – это химик. В России нет аккредитованных учебных заведений, которые
+                        готовят специалистов профессии «парфюмер». Однако, вузы нашей страны готовят
+                        высококвалифицированные и востребованные во всем мире кадры по направлению «органическая химия»,
+                        а это в свою очередь является прочным фундаментом к развитию в парфюмерной отрасли.
+                        <br><br>
+                        Чтобы поступить в европейский парфюмерный институт, нужно иметь законченное высшее
+                        химико-технологическое образование, сдать сложные вступительные экзамены и быть готовым
+                        заплатить за обучение в среднем 10-30 тысяч евро.
+                        <br><br>
+                        Например, чтобы поступить в Институт парфюмерии Грасса необходимо сдать экзамен по математике,
+                        ольфакторный тест, написать эссе и пройти собеседование. В институт ежегодно принимают не более
+                        12 студентов на интенсивный курс, который длится 9 месяцев.
+                    </p>
+                </div>
+
+
+                <div class="blogDetailedImgRight">
+                    <img src="../assets/blogDetailed/6/image 475.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Одним из самых известных мировых парфюмерных институтов является ISIPCA (Франция, Версаль). Это
+                        престижное высшее учебное заведение в области парфюмерии, косметики и ароматизаторов, где выдают
+                        дипломы международного образца о получении дополнительного образования по специальности
+                        «парфюмер».
+                        <br><br>
+                        Большая часть расходов знаменитых парфюмерных институтов спонсируется за счет крупнейших
+                        производителей парфюмерии. Ингредиенты для обучения зачастую также предоставляют
+                        компании-спонсоры, ведь каждая корпорация-гигант заинтересована в новых специалистах высокого
+                        уровня.
+                        <br><br>
+                        Самые лучшие ученики и выпускники попадают на практику и стажировку как в передовые, так и в
+                        небольшие семейные компании, и все это только начало в борьбе за свое «место под солнцем» в
+                        парфюмерной индустрии.
+                        <br><br>
+                        <i>Кстати, парфюмерные дома Guerlain, Givaudan, Mane и многие другие открыли свои частные школы
+                            парфюмерного искусства, однако получить образование там могут только сотрудники этих
+                            компаний.
+                            Парижская школа Cinquieme Sens для всех желающих повысить квалификацию предлагает большой
+                            выбор
+                            тренингов и различных мастер-классов на английском и французском языках.
+                        </i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft">
+                    <img src="../assets/blogDetailed/6/image 476.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Нюансы профессии</h1>
+                    <p>
+                        Непревзойденное и тонкое обоняние – то, без чего невозможно состояться в профессии. Однако и
+                        этого недостаточно. Любой талант необходимо развивать.
+                        <br><br>
+                        Хочется отметить, что вопреки распространенному мнению, парфюмер – это не исключительно мужская
+                        профессия. Женщины от природы обладают более чутким обонянием благодаря большему количеству
+                        нейронов в обонятельном центре. Также, согласно последним исследованиям Федерального
+                        университета Рио-де-Жанейро, у женщин на 40% больше клеток в обонятельных луковицах, чем у
+                        мужчин. Конечно, это не говорит о том, что хорошим парфюмером может стать только женщина, ведь
+                        профессия «парфюмер» - это совокупность талантов, индивидуальных способностей и труда.
+                        <br><br>
+                        Существует множество упражнений, для формирования и поддержания уровня обонятельной памяти,
+                        тонуса дыхательной системы, тренировки основных мышц: носовой мышцы (она находится в крыльях
+                        носа), мышцы гордецов (она – над переносицей).
+                        <br><br>
+                        В профессии парфюмера предъявляются высокие требованию к здоровью. Дерматиты, болезни
+                        дыхательных путей, аллергии и мигрени – недопустимы. Парфюмерам рекомендовано избегать
+                        переохлаждений и пыли, а также как можно меньше находиться в помещениях с сухим воздухом.
+                        <br><br>
+                        Жирная и острая пища, алкоголь и курение пагубно влияют на тонкий нюх специалиста. Стрессы и
+                        тревожность также ослабляют восприятие ароматов. Пожалуй, эта профессия одна из немногих, где
+                        требуется ответственное отношение к своему здоровью и приверженность правильному образу жизни и
+                        питанию.
+                        <br><br>
+                        <i>
+                            Рекомендация от парфюмеров: чтобы повысить обоняние, нужно есть продукты, обогащенные
+                            цинком:
+                            моллюски, чечевица, грецкие орехи и миндаль, семена тыквы и кунжут, телятина, какао-порошок
+                            и
+                            темный шоколад, а также поливитамины с цинком.
+                        </i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter">
+                    <img src="../assets/blogDetailed/6/image 477.png" alt="">
+                </div>
+                <div class="blogDetailedText">
+                    <p>
+                        Вместе с тем профессия парфюмера требует базовых знаний не только в химии, но и в физике,
+                        фармацевтике, ботанике, политике, истории, маркетинге и психологии. При создании парфюмерной
+                        композиции необходимо не только следовать требованиям заказчика, но и чувствовать тонкую
+                        социально-экономическую конъюнктуру, осознавать цикличность исторических событий и уметь
+                        «заглядывать» в будущее, чтобы аромат как можно дольше был актуальным и востребованным.
+                        <br><br>
+                        Умение работать в команде и коммуникабельность также очень важны. Ведь над созданием парфюмерной
+                        продукции трудится группа парфюмеров и технологов, зачастую разных национальностей и каждый со
+                        своим темпераментом.
+                        <br><br>
+                        <i>
+                            Кстати, рабочий день парфюмеров начинается ранним утром. Это связано с тем, что обоняние
+                            человека острее в первой половине дня, затем запахи начинают накладываться друг на друга,
+                            искажая восприятие.
+                        </i>
+
+                        <br><br>
+                        В обязанности парфюмеров входит определение, запоминание и запись запахов, понимание формул
+                        каждого из них, для чего необходимы самодисциплина и расположенность к монотонной работе.
+                        Креативное мышление, развитая интуиция и творческий взгляд помогают создавать уникальные
+                        композиции. Личность словно разделена надвое, и очень важно иметь высокое самообладание, чтобы
+                        уметь переходить из одного состояния в другое.
+                    </p>
+                </div>
+                <div class="blogDetailedImgLeft __blogDetailedImgLeftText">
+                    <img src="../assets/blogDetailed/6/image 479.png" alt="">
+                    <p>Франсуа Демаши</p>
+                </div>
+                <div class="blogDetailedText">
+
+                    <p>
+                        У многих специалистов есть свои записные книжки, в которых они фиксируют идеи композиций,
+                        интересные сочетания ароматов и вдохновляющие ассоциации.
+
+                        <i>
+                            Франсуа Демаши – французский парфюмер, бывший главный парфюмер модного дома Christian Dior и
+                            других брендов под эгидой LVMH (французская транснациональная компания, известный
+                            производитель
+                            предметов роскоши под торговыми марками Christian Dior, Louis Vuitton, Givenchy, Guerlain,
+                            Moët
+                            & Chandon, Hennessy, Chaumet и др.) признался, что часто просыпается ночью от того, что ему
+                            снятся идеи воссоздания ароматов, которые он сразу же записывает в старую потертую красную
+                            тетрадь. Внутри в алфавитном порядке записаны предметы и вдохновляющие события, а рядом –
+                            названия эссенций и молекул, которые с ними ассоциируются.
+                        </i>
+                    </p>
+                </div>
+                <div class="blogDetailedImgRight ">
+                    <img src="../assets/blogDetailed/6/image 478.png" alt="">
+                  
+                </div>
+                <div class="blogDetailedText">
+                    <h1>Заключение</h1>
+                    <p>
+                        <strong>Парфюмер</strong> – это уникальная профессия, которая сочетает в себе творческое начало,
+                        невероятное
+                        самообладание и энциклопедические знания из разных областей. И только единицам суждено стать
+                        творцами мирового уровня, имена которых войдут в историю моды и жизни людей.
+                        <br><br>
+                        Поэтому невозможно описать, как бренд DIVINE AROMA гордиться сотрудничеством с профессионалами
+                        высшего класса. Команду наших парфюмеров возглавляет Мелисса Хоффманн — выпускница Института
+                        парфюмерии Грасса и потомственный знаток ароматов. Ее родословная богата людьми, оставившими
+                        значительный вклад в индустрии парфюмерии Грасса. К числу создателей наших ароматов также
+                        относятся: потомственный парфюмер Аймрик Верлак и парфюмер-технолог Лоик Сесиль.
+                        <br><br>
+                        Узнать про них чуть больше можно в истории бренда DIVINE AROMA
+                    </p>
+                </div>
+                <div class="blogDetailedImgCenter __blogDetailedImgRightText">
+                    <img src="../assets/blogDetailed/6/image 480.png" alt="">
+                    <p>Команда парфюмеров DIVINE AROMA</p>
+                </div>
+
+                <div class="blogDetailedText">
+                    <h5>
+                        Соберите свою уникальную коллекцию ароматов DIVINE AROMA, созданных талантливыми парфюмерами и
+                        профессионалами тонкого ремесла.
+                    </h5>
+                </div>
+                <div class="blogDetailedNetWorks">
+                    <p>Понравилась статья? Не забудьте поделиться с друзьями в социальных сетях.</p>
+                    <div class="blogDetailedNetWorksIcons">
+                        <a href=""><img src="../assets/icons/face.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/vk.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/twi.svg" alt=""></a>
+                        <a href=""><img src="../assets/icons/class.svg" alt=""></a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="Footer">
+            <div class="FooterContent">
+                <div class="FooterContentBox">
+                    <h5>КОНТАКТЫ</h5>
+                    <a href="">197110, Санкт-Петербург,<br>
+                        Большая Зеленина улица, 24</a>
+                    <div class="FooterContentBoxContacts">
+                        <a href="tel:+79210999935">+7 (921) 099-99-35</a>
+                        <a href="mailto:divine-aroma.office@yandex.ru"></a>
+                        <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                            <img src="../assets/icons/insta.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox">
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <div class="FooterContentBoxInfo">
+                        <a href="">
+                            Сотрудничество
+
+                        </a>
+                        <a href="./ PRIVACYPOLICY.html">
+                            Политика кондефициальности
+                        </a>
+                    </div>
+                </div>
+                <div class="FooterContentBox" id="FooterContentBoxLast">
+                    <h5>НОВОСТИ</h5>
+                    <p>Будьте в курсе наших новостей, эксклюзивных скидок и специальных предложений.</p>
+                    <form action="" class="HeaderBurgerBlockForm">
+                        <input type="email" placeholder="Введите адрес электронной почты" type="text">
+                        <button type="submit">Подписаться</button>
+                        <a href="">Политика обработки персональных данных</a>
+                    </form>
+                </div>
+
+                <div class="FooterContentNetworks">
+                    <h5>Следите за нами в </h5>
+                    <a href="https://instagram.com/divine.aroma.perfume?igshid=YmMyMTA2M2Y=">
+                        <img src="../assets/icons/insta.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="FooterText">© DIVINE AROMA 2018 — 2023</p>
+        </footer>
+    </div>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/modals/modals.js"></script>
+
+</body>
+
+</html>

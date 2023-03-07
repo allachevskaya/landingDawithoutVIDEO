@@ -1,0 +1,355 @@
+.wishList {
+  width: 100%;
+  padding: 80px 0px;
+}
+.wishListTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 11px;
+  font-family: "Montserrat Medium";
+}
+.wishListTitle h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.05em;
+  color: #262626;
+}
+.wishListTitle p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+.wishListBtns {
+  padding: 0 65px;
+  margin-top: 40px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.wishListBtns a {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 8px 20px;
+  border: 1px solid #262626;
+}
+.wishListBtns a p {
+  font-family: "Montserrat Regular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #262626;
+}
+.wishListProducts {
+  padding-top: 60px;
+  width: 100%;
+  display: grid;
+  gap: 82px 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+.wishListProductsProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  position: relative;
+  transition: all 0.75s ease-in-out;
+}
+.wishListProductsProduct img {
+  width: 100%;
+}
+.wishListProductsProductText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wishListProductsProductTextTitle {
+  position: relative;
+  width: 100%;
+}
+.wishListProductsProductTextTitle h1 {
+  font-family: "Montserrat Medium";
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 34px;
+  text-align: center;
+  color: #262626;
+}
+.wishListProductsProductTextTitle img {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  width: 31px;
+  height: 26px;
+  top: 0;
+}
+.wishListProductsProductTextSubTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.wishListProductsProductTextSubTitle h5 {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #808080;
+}
+.wishListProductsProductTextSubTitle p {
+  font-family: "Montserrat Italic";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 29px;
+  text-transform: lowercase;
+  color: #808080;
+}
+.wishListProductsProductBtns {
+  display: none;
+}
+.wishListBtnMob {
+  display: none;
+}
+
+#BlackLove {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .wishListBtns {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 980px) {
+  .wishList {
+    padding: 60px 0 80px;
+  }
+  .wishListTitle {
+    padding: 0 10px;
+  }
+  .wishListTitle h1 {
+    font-size: 30px;
+    line-height: 29px;
+  }
+  .wishListTitle p {
+    font-size: 19px;
+    line-height: 18px;
+  }
+  .wishListBtns {
+    padding: 0 20px;
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .wishListProducts {
+    margin: 0;
+    padding-top: 58px;
+    gap: 50px 0;
+  }
+  .wishListProductsProduct {
+    gap: 18px;
+  }
+  .wishListProductsProductTextTitle h1 {
+    font-size: 1.7346938776vw;
+    line-height: 11px;
+  }
+  .wishListProductsProductTextTitle img {
+    width: 2.3469387755vw;
+    height: 1.9387755102vw;
+  }
+  .wishListProductsProductTextSubTitle h5 {
+    font-size: 1.7346938776vw;
+    line-height: 11px;
+  }
+  .wishListProductsProductTextSubTitle p {
+    font-size: 1.7346938776vw;
+    line-height: 17px;
+  }
+  .wishListBtns {
+    display: none;
+  }
+  #BlackLove {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .wishList {
+    padding: 40px 0;
+  }
+  .wishListTitle {
+    padding: 0 10px;
+    gap: 5px;
+  }
+  .wishListTitle h1 {
+    font-size: 16px;
+    line-height: 29px;
+  }
+  .wishListTitle p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .wishListProducts {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .wishListProductsProduct {
+    gap: 0;
+  }
+  .wishListProductsProductText {
+    padding-top: 28px;
+  }
+  .wishListProductsProductTextTitle h1 {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .wishListProductsProductTextTitle img {
+    width: 23px;
+    height: 19px;
+  }
+  .wishListProductsProductTextSubTitle h5 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .wishListProductsProductTextSubTitle p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .wishListProductsProductBtns {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .wishListProductsProductBtnsLight {
+    border: 1px solid #808080;
+  }
+  .wishListProductsProductBtnsLight a {
+    min-height: 54px;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .wishListProductsProductBtnsLight a p {
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .wishListProductsProductBtnsBlack {
+    background-color: #808080;
+  }
+  .wishListProductsProductBtnsBlack a {
+    display: flex;
+    min-height: 54px;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+  }
+  .wishListProductsProductBtnsBlack a p {
+    font-family: "Montserrat Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .wishListProductsProductBtnsBlack a img {
+    width: 12px;
+    height: 12px;
+  }
+  .wishListBtns {
+    display: none;
+  }
+  .wishListBtnMob {
+    display: flex;
+    margin: 80px 0 25px;
+  }
+  #BlackLove {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    width: 20px;
+    height: 20px;
+  }
+}
+.wishListProductsEmpty {
+  display: none;
+}
+.wishListProductsEmptyDescription {
+  margin-top: 140px;
+  width: 100%;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+.wishListProductsEmptyDescription p {
+  font-family: "Montserrat Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+}
+
+@media (max-width: 980px) {
+  .wishListProductsEmptyDescription {
+    margin-top: 80px;
+  }
+  .wishListProductsEmptyDescription p {
+    font-size: 19px;
+    line-height: 28px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 520px) {
+  .wishListProductsEmptyDescription {
+    margin-top: 80px;
+  }
+  .wishListProductsEmptyDescription p {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 300px;
+  }
+}
+.wishListScale {
+  opacity: 0;
+}/*# sourceMappingURL=wishList.css.map */
