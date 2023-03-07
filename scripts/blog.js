@@ -4,7 +4,8 @@ const blogItems = document.querySelectorAll('.blogItems');
 
 const showENDBlog = (e) => {
     e.preventDefault();
-    if (e.target.getAttribute('data-pagination') == 'end') {
+    if (e.target.getAttribute('data-pagination') !== '0' ) {
+        
 
         blogItems.forEach(item => {
             item.classList.add('hiddenblogItems')
