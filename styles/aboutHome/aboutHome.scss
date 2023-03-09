@@ -1,3 +1,40 @@
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url("/font/Montserrat-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat SemiBold";
+    src: url("/font/Montserrat-SemiBold.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat Italic";
+    src: url("/font/Montserrat-Italic.ttf");
+
+}
+
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("/font/Montserrat-Medium.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("/font/Montserrat-Light.ttf");
+
+}
+
+@font-face {
+    font-family: "Montserrat MediumItalic";
+    src: url("/font/Montserrat-MediumItalic.ttf");
+
+}
+
 .aboutHome {
     width: 100%;
     height: max-content;
@@ -19,14 +56,13 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-family: "Montserrat Medium";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 65px;
-            line-height: 79px;
+            width: 100%;
             text-align: center;
             color: #FFFFFF;
-            text-shadow: 1px 1px 2px #8d8282;
+            font-family: 'Montserrat Medium', Arial, sans-serif;
+            font-weight: 600;
+            font-size: 62px;
+            line-height: 1.17;
         }
     }
 
@@ -37,7 +73,7 @@
         align-items: center;
 
         &Text {
-            padding-top: 120px;
+            padding-top: 80px;
 
             max-width: 828px;
             display: flex;
@@ -45,26 +81,27 @@
             gap: 25px;
 
             & h1 {
-                font-family: "Montserrat Medium";
-                font-style: normal;
+                line-height: 1.23;
+                font-family: "Montserrat Medium", Arial, sans-serif;
+                font-size: 20px;
                 font-weight: 500;
-                font-size: 24px;
-                line-height: 29px;
-
                 color: #000000;
+                text-transform: uppercase;
             }
 
             & p {
-                font-family: "Montserrat Regular";
+                font-family: "Montserrat Regular", Arial, sans-serif;
+                font-weight: 300;
+                color: #000000;
                 font-style: normal;
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 29px;
+
+                font-size: 13px;
+                line-height: 1.55;
 
                 color: #000000;
 
                 & strong {
-                    font-family: "Montserrat Regular";
+                    font-family: "Montserrat Regular", Arial, sans-serif;
                     font-style: normal;
                     font-weight: 600;
                     color: #000000;
@@ -75,7 +112,7 @@
 
     &Block {
 
-        padding: 120px 20px 0;
+        padding: 80px 20px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -96,12 +133,17 @@
                 }
 
                 & p {
-                    font-family: "Montserrat MediumItalic";
+
                     display: flex;
                     justify-content: flex-end;
-                    font-weight: 500;
-                    font-size: 20px;
-                    line-height: 24px;
+                    font-family: "Montserrat Italic";
+                    font-weight: 300;
+                    font-style: italic;
+                    color: #000000;
+                    font-style: normal;
+                    font-size: 13px;
+                    line-height: 1.55;
+                    color: #000000;
                 }
             }
         }
@@ -110,7 +152,7 @@
 
     &Box {
         width: 100%;
-        padding: 120px 210px 0;
+        padding: 80px 210px 0;
         display: flex;
 
         align-items: flex-end;
@@ -130,13 +172,17 @@
             }
 
             & p {
-                font-family: "Montserrat MediumItalic";
+
 
                 display: flex;
                 justify-content: flex-end;
-                font-weight: 500;
-                font-size: 21px;
-                line-height: 24px;
+                font-family: "Montserrat Regular", Arial, sans-serif;
+                font-weight: 300;
+                color: #000000;
+                font-style: normal;
+                font-size: 13px;
+                line-height: 1.55;
+                color: #000000;
 
             }
         }
@@ -150,7 +196,7 @@
     }
 
     &Text {
-        padding: 120px 20px;
+        padding: 80px 20px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -166,21 +212,23 @@
 
 
             & p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 29px;
+                font-family: "Montserrat Regular", Arial, sans-serif;
+                font-weight: 300;
                 color: #000000;
-                font-family: "Montserrat Regular";
+                font-style: normal;
+                font-size: 13px;
+                line-height: 1.55;
+                color: #000000;
             }
 
             & h1 {
-                font-style: normal;
+                line-height: 1.23;
+                font-family: "Montserrat Medium", Arial, sans-serif;
+                font-size: 20px;
                 font-weight: 500;
-                font-size: 24px;
-                line-height: 29px;
                 color: #000000;
-                font-family: "Montserrat Medium";
+                text-transform: uppercase;
+
             }
         }
 
@@ -195,11 +243,12 @@
 
             & p {
 
-                font-family: "Montserrat Italic";
-                font-style: italic;
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 29px;
+                font-family: "Montserrat Regular", Arial, sans-serif;
+                font-weight: 300;
+                color: #000000;
+                font-style: normal;
+                font-size: 13px;
+                line-height: 1.55;
                 color: #000000;
             }
         }
@@ -212,28 +261,30 @@
             max-width: 878px;
 
             & p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 29px;
+                font-family: "Montserrat Regular", Arial, sans-serif;
+                font-weight: 300;
                 color: #000000;
-                font-family: "Montserrat Regular";
+                font-style: normal;
+                font-size: 13px;
+                line-height: 1.55;
+                color: #000000;
             }
 
             & h1 {
-                font-style: normal;
+                line-height: 1.23;
+                font-family: "Montserrat Medium", Arial, sans-serif;
+                font-size: 20px;
                 font-weight: 500;
-                font-size: 24px;
-                line-height: 29px;
                 color: #000000;
-                font-family: "Montserrat Medium";
+                text-transform: uppercase;
+
             }
         }
     }
 
     &List {
         width: 100%;
-        padding: 120px 80px 0;
+        padding: 80px 80px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -247,11 +298,12 @@
             gap: 30px;
 
             & p {
-                font-family: "Montserrat Regular";
+                font-family: "Montserrat Regular", Arial, sans-serif;
+                font-weight: 300;
+                color: #000000;
                 font-style: normal;
-                font-weight: 400;
-                font-size: 24px;
-                line-height: 29px;
+                font-size: 13px;
+                line-height: 1.55;
                 color: #000000;
             }
 
@@ -259,15 +311,18 @@
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+                padding-left: 15px;
 
                 & li {
                     list-style-type: circle;
                     font-style: normal;
-                    font-weight: 400;
-                    font-size: 24px;
-                    line-height: 29px;
+                    font-family: "Montserrat Regular", Arial, sans-serif;
+                    font-weight: 300;
                     color: #000000;
-                    font-family: "Montserrat Regular";
+                    font-style: normal;
+                    font-size: 13px;
+                    line-height: 1.55;
+                    color: #000000;
                 }
             }
         }
@@ -276,13 +331,6 @@
 
 @media (max-width:980px) {
     .aboutHome {
-        &Image {
-            & h1 {
-                font-size: 39px;
-                line-height: 45px;
-            }
-        }
-
         &Description {
             padding: 0 20px;
             gap: 20px;
@@ -291,92 +339,57 @@
                 padding-top: 80px;
 
                 & h1 {
-                    font-size: 19px;
-                }
-
-                & p {
-                    font-size: 19px;
+                    font-size: calc(24 * (100vw/980));
                 }
             }
         }
 
         &Block {
-            padding-top: 80px;
+            padding-top: 40px;
 
             &Images {
                 gap: 20px;
-
-                & p {
-                    font-size: 16px;
-                    line-height: 24px;
-                }
             }
         }
 
         &Box {
-            padding: 80px 20px 0 50px;
+            padding: 40px 20px 0 50px;
 
             &Item {
                 max-width: 451.625px;
-
-                & p {
-                    font-size: 15px;
-                    line-height: 24px;
-                }
             }
         }
 
         &Text {
-            padding: 80px 20px;
+            padding: 40px 20px;
 
             &Title {
                 & h1 {
-                    font-size: 19px;
-                }
-
-                & p {
-                    font-size: 19px;
+                    font-size: calc(24 * (100vw/980));
                 }
             }
 
-            &Description {
-                & p {
-                    font-size: 19px;
-                }
+            &Sub h1 {
+                font-size: calc(24 * (100vw/980));
             }
 
-            &Sub {
-                & p {
-                    font-size: 19px;
-                }
-
-                & h1 {
-                    font-size: 19px;
-                }
-            }
         }
 
         &List {
             width: 100%;
-            padding: 80px 20px;
+            padding: 40px 20px;
 
             &Item {
                 max-width: 878px;
                 gap: 30px;
 
-                & p {
-                    font-size: 19px;
-                }
-
                 & ul {
                     padding-left: 21px;
-
-                    & li {
-                        font-size: 19px;
-                    }
                 }
             }
         }
+
+
 
     }
 }
@@ -385,13 +398,7 @@
     .aboutHome {
         &Image {
             & h1 {
-                font-style: normal;
-                width: 100%;
-                font-weight: 500;
-                font-size: 25px;
-                line-height: 37px;
-                text-align: center;
-                color: #FFFFFF;
+                font-size: calc(48 * (100vw/520));
             }
         }
 
@@ -399,23 +406,21 @@
 
 
             &Text {
-                padding-top: 40px;
+                padding-top: 20px;
                 gap: 15px;
 
                 & h1 {
-                    font-size: 14px;
-                    line-height: 17px;
+                    font-size: calc(13 * (100vw/520));
                 }
 
                 & p {
-                    font-size: 14px;
-                    line-height: 17px;
+                    font-size: calc(13 * (100vw/520));
                 }
             }
         }
 
         &Block {
-            padding: 40px 0px 0;
+            padding: 20px 0px 0;
 
             &Images {
                 flex-direction: column;
@@ -424,19 +429,18 @@
                     gap: 0;
 
                     & p {
-                        font-size: 10px;
+                        font-size: calc(13 * (100vw/520));
                         padding: 5px 5px 0;
-                        line-height: 12px;
                     }
                 }
             }
         }
 
         &Box {
-            padding: 40px 10px 0 50px;
+            padding: 20px 10px 0 50px;
 
             &-left {
-                padding: 40px 50px 0 10px;
+                padding: 20px 50px 0 10px;
             }
 
             &Item {
@@ -446,8 +450,7 @@
                     max-width: max-content;
                     width: 100%;
                     padding: 5px 0px 0;
-                    font-size: 9px;
-                    line-height: 12px;
+                    font-size: calc(13 * (100vw/520));
                 }
 
                 &-left {
@@ -465,21 +468,11 @@
         }
 
         &Text {
-            padding: 40px 20px;
+            padding: 20px 20px;
 
             &Title {
                 padding-bottom: 20px;
                 gap: 15px;
-
-                & h1 {
-                    font-size: 14px;
-                    line-height: 17px;
-                }
-
-                & p {
-                    font-size: 14px;
-                    line-height: 17px;
-                }
             }
 
             &Description {
@@ -487,47 +480,35 @@
                 padding: 20px 0;
 
                 & p {
-                    font-size: 14px;
-                    line-height: 17px;
+                    font-size: calc(13 * (100vw/520));
                 }
             }
 
             &Sub {
                 padding-top: 20px;
                 gap: 25px;
-
-                & p {
-                    font-size: 14px;
-                    line-height: 17px;
-                }
-
-                & h1 {
-                    font-size: 14px;
-                    line-height: 17px;
-                }
             }
         }
 
         &List {
             width: 100%;
-            padding: 40px 20px;
+            padding: 20px 20px;
 
             &Item {
-
                 gap: 20px;
-
-                & p {
-                    font-size: 14px;
-                    line-height: 17px;
-                }
 
                 & ul {
                     padding-left: 17px;
+                    gap: 13px;
 
                     & li {
-                        font-size: 14px;
-                        line-height: 17px;
+                        font-size: calc(13 * (100vw/520));
                     }
+
+                }
+
+                & p {
+                    font-size: calc(13 * (100vw/520));
                 }
             }
         }

@@ -6,38 +6,38 @@
 
 @font-face {
     font-family: "Montserrat Regular";
-    src: url("../../font/Montserrat-Regular.ttf");
+    src: url("/font/Montserrat-Regular.ttf");
 
 }
 
 @font-face {
     font-family: "Montserrat SemiBold";
-    src: url("../../font/Montserrat-SemiBold.ttf");
+    src: url("/font/Montserrat-SemiBold.ttf");
 
 }
 
 @font-face {
     font-family: "Montserrat Italic";
-    src: url("../../font/Montserrat-Italic.ttf");
+    src: url("/font/Montserrat-Italic.ttf");
 
 }
 
 
 @font-face {
     font-family: "Montserrat Medium";
-    src: url("../../font/Montserrat-Medium.ttf");
+    src: url("/font/Montserrat-Medium.ttf");
 
 }
 
 @font-face {
     font-family: "Montserrat Light";
-    src: url("../../font/Montserrat-Light.ttf");
+    src: url("/font/Montserrat-Light.ttf");
 
 }
 
 @font-face {
     font-family: "Montserrat MediumItalic";
-    src: url("../../font/Montserrat-MediumItalic.ttf");
+    src: url("/font/Montserrat-MediumItalic.ttf");
 
 }
 
@@ -66,14 +66,15 @@ input {
     font-size: 12px;
     line-height: 15px;
     font-family: "Montserrat Regular";
+    outline: none;
 }
 
 input::placeholder {
     opacity: 0.6;
 }
 
-@media (max-width:520px) {
-    input{
+@media (max-width:980px) {
+    input {
         font-size: 9px;
     }
 }
@@ -145,7 +146,11 @@ body {
     padding: 0 65px;
     width: 100%;
     height: 140px;
-
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    z-index: 20;
+    border-bottom: 1px solid #D9D9D9 ;
 
     &Container {
         display: flex;
@@ -161,13 +166,17 @@ body {
 
 
             & a {
-                font-family: "Montserrat Regular";
-                font-size: 16px;
-                line-height: 20px;
-                color: #3D4043;
+                font-size: 13px;
+                font-family: 'Montserrat', Arial, sans-serif;
+                line-height: 1.55;
+                font-weight: 400;
+                letter-spacing: 0.5px;
                 text-transform: uppercase;
+                color: #3D4043;
                 transition: all ease 0.7s;
                 border-bottom: 1px solid rgba(255, 0, 0, 0);
+
+
 
             }
         }
@@ -177,11 +186,12 @@ body {
         }
 
         &Logo {
-            width: 123px;
-            height: 119px;
-            // transform: translate(-50%, 7%);
-
-            margin-right: 105px;
+            width: 85px;
+            height: 85px;
+            transform: translate(-48%, 7%);
+            position: absolute;
+            left: 50%;
+            // margin-right: 105px;
 
             & a img {
 
@@ -191,11 +201,12 @@ body {
 
         &Icons {
             display: flex;
-            gap: 20px;
+            gap: 12px;
             height: 25px;
 
             & a img {
                 height: 100%;
+                width: 19px;
             }
         }
 
@@ -219,7 +230,8 @@ body {
         justify-content: space-between;
         gap: 20px;
         transition: all 1s ease-in-out;
-        visibility:visible;
+        visibility: visible;
+
         &Text {
             padding: 30px 0;
             display: flex;
@@ -279,6 +291,21 @@ body {
     }
 }
 
+#store img {
+    width: 22.656px;
+}
+
+#lang img {
+    width: 17px;
+}
+
+#search img {
+    width: 20px;
+}
+
+#user img {
+    width: 20px;
+}
 
 @media (max-width:1200px) {
     .Header {
@@ -729,9 +756,9 @@ body {
         &Box {
             display: flex;
             flex-direction: column;
-            gap: 60px;
+            gap: 100px;
             max-width: 344px;
-            padding: 60px 0px 20px;
+            padding: 80px 0px 20px;
 
             & h5 {
                 font-family: "Montserrat Medium";
@@ -744,19 +771,19 @@ body {
 
             & p {
 
+                font-size: 13px;
+                font-family: "Montserrat", Arial, sans-serif;
+                line-height: 1.55;
                 font-weight: 400;
-                font-family: "Montserrat Regular";
-                font-size: 16px;
-                line-height: 20px;
 
                 color: #3D4043;
             }
 
             & a {
-                font-family: "Montserrat Regular";
-                font-style: normal;
+                font-size: 13px;
+                font-family: "Montserrat", Arial, sans-serif;
+                line-height: 1.55;
                 font-weight: 400;
-                font-size: 16px;
 
                 color: #3D4043;
             }
@@ -767,11 +794,11 @@ body {
                 font-family: "Montserrat Regular";
 
                 & a {
-                    font-family: "Montserrat Regular";
-                    font-style: normal;
+
+                    font-size: 13px;
+                    font-family: "Montserrat", Arial, sans-serif;
+                    line-height: 1.55;
                     font-weight: 400;
-                    font-size: 16px;
-                    line-height: 20px;
                     color: #3D4043;
                 }
 
@@ -788,14 +815,13 @@ body {
             &Info {
                 display: flex;
                 flex-direction: column;
-                gap: 7px;
+                gap: 0;
 
                 & a {
-                    font-family: "Montserrat Regular";
-                    font-style: normal;
+                    font-size: 13px;
+                    font-family: "Montserrat", Arial, sans-serif;
+                    line-height: 1.55;
                     font-weight: 400;
-                    font-size: 16px;
-                    line-height: 20px;
                     color: #3D4043;
                 }
             }
@@ -813,14 +839,15 @@ body {
     }
 
     &Text {
-        font-family: "Montserrat Regular";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+
         color: #787676;
         text-align: center;
         padding-bottom: 20px;
+        font-size: 13px;
+        font-family: "Montserrat Regular", Arial, sans-serif;
+        line-height: 1.55;
+        font-weight: 400;
+
     }
 
 }
@@ -841,27 +868,27 @@ body {
                 // max-width: 239px;
 
                 & h5 {
-                    font-size: 14px;
+                    font-size: calc(14 * (100vw/980));
                 }
 
                 & a {
-                    font-size: 13px;
+                    font-size: calc(13 * (100vw/980));
                 }
 
                 &Contacts a {
-                    font-size: 13px;
+                    font-size: calc(13 * (100vw/980));
                 }
 
                 &Info a {
-                    font-size: 13px;
+                    font-size: calc(13 * (100vw/980));
                 }
 
                 & p {
-                    font-size: 13px;
+                    font-size: calc(13 * (100vw/980));
                 }
 
                 & form a {
-                    font-size: 10px;
+                    font-size: calc(10 * (100vw/980));
                 }
             }
         }
@@ -882,6 +909,16 @@ body {
 
             &Box {
                 display: none;
+
+                & h5 {
+                    font-size: 12px;
+                    width: 100%;
+                    text-align: center;
+                }
+
+                & form a {
+                    font-size: 11px;
+                }
             }
 
             #FooterContentBoxLast {
@@ -890,6 +927,7 @@ body {
                 align-items: center;
                 max-width: 100%;
                 padding: 0;
+                margin-top: 80px;
 
                 & p {
                     display: none;
@@ -905,13 +943,15 @@ body {
                 padding: 20px 0 0 0;
 
                 & h5 {
-                    font-family: "Montserrat Medium";
+
                     font-style: normal;
                     font-weight: 500;
-                    font-size: 12px;
-                    line-height: 15px;
+
                     text-align: center;
                     text-transform: uppercase;
+                    font-size: 12px;
+                    font-family: "Montserrat Medium";
+                    line-height: 1.55;
 
                     color: #212121;
                 }
@@ -937,6 +977,7 @@ body {
             padding: 20px 0;
             color: #787676;
 
+
         }
     }
 }
@@ -958,11 +999,12 @@ body {
         font-weight: 400;
         font-size: 16px;
         line-height: 20px;
-        & strong{
-            color:rgb(19, 18, 18);
+
+        & strong {
+            color: rgb(19, 18, 18);
         }
     }
-    
+
 
     &Item {
         border-bottom: 1px solid #9C9C9C;
@@ -998,7 +1040,7 @@ body {
         & p {
             font-size: 9px;
         }
-        
+
 
         &Item {
             border-bottom: 0.1px solid #9C9C9C;
@@ -1077,7 +1119,7 @@ body {
     width: 0;
     opacity: 0;
     visibility: hidden;
-//new need check
+    //new need check
     overflow: hidden;
     width: 0;
     opacity: 0;
@@ -1095,5 +1137,3 @@ body {
 .closePageContent {
     display: none;
 }
-
-// https://admin.kalmykwool.com/api/news-cards?populate=*&locale=ru&sort[0]=date%3Adesc

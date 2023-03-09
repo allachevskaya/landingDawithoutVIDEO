@@ -20,7 +20,7 @@
                     <a href="" id="MenuDesktop">МАГАЗИН</a>
                     <a href="./pages/aboutHome.html">О ДОМЕ</a>
                     <a href="./pages/blog.html">БЛОГ</a>
-                    <a href="">КОНТАКТЫ</a>
+                    <a href="./pages/map.html">КОНТАКТЫ</a>
                 </nav>
                 <div class="HeaderContainerLogo">
                     <a href="./index.html">
@@ -28,10 +28,10 @@
                     </a>
                 </div>
                 <nav class="HeaderContainerIcons">
-                    <a class="HeaderContainerIconsSearch" href="search">
+                    <a id="search" class="HeaderContainerIconsSearch" href="search">
                         <img src="./assets/icons/search.svg" alt="search">
                     </a>
-                    <a class="HeaderContainerIconsLang" href="lang">
+                    <a id="lang" class="HeaderContainerIconsLang" href="lang">
                         <img src="./assets/icons/lang.svg" alt="lang">
                     </a>
                     <a id="store" class="HeaderContainerIconsStore" href="store">
@@ -69,7 +69,7 @@
                         <a href="./pages/blog.html">БЛОГ</a>
                     </li>
                     <li>
-                        <a href="">КОНТАКТЫ</a>
+                        <a href="./pages/map.html">КОНТАКТЫ</a>
                     </li>
                 </ul>
 
@@ -79,7 +79,7 @@
                         <p>Личный Кабинет</p>
                     </a>
                     <a href="./pages/wishList.html" class="HeaderBurgerBoxItem">
-                        <img src="./assets/icons/love.svg" alt="Избранное">
+                        <img src="./assets/icons/loveWhite.svg" alt="Избранное">
                         <p>Избранное</p>
                     </a>
                     <a class="HeaderBurgerBoxItem">
@@ -181,7 +181,7 @@
                         </div>
                     </div>
 
-                    <button style="margin-top: 30px; font-size:15px; text-transform:uppercase">войти</button>
+                    <button style="margin-top: 30px; font-size:13px; text-transform:uppercase">войти</button>
 
                 </form>
                 <form action="" class="HeaderPopModalRegister">
@@ -189,7 +189,7 @@
                     <p>Получайте привилегии и узнавайте
                         <br> о новинках парфюмерного дома DIVINE AROMA
                     </p>
-                    <button style="margin-top: 30px; font-size:15px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+                    <button style="margin-top: 30px; font-size:13px">ЗАРЕГИСТРИРОВАТЬСЯ</button>
                 </form>
 
             </div>
@@ -226,19 +226,20 @@
                     <div class="rememberPasswordModalTextTitle">
                         <img src="./assets/icons/user.svg" alt="Личный кабинет">
                         <p>Изменить пароль</p>
-                    </div>  
+                    </div>
                     <img src="./assets/icons/close.svg" alt="" id="closeHeaderPop">
                 </div>
                 <div class="rememberPasswordModalSubtext">
-                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по восстановлению пароля.</p>
+                    <p>Введите адрес e-mail, ассоциированный с Вашим аккаунтом, и вы получите инструкцию по
+                        восстановлению пароля.</p>
                     <form action="" class="HeaderPopModalFormInput">
                         <p>Введите e-mail *</p>
                         <input type="email" inputmode="email" required pattern=".+@globex\.com" id="email">
                         <div class="HeaderPopModalFormInputBtn">
-                            <button class="btnLignt" >ОТМЕНИТЬ</button>
+                            <button class="btnLignt">ОТМЕНИТЬ</button>
                             <button>ПОДТВЕРДИТЬ</button>
                         </div>
-                      
+
                     </form>
                 </div>
                 <div class="rememberPasswordModalLastText">
@@ -257,279 +258,186 @@
             <main class="Main">
                 <video autoplay loop muted src="./assets/video/DIVINE AROMA commercial.mov"></video>
                 <p>Стиль и уют всего в одной детали.<br>
-                    Создай свою коллекцию интерьерных ароматов с <br>
+                    Создай свою коллекцию интерьерных ароматов с 
                     DIVINE AROMA</p>
-                <!-- <img id="MainImg" src="./assets/mainPage/image 367.png" alt=""> -->
-                <!-- <img id="MainImg" src="./assets/mainPage/IMG_6884.jpg" alt=""> -->
+
                 <picture>
-                    <source srcset="../assets/mainPage/mainIMg.png" media="(max-width: 520px)">
+                    <source srcset="../assets/mainPage/mainIMg.jpg" media="(max-width: 520px)">
                     <img src="./assets/mainPage/IMG_6884.jpg" alt="My default image">
                 </picture>
             </main>
-    
+
             <section class="NewProducts">
                 <div class="NewProductsTitle">
                     <h1>НОВИНКИ</h1>
                 </div>
                 <div class="NewProductsSlider">
-                    <div class="NewProductsSliderSlides">
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 299.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
+                    <div class="NewProductsSliderItem">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/1.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
                             </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
-                        </div>
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 301.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                            </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
-                        </div>
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 301.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                            </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
                         </div>
                     </div>
-                    <div class="NewProductsSliderSlides closeSlideMainPage">
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 301.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
+                    <div class="NewProductsSliderItem">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/2.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
                             </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
-                        </div>
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 301.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                            </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
-                        </div>
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 301.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                            </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
                         </div>
                     </div>
-                    <div class="NewProductsSliderSlides closeSlideMainPage">
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 301.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
+                    <div class="NewProductsSliderItem">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/3.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
                             </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
-                        </div>
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 301.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                            </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
-                        </div>
-                        <div class="NewProductsSliderSlidesItem">
-                            <div class="NewProductsSliderSlidesItemImage">
-                                <img src="./assets/mainPage/image 301.png" alt="товар">
-                                <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                            </div>
-                            <div class="NewProductsSliderSlidesItemText">
-                                <h5>
-                                    <a href="">MILANO PRO </a>
-                                    <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                            fill="#262626" />
-                                    </svg>
-                                </h5>
-                                <p>8 200 р.</p>
-                                <p>древесный, пряный</p>
-                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
                         </div>
                     </div>
                 </div>
-                <div class="NewProductsMobSlider">
-                    <div class="NewProductsMobSliderItem">
-                        <div class="NewProductsMobSliderItemImage">
-                            <img src="./assets/mainPage/image 301.png" alt="товар">
-                            <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                        </div>
-                        <div class="NewProductsSliderSlidesItemText">
-                            <h5>
-                                <a href="">MILANO PRO </a>
-                                <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                        fill="#262626" />
-                                </svg>
-                            </h5>
+                <div class="NewProductsSlider closeSlideMainPage">
+                    <div class="NewProductsSliderItem">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/4.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
                             <p>8 200 р.</p>
-                            <p>древесный, пряный</p>
+                            <h5>древесный, пряный</h5>
                         </div>
-    
-    
                     </div>
-                    <div class="NewProductsMobSliderItem closeSlideMainPage">
-                        <div class="NewProductsMobSliderItemImage">
-                            <img src="./assets/mainPage/image 299.png" alt="товар">
-                            <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                        </div>
-                        <div class="NewProductsSliderSlidesItemText">
-                            <h5>
-                                <a href="">MILANO PRO </a>
-                                <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                        fill="#262626" />
-                                </svg>
-                            </h5>
+                    <div class="NewProductsSliderItem">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/5.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
                             <p>8 200 р.</p>
-                            <p>древесный, пряный</p>
+                            <h5>древесный, пряный</h5>
                         </div>
-    
-    
                     </div>
-                    <div class="NewProductsMobSliderItem closeSlideMainPage">
-                        <div class="NewProductsMobSliderItemImage">
-                            <img src="./assets/mainPage/image 299.png" alt="товар">
-                            <img src="./assets/icons/loveWhite.svg" alt="" id="loveWhite">
-    
-                        </div>
-                        <div class="NewProductsSliderSlidesItemText">
-                            <h5>
-                                <a href="">MILANO PRO </a>
-                                <svg width="31" height="26" viewBox="0 0 31 26" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M24.5413 14.0812H16.7913V20.5812H14.208V14.0812H6.45801V11.9145H14.208V5.41449H16.7913V11.9145H24.5413V14.0812Z"
-                                        fill="#262626" />
-                                </svg>
-                            </h5>
+                    <div class="NewProductsSliderItem">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/1.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
                             <p>8 200 р.</p>
-                            <p>древесный, пряный</p>
+                            <h5>древесный, пряный</h5>
                         </div>
-    
-    
                     </div>
                 </div>
+
+                <div class="NewProductsSliderMob">
+                    <div class="NewProductsSliderItem SliderItemMob">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/1.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite-mob" src="./assets/icons/loveWhiteWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
+                        </div>
+                    </div>
+                    <div class="NewProductsSliderItem SliderItemMob closeSlideMainPage">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/2.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite-mob" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
+                        </div>
+                    </div>
+                    <div class="NewProductsSliderItem SliderItemMob closeSlideMainPage">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/3.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite-mob" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
+                        </div>
+                    </div>
+                    <div class="NewProductsSliderItem SliderItemMob closeSlideMainPage">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/4.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite-mob" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
+                        </div>
+                    </div>
+                    <div class="NewProductsSliderItem SliderItemMob closeSlideMainPage">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/5.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite-mob" src="./assets/icons/loveWhite.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
+                        </div>
+                    </div>
+                    <div class="NewProductsSliderItem SliderItemMob closeSlideMainPage">
+                        <img class="NewProductsSliderItemProduct" src="./assets/mainPage/1.png" alt="product">
+                        <img class="NewProductsSliderItemAddFavorite" id="addFavorite-mob" src="./assets/icons/loveWhiteWhire.svg"
+                            alt="">
+                        <div class="NewProductsSliderItemText">
+                            <div class="NewProductsSliderItemTextTitle">
+                                <h1>MILANO PRO</h1>
+                                <img src="./assets/icons/plus.svg" alt="addBasket">
+                            </div>
+                            <p>8 200 р.</p>
+                            <h5>древесный, пряный</h5>
+                        </div>
+                    </div>
+                </div>
+
             </section>
-    
-    
+
+
             <footer class="Footer">
                 <div class="FooterContent">
                     <div class="FooterContentBox">
@@ -549,7 +457,7 @@
                         <div class="FooterContentBoxInfo">
                             <a href="">
                                 Сотрудничество
-    
+
                             </a>
                             <a href="./pages/ PRIVACYPOLICY.html">
                                 Политика кондефициальности
@@ -565,7 +473,7 @@
                             <a href="">Политика обработки персональных данных</a>
                         </form>
                     </div>
-    
+
                     <div class="FooterContentNetworks">
                         <h5>Следите за нами в </h5>
                         <a href="">
@@ -577,7 +485,7 @@
             </footer>
         </div>
 
-       
+
 
 
     </div>
