@@ -3,10 +3,9 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 540px;
-  margin: 80px 0;
+  margin: 0px 0 80px;
 }
 .mapIMG {
-  border: 1px solid red;
   min-height: 250px;
   width: 100%;
   background-color: #D9D9D9;
@@ -17,46 +16,37 @@
 .mapBarText {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   padding: 2rem;
 }
 .mapBarText form {
   display: flex;
 }
 .mapBarText h1 {
-  font-family: "Montserrat Medium";
-  font-style: normal;
+  line-height: 1.23;
+  font-family: "Montserrat Medium", Arial, sans-serif;
+  font-size: 18px;
   font-weight: 500;
-  font-size: 21px;
-  line-height: 24px;
-  font-variant: small-caps;
   color: #3D4043;
 }
 .mapBarText p {
-  font-family: "Montserrat Regular";
-  font-style: normal;
+  line-height: 1.23;
+  font-family: "Montserrat Medium", Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
   color: #787676;
-}
-.mapBarInput {
-  margin-top: 15px;
-  border: 1px solid #000000;
-  max-width: 300px;
+  font-size: 15px;
+  line-height: 1.55;
 }
 .mapBarFilters {
   padding: 2rem;
   background-color: #ffffff;
 }
 .mapBarFilters h1 {
-  font-family: "Montserrat Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 24px;
-  font-variant: small-caps;
-  color: #3D4043;
+  line-height: 1.23;
+  font-family: "Montserrat Medium", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(61, 64, 67);
 }
 .mapBarFiltersItems {
   display: flex;
@@ -66,6 +56,7 @@
   margin-top: 20px;
 }
 .mapBarFiltersItems a {
+  font-family: "Montserrat Medium", Arial, sans-serif;
   flex: 1 1 auto;
   width: -moz-fit-content;
   width: fit-content;
@@ -73,14 +64,15 @@
   padding: 10px;
   max-width: 249px;
   transition: all 0.75s ease-in-out;
+  font-size: 15px;
+  line-height: 1.55;
 }
 .mapBarFiltersItems a p {
-  font-family: "Montserrat Regular";
-  font-style: normal;
+  line-height: 1.23;
+  font-family: "Montserrat Medium", Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
   color: #000000;
+  font-size: 15px;
 }
 .mapBarList {
   display: flex;
@@ -99,15 +91,15 @@
 .mapBarListBoxAdress {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
 }
 .mapBarListBoxAdress a, .mapBarListBoxAdress p {
-  font-family: "Montserrat Regular";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   color: #787676;
+  line-height: 1.23;
+  font-family: "Montserrat Medium", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .mapBarFiltersItems a:hover {
@@ -126,8 +118,9 @@
 #myInput {
   border: 1px solid transparent;
   background-color: #f1f1f1;
-  padding: 10px;
+  padding: 7px 10px;
   font-size: 16px;
+  outline: none;
 }
 
 #myInput {
@@ -228,4 +221,11 @@
   .mapBarListBox {
     padding: 1rem;
   }
+}
+#myInput {
+  font-family: "Montserrat Medium", Arial, sans-serif;
+  font-weight: 400;
+  color: #2d2c2c;
+  font-size: 15px;
+  line-height: 1.55;
 }/*# sourceMappingURL=map.css.map */

@@ -67,6 +67,8 @@ input {
     line-height: 15px;
     font-family: "Montserrat Regular";
     outline: none;
+    border: 1px solid #000000;
+    border-radius: 0;
 }
 
 input::placeholder {
@@ -167,7 +169,7 @@ body {
 
             & a {
                 font-size: 13px;
-                font-family: 'Montserrat', Arial, sans-serif;
+                font-family: 'Montserrat Regular', Arial, sans-serif;
                 line-height: 1.55;
                 font-weight: 400;
                 letter-spacing: 0.5px;
@@ -990,15 +992,17 @@ body {
     // border: 1px solid red;
     display: flex;
     gap: 10px;
-    padding: 0 65px;
+    padding: 20px 65px 0;
 
 
     & p {
-        font-family: "Montserrat SemiBold";
-        color: #A5A2A2;
+        
+        font-family: "Montserrat Medium", Arial, sans-serif;
+
         font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+        color: #A5A2A2;
+        font-size: 15px;
+        line-height: 1.55;
 
         & strong {
             color: rgb(19, 18, 18);
@@ -1016,13 +1020,13 @@ body {
 
 @media (max-width: 1200px) {
     .pageRoute {
-        padding: 0 20px;
+        padding:  20px;
     }
 }
 
 @media (max-width:980px) {
     .pageRoute {
-        padding: 0 40px;
+        padding: 20px 40px;
         margin-top: 0px;
 
         & p {

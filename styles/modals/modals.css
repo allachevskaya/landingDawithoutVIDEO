@@ -45,7 +45,9 @@
   min-height: -moz-max-content;
   min-height: max-content;
   width: 490px;
-  height: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100%;
   background-color: rgb(255, 255, 255);
   padding: 4rem 2.5rem;
 }
@@ -53,6 +55,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 10px;
 }
 .HeaderPopModalText img {
   width: 13px;
@@ -94,8 +98,7 @@
   justify-content: space-between;
 }
 .HeaderPopModalFormInput p {
-  font-family: "Montserrat Medium";
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -117,12 +120,13 @@
   padding-top: 20px;
 }
 .HeaderPopModalFormHelpers a {
-  border-bottom: 1px solid #262626;
-  font-family: "Montserrat Medium";
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 24px;
-  letter-spacing: 0.1em;
+  font-family: "Montserrat Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  color: #262626;
 }
 .HeaderPopModalFormHelpersRemember {
   display: flex;
@@ -130,7 +134,7 @@
   gap: 4px;
 }
 .HeaderPopModalFormHelpersRemember label {
-  font-family: "Montserrat Medium";
+  font-family: "Montserrat Medium", Arial, sans-serif;
   font-weight: 500;
   font-size: 11px;
   line-height: 24px;
@@ -149,18 +153,18 @@
   padding-top: 20px;
   color: #262626;
   text-transform: uppercase;
-  font-size: 13px;
-  font-family: "Montserrat", Arial, sans-serif;
-  line-height: 1.55;
-  font-weight: 400;
-  letter-spacing: 0.5px;
+  font-family: "Montserrat Medium", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
 }
 .HeaderPopModalRegister p {
   font-family: "Montserrat Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.05em;
 }
 
@@ -175,6 +179,8 @@
   display: flex;
   justify-content: flex-end;
   transition: all 0.85s ease-in;
+  z-index: 37;
+  overflow-y: scroll;
 }
 .HeaderPopStoreModal {
   display: flex;
@@ -182,7 +188,9 @@
   gap: 50px;
   transition: all 0.85s ease-in;
   width: 490px;
-  height: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100%;
   background-color: rgb(255, 255, 255);
   padding: 4rem 2.5rem;
 }
@@ -191,7 +199,7 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #D9D9D9;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .HeaderPopStoreModalText img {
   width: 0.8rem;
@@ -208,13 +216,12 @@
   height: 1.5rem;
 }
 .HeaderPopStoreModalTextTitle p {
-  font-family: "Montserrat Light";
-  font-size: 1rem;
-  font-weight: 400;
-  font-stretch: normal;
+  font-family: "Montserrat", Arial, sans-serif;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.25rem;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
   color: #262626;
   text-transform: uppercase;
 }
@@ -222,23 +229,22 @@
   height: -moz-max-content;
   height: max-content;
   min-height: 140px;
-  height: 50%;
+  height: 3.5714285714vw;
 }
 .HeaderPopStoreModalSum {
-  padding: 20px 0;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
 }
 .HeaderPopStoreModalSum p {
-  font-family: "Montserrat Medium";
-  font-size: 1rem;
-  font-weight: 400;
-  font-stretch: normal;
+  font-family: "Montserrat", Arial, sans-serif;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.25rem;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
   color: #262626;
   text-transform: uppercase;
 }

@@ -24,7 +24,7 @@
   gap: 100px;
 }
 .blogDetailedMainText p {
-  font-family: "Montserrat Medium";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -33,7 +33,7 @@
   color: #FFFFFF;
 }
 .blogDetailedMainText h1 {
-  font-family: "Montserrat SemiBold";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 50px;
@@ -50,11 +50,11 @@
   align-items: center;
 }
 .blogDetailedTitle p {
-  font-family: "Montserrat Italic";
   font-style: italic;
+  font-size: 13px;
+  font-family: "Montserrat", Arial, sans-serif;
+  line-height: 1.55;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 34px;
   text-align: center;
   color: #000000;
   max-width: 878px;
@@ -72,28 +72,28 @@
 }
 .blogDetailedText p {
   max-width: 878px;
-  font-family: "Montserrat Regular";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.55;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 33px;
   color: #000000;
 }
 .blogDetailedText h1 {
   max-width: 878px;
   font-weight: 500;
   width: 100%;
-  font-family: "Montserrat Medium";
+  font-family: "Montserrat Regular", Arial, sans-serif;
 }
 .blogDetailedText h5 {
   max-width: 878px;
   font-style: italic;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
   text-align: center;
   width: 100%;
-  font-family: "Montserrat Light";
+  font-family: "Montserrat Regular", Arial, sans-serif;
 }
 .blogDetailedImgLeft {
   width: 100%;
@@ -143,11 +143,11 @@
   padding: 68px;
 }
 .blogDetailedNetWorks p {
-  font-family: "Montserrat Regular";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.55;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
   color: #000000;
 }
 .blogDetailedNetWorksIcons {
@@ -163,7 +163,7 @@
   padding: 20px 0 20px 68px;
 }
 .__blogDetailedImgLeftText p {
-  font-family: "Montserrat Italic";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   width: 100%;
   justify-content: flex-end;
   display: flex;
@@ -181,7 +181,7 @@
   gap: 15px;
 }
 .__blogDetailedImgCenter p {
-  font-family: "Montserrat Italic";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   width: 100%;
   justify-content: center;
   display: flex;
@@ -208,16 +208,16 @@
   gap: 50px;
 }
 .__8blogDetailedMainText p {
-  font-family: "Montserrat Medium";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: 400;
   text-align: center;
   color: #000000;
 }
 .__8blogDetailedMainText h1 {
-  font-family: "Montserrat SemiBold";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 50px;
@@ -235,7 +235,7 @@
   align-items: flex-end;
 }
 .__blogDetailedImgRightText p {
-  font-family: "Montserrat Italic";
+  font-family: "Montserrat Regular", Arial, sans-serif;
   width: 100%;
   justify-content: flex-end;
   display: flex;
@@ -260,19 +260,16 @@
   }
   .blogDetailedTitle p {
     padding: 20px;
-    font-size: 2.1428571429vw;
-    line-height: 3.3673469388vw;
+    font-size: 1.6326530612vw;
   }
   .blogDetailedText {
     padding: 20px;
   }
   .blogDetailedText h1 {
     font-size: 2.1428571429vw;
-    line-height: 3.3673469388vw;
   }
   .blogDetailedText p {
-    font-size: 2.2448979592vw;
-    line-height: 3.3673469388vw;
+    font-size: 1.6326530612vw;
   }
   .blogDetailedImgLeft {
     padding: 20px 0 20px 20px;
@@ -320,7 +317,7 @@
     gap: 2.5510204082vw;
   }
   .__8blogDetailedMainText p {
-    font-size: 2.0408163265vw;
+    font-size: 1.6326530612vw;
   }
   .__8blogDetailedMainText h1 {
     font-size: 3.4693877551vw;
@@ -333,20 +330,20 @@
   }
   .blogDetailedMainText {
     padding: 0 10px;
-    top: 50%;
-    gap: 48.0769230769vw;
+    top: 43%;
+    gap: 28.8461538462vw;
   }
   .blogDetailedMainText p {
-    font-size: 3.4615384615vw;
+    font-size: 2.5vw;
+    font-weight: 800;
   }
   .blogDetailedMainText h1 {
     font-size: 6.7307692308vw;
-    line-height: 36px;
+    line-height: 39px;
   }
   .blogDetailedTitle p {
     padding: 20px;
-    font-size: 3.4615384615vw;
-    line-height: 5.3846153846vw;
+    font-size: 2.5vw;
   }
   .blogDetailedText {
     padding: 20px;
@@ -355,16 +352,13 @@
     gap: 15px;
   }
   .blogDetailedText p {
-    font-size: 3.0769230769vw;
-    line-height: 5.1923076923vw;
+    font-size: 2.5vw;
   }
   .blogDetailedText h1 {
     font-size: 3.0769230769vw;
-    line-height: 5.1923076923vw;
   }
   .blogDetailedText h5 {
-    font-size: 3.4615384615vw;
-    line-height: 6.3461538462vw;
+    font-size: 3.0769230769vw;
   }
   .blogDetailedImgLeft img, .blogDetailedImgRight img, .blogDetailedImgCenter img {
     max-width: 300px;
@@ -383,28 +377,29 @@
     gap: 4.8076923077vw;
     top: 34%;
   }
-  .__3blogDetailedMainText h1, .__3blogDetailedMainText p {
-    font-weight: 800;
-    text-shadow: 5px 50px 40px black;
-    font-size: 4.6153846154vw;
-    line-height: 5.1923076923vw;
+  .__3blogDetailedMainText h1 {
+    font-size: 3.0769230769vw;
+  }
+  .__3blogDetailedMainText p {
+    font-size: 2.5vw;
   }
   .__blogDetailedImgLeftText p,
   .__blogDetailedImgRightText p {
     max-width: 300px;
-    font-size: 2.6923076923vw;
+    font-size: 2.5vw;
   }
   .__8blogDetailedMainText {
     top: 54%;
     gap: 6.7307692308vw;
   }
-  .__8blogDetailedMainText p {
-    font-size: 3.0769230769vw;
-    line-height: 5.1923076923vw;
-  }
   .__8blogDetailedMainText h1 {
-    font-size: 3.4615384615vw;
-    line-height: 5.1923076923vw;
+    font-size: 3.0769230769vw;
+  }
+  .__8blogDetailedMainText p {
+    font-size: 2.5vw;
+  }
+  .blogDetailedNetWorks p {
+    font-size: 2.5vw;
   }
 }
 .blogDetailedTextLink {
